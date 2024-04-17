@@ -31,7 +31,7 @@ dependencies {
     implementation 'Plugin:PlaceholderAPI:2.11.5'
     implementation 'Plugin:Plan-Bungee:5.6-build-2614'
     implementation 'Plugin:ProtocolLib:5.1.1-SNAPSHOT-673'
-    implementation 'Plugin:spark:1.10.43'
+    // implementation 'Plugin:spark:1.10.43'
     implementation 'Plugin:TAB-Bungee:4.0.9'
     implementation 'Plugin:Vault:1.7.3-b131'
     implementation 'Plugin:ViaVersion-Bungee:4.8.1'
