@@ -1,0 +1,99 @@
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+// Use environment instead of gradle.properties
+if("$System.env.MAVEN_URL" != null) {
+    ext.MAVEN_URL="$System.env.MAVEN_URL"+"/"+"tfb"
+    ext.MAVEN_PASSWORD="$System.env.MAVEN_PASSWORD"
+    ext.MAVEN_USERNAME="$System.env.MAVEN_USERNAME"
+}
+
+dependencies {
+    // Network plugins
+    implementation 'Server:Purpur:1.20.1-2060'
+    implementation 'Plugin:PlayerReferrals:1.3.3'
+    implementation 'Plugin:BuycraftX:12.0.8'
+    implementation 'Plugin:ChatControlRed:10.22.3'
+    implementation 'Plugin:CommandPanels:3.19.1.7'
+    implementation 'Plugin:CoreProtect:22.2'
+    implementation 'Plugin:DecentHolograms:2.8.4'
+    implementation 'Plugin:Essentials:2.20.1'
+    implementation 'Plugin:EssentialsSpawn:2.20.1'
+    implementation 'Plugin:FastAsyncWorldEdit:2.8.2-SNAPSHOT'
+    implementation 'Plugin:GadgetsMenu:5.13.4'
+    implementation 'Plugin:HexNicks:3.1.1'
+    implementation 'Plugin:GSit:1.5.3'
+    implementation 'Plugin:LibsDisguises:10.0.38'
+    implementation 'Plugin:LuckPerms:5.4.108'
+    implementation 'Plugin:Multiverse-Core:4.3.12'
+    implementation 'Plugin:PlaceholderAPI:2.11.5'
+    implementation 'Plugin:Plan-Bungee:5.6-build-2614'
+    implementation 'Plugin:ProtocolLib:5.1.1-SNAPSHOT-673'
+    implementation 'Plugin:spark:1.10.43'
+    implementation 'Plugin:TAB-Bungee:4.0.9'
+    implementation 'Plugin:Vault:1.7.3-b131'
+    implementation 'Plugin:ViaVersion-Bungee:4.8.1'
+    implementation 'Plugin:VotingPlugin-Bungee:6.14.1'
+    implementation 'Plugin:WorldGuard:7.0.9+5934e49'
+    // implementation 'Vulcan:Vulcan:2.7.5'
+
+    //PlaceholderAPI Expansions
+    implementation 'PAPI-Expansion:Expansion-Bungee:2.2'
+    implementation 'PAPI-Expansion:Expansion-Essentials:1.5.2'
+    implementation 'PAPI-Expansion:Expansion-Javascript:2.1.2'
+    implementation 'PAPI-Expansion:Expansion-LuckPerms:5.4'
+    implementation 'PAPI-Expansion:Expansion-Pinger:1.0.1'
+    implementation 'PAPI-Expansion:Expansion-Player:2.0.7'
+    implementation 'PAPI-Expansion:Expansion-Server:2.6.2'
+    implementation 'PAPI-Expansion:Expansion-VotingPlugin:1.5'
+    implementation 'PAPI-Expansion:Expansion-World:1.2.2'
+    
+    // K8s Plugins
+    implementation 'Plugin:UnifiedMetrics:0.3.8'
+}
+
+// TFB Artifactory
+repositories {
+    mavenCentral {
+        url "${MAVEN_URL}"
+        credentials {
+            username = "${MAVEN_USERNAME}"
+            password = "${MAVEN_PASSWORD}"
+        }
+    }
+}
+
+// Type "gradle plugins" in terminal to update plugins
+task plugins(type: Copy) {
+    doFirst{
+    delete fileTree(dir: 'plugins/.', include: '/*.jar')
+    }
+    from configurations.compileClasspath
+    exclude '*Paper*', '*Flamecord*', '*Expansion*', 'Purpur*'
+    into 'plugins'
+}
+
+// Type "gradle expansions" in terminal to update PAPI Expansions
+task expansions(type: Copy) {
+    doFirst{
+    delete fileTree(dir: 'plugins/PlaceholderAPI/expansions/.', include: '/*.jar')
+    }
+    from configurations.compileClasspath
+    include '*Expansion*'
+    into 'plugins/PlaceholderAPI/expansions'
+}
+
+// Type "gradle server" in terminal to update server
+task server(type: Copy) {
+    doFirst{
+    delete fileTree(dir: '/.' , include: 'server.jar')
+    }
+    from configurations.compileClasspath
+    include 'Paper-*', 'Flamecord-*', 'Purpur-*'
+    rename '.*-(.+)', 'server.jar'
+    into "."
+}
+
+task update(dependsOn: ['server', 'plugins', 'expansions'])
