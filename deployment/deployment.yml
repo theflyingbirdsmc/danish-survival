@@ -113,11 +113,11 @@ spec:
           - name: ONLINE_MODE
             value: "FALSE"
           - name: SERVER_PORT
-            value: "25565"
+            value: "30005"
           - name: "MEMORY"
             value: "8G"
         ports:
-          - containerPort: 25565
+          - containerPort: 30005
         volumeMounts:
           - name: danish-survival-pv
             mountPath: /data
