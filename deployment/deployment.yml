@@ -1,35 +1,35 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: danish-survival
+  name: vanilla
   namespace: tfb-servers
 spec:
   type: NodePort
   ports:
-  - name: danish-survival
+  - name: vanilla
     port: 30005
     targetPort: 30005
     nodePort: 30005
   selector:
-    run: danish-survival
+    run: vanilla
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: danish-survival
+  name: vanilla
   namespace: tfb-servers
   labels:
-    run: danish-survival
+    run: vanilla
 spec:
-  serviceName: "danish-survival"
+  serviceName: "vanilla"
   replicas: 1
   selector:
     matchLabels:
-      run: danish-survival
+      run: vanilla
   template:
     metadata:
       labels:
-        run: danish-survival
+        run: vanilla
     spec:
       securityContext:
         runAsUser: 1000
@@ -50,7 +50,7 @@ spec:
         command: ["/bin/sh", "-c"]
         args: ["rm -rf /data/*.jar && rm -rf /data/plugins/*.jar"]
         volumeMounts:
-        - name: danish-survival-pv
+        - name: vanilla-pv
           mountPath: /data
       - name: git-sync
         image: k8s.gcr.io/git-sync-amd64:v2.0.6
@@ -60,7 +60,7 @@ spec:
           mountPath: /git-data
         env:
         - name: GIT_SYNC_REPO
-          value: "https://github.com/theflyingbirdsmc/danish-survival.git"
+          value: "https://github.com/theflyingbirdsmc/TFB-Network.git"
         - name: GIT_SYNC_BRANCH
           value: "main"
         - name: GIT_SYNC_ROOT
@@ -74,16 +74,16 @@ spec:
       - name: move-files
         image: alpine
         command: ["/bin/sh", "-c"]
-        args: ["cp -r /git-data/temp/danish-survival/* /data && rm -rf /git-data/temp"]
+        args: ["cp -r /git-data/temp/vanilla/* /data && rm -rf /git-data/temp"]
         volumeMounts:
         - name: git-repo-volume
           mountPath: /git-data
-        - name: danish-survival-pv
+        - name: vanilla-pv
           mountPath: /data
       - name: gradle-build
         image: gradle:latest
         volumeMounts:
-        - name: danish-survival-pv
+        - name: vanilla-pv
           mountPath: /data
         env:
         - name: MAVEN_URL
@@ -101,7 +101,7 @@ spec:
         command: ["/bin/sh", "-c"]
         args: ["cd /data && gradle update -PmavenUrl=$MAVEN_URL -PmavenUsername=$MAVEN_USERNAME -PmavenPassword=$MAVEN_PASSWORD"]
       containers:
-      - name: danish-survival
+      - name: vanilla
         image: itzg/minecraft-server
         env:
           - name: EULA
@@ -119,7 +119,7 @@ spec:
         ports:
           - containerPort: 25565
         volumeMounts:
-          - name: danish-survival-pv
+          - name: vanilla-pv
             mountPath: /data
           - name: git-repo-volume
             mountPath: /git-data
@@ -139,7 +139,7 @@ spec:
           periodSeconds: 60
   volumeClaimTemplates:
   - metadata:
-      name: danish-survival-pv
+      name: vanilla-pv
     spec:
       accessModes: ["ReadWriteOnce"]
       resources:
