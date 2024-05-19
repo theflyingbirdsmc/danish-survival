@@ -1,7 +1,26 @@
+import java.util.jar.JarFile
+import org.yaml.snakeyaml.Yaml
+
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath("org.yaml:snakeyaml:2.0")
+    classpath "org.jfrog.buildinfo:build-info-extractor-gradle:5.1.10"
+  }
+}
+
 plugins {
     id 'java'
     id 'groovy'
 }
+
+apply plugin: "com.jfrog.artifactory"
+apply plugin: 'maven-publish'
+
 
 // Use environment instead of gradle.properties
 if("$System.env.MAVEN_URL" != null) {
@@ -12,31 +31,28 @@ if("$System.env.MAVEN_URL" != null) {
 
 dependencies {
     // Network plugins
-    implementation 'Server:Purpur:1.20.1-2060'
-    implementation 'Plugin:PlayerReferrals:1.3.3'
-    implementation 'Plugin:BuycraftX:12.0.8'
-    implementation 'Plugin:ChatControlRed:10.22.3'
-    implementation 'Plugin:CommandPanels:3.19.1.7'
-    implementation 'Plugin:CoreProtect:22.2'
-    implementation 'Plugin:DecentHolograms:2.8.4'
-    implementation 'Plugin:Essentials:2.20.1'
-    implementation 'Plugin:EssentialsSpawn:2.20.1'
-    implementation 'Plugin:FastAsyncWorldEdit:2.8.2-SNAPSHOT'
-    implementation 'Plugin:GadgetsMenu:5.13.4'
+    implementation 'Server:Paper:1.20.4-496'
+    implementation 'Plugin:PlayerReferrals:1.3.+'
+    implementation 'Plugin:Tebex:2.0.+'
+    implementation 'Plugin:ChatControlRed:10.22.+'
+    implementation 'Plugin:CommandPanels:3.+'
+    implementation 'Plugin:CoreProtect:22.+'
+    implementation 'Plugin:DecentHolograms:2.8.+'
+    implementation 'Plugin:Essentials:2.20.+'
+    implementation 'Plugin:EssentialsSpawn:2.20.+'
+    implementation 'Plugin:FastAsyncWorldEdit:2.9.+'
+    implementation 'Plugin:GadgetsMenu:5.16.+'
     implementation 'Plugin:HexNicks:3.1.1'
-    implementation 'Plugin:GSit:1.5.3'
-    implementation 'Plugin:LibsDisguises:10.0.38'
-    implementation 'Plugin:LuckPerms:5.4.108'
-    implementation 'Plugin:Multiverse-Core:4.3.12'
-    implementation 'Plugin:PlaceholderAPI:2.11.5'
-    implementation 'Plugin:Plan-Bungee:5.6-build-2614'
-    implementation 'Plugin:ProtocolLib:5.1.1-SNAPSHOT-673'
-    // implementation 'Plugin:spark:1.10.43'
-    implementation 'Plugin:TAB-Bungee:4.0.9'
-    implementation 'Plugin:Vault:1.7.3-b131'
-    implementation 'Plugin:ViaVersion-Bungee:4.8.1'
-    implementation 'Plugin:VotingPlugin-Bungee:6.14.1'
-    implementation 'Plugin:WorldGuard:7.0.9+5934e49'
+    implementation 'Plugin:GSit:1.+'
+    implementation 'Plugin:LibsDisguises:10.+'
+    implementation 'Plugin:LuckPerms:5.4.+'
+    implementation 'Plugin:Multiverse-Core:4.+'
+    implementation 'Plugin:PlaceholderAPI:2.11.+'
+    implementation 'Plugin:ProtocolLib:5.2.+'
+    implementation 'Plugin:Plan-Bungee:5.+'
+    implementation 'Plugin:Vault:1.7.+'
+    implementation 'Plugin:VotingPlugin-Bungee:6.16.+'
+    implementation 'Plugin:WorldGuard:7.0.+'
     // implementation 'Vulcan:Vulcan:2.7.5'
 
     //PlaceholderAPI Expansions
@@ -97,3 +113,106 @@ task server(type: Copy) {
 }
 
 task update(dependsOn: ['server', 'plugins', 'expansions'])
+
+ext.dir = new File("_plugins")
+def files = ext.dir.listFiles().findAll { it.isFile() && it.name.endsWith('.jar') }
+def allowedPrefixes = ["Paper", "Flamecord","Purpur", "Expansion"]
+
+def dists = []
+
+files.each { file ->
+if (allowedPrefixes.any { prefix -> file.name.startsWith(prefix) } && file.name.endsWith(".jar")) {
+        def fileName = file.name - '.jar' // Remove the ".jar" extension
+        
+        if (fileName.startsWith("Expansion-")) {
+            // Handle Expansion files
+            def parts = fileName.split('-')
+            // println(parts)
+            if (parts.size() >= 1) {
+                def groupId = "PAPI-Expansion"
+                def artifactId = "Expansion-" + parts[1]
+                def version = parts[2]
+
+                def path = file
+
+                println("Found Expansion JAR: groupId=$groupId, artifactId=$artifactId, version=$version, path=$path")
+
+                dists << [groupId: groupId, artifactId: artifactId, version: version, path: path]
+            }
+        } else {
+            // Handle Paper and FlameCord files
+            def parts = fileName.split('-')
+            println(parts.toString())
+            def groupId = "Server"
+            def artifactId = parts[0]
+            def version = parts[1]
+            
+            // Extract the version from the file name
+            if (parts.size() > 2) {
+                version += "-" + parts[2]
+            }
+            
+            def path = file
+
+            println("Found JAR: groupId=$groupId, artifactId=$artifactId, version=$version, path=$path")
+
+            dists << [groupId: groupId, artifactId: artifactId, version: version, path: path]
+            
+        }
+    } else {
+        def jarFile = new JarFile(file)
+        def pluginYml = (jarFile.getEntry("plugin.yml") != null) ? jarFile.getEntry("plugin.yml") : jarFile.getEntry("bungee.yml")
+        
+        if (pluginYml != null) {
+            def yaml = new Yaml()
+            def plugin = yaml.load(jarFile.getInputStream(pluginYml))
+            
+            def groupId = "Plugin"
+            def artifactId = plugin.name
+            //Adds "-Bungee" to artifact name for plugins like LuckPerms that wont rename their plugin when it's a Bungee-plugin.
+            if(file.name.contains("Bungee") && !artifactId.contains("Bungee") || jarFile.getEntry("bungee.yml")) 
+                artifactId += "-Bungee"
+            def version = plugin.version.toString()
+            
+            if (version.contains(" ") || version.contains(";")) {
+                version = version.replace(" ", "-").replace(";", "-")
+            }
+            
+            def path = file
+
+            println("Found JAR: groupId=$groupId, artifactId=$artifactId, version=$version, path=$path")
+
+            dists << [groupId: groupId, artifactId: artifactId, version: version, path: path]
+        }
+    }
+}
+
+publishing {
+    publications {
+        dists.each { dist ->
+            "$dist.artifactId"(MavenPublication) {
+                groupId dist.groupId
+                version = dist.version
+                artifactId = dist.artifactId
+
+                artifact dist.path
+            }
+        }
+    }
+}
+
+artifactory {
+    contextUrl = "https://jfrog.theflyingbirds.net/artifactory"
+    publish {
+        repository {
+            repoKey = 'tfb'
+            username = "${MAVEN_USERNAME}"
+            password = "${MAVEN_PASSWORD}"
+        }
+        defaults {
+            dists.each { dist ->
+                publications(dist.artifactId)
+            }
+        }
+    }
+}
