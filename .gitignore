@@ -18,8 +18,6 @@ pkcs.p12
 cache
 libraries
 **/logs/
-/FlameCord
-/pluGET
 */banned-ips.json
 */plugins/LuckPerms/editor-keystore.json
 */plugins/BuycraftX/config.properties
@@ -28,7 +26,7 @@ libraries
 */plugins/EssentialsGeoIP/config.yml
 */plugins/Parkour/players/*
 .github/workflows/scripts/livevalues.yml
-/*/world*/
+/**/world**/
 **/.gradle
 *build/
 **/gradle.properties
