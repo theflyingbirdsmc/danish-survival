@@ -16,3 +16,4 @@ command /deleteworlds <text> <number>:
             execute console command "mv delete %{_worldName}%"
             execute console command "mv confirm"
             send "Deleted world: %{_worldName}%" to player
+# a comment
