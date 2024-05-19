@@ -21,14 +21,6 @@ plugins {
 apply plugin: "com.jfrog.artifactory"
 apply plugin: 'maven-publish'
 
-
-// Use environment instead of gradle.properties
-if("$System.env.MAVEN_URL" != null) {
-    ext.MAVEN_URL="$System.env.MAVEN_URL"+"/"+"tfb"
-    ext.MAVEN_PASSWORD="$System.env.MAVEN_PASSWORD"
-    ext.MAVEN_USERNAME="$System.env.MAVEN_USERNAME"
-}
-
 dependencies {
     // Network plugins
     implementation 'Server:Paper:1.20.4-496'
@@ -72,6 +64,14 @@ dependencies {
     implementation 'Plugin:UnifiedMetrics:0.3.8'
 }
 
+
+
+// Use environment instead of gradle.properties
+if("$System.env.MAVEN_URL" != null) {
+    ext.MAVEN_URL="$System.env.MAVEN_URL"+"/"+"tfb"
+    ext.MAVEN_PASSWORD="$System.env.MAVEN_PASSWORD"
+    ext.MAVEN_USERNAME="$System.env.MAVEN_USERNAME"
+}
 // TFB Artifactory
 repositories {
     mavenCentral {
