@@ -114,6 +114,8 @@ spec:
             value: "FALSE"
           - name: SERVER_PORT
             value: "30005"
+          - name: SERVER_NAME
+            value: "danish-survival"
           - name: "MEMORY"
             value: "8G"
         ports:
