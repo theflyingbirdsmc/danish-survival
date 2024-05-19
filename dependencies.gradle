@@ -1,0 +1,43 @@
+dependencies {
+    // Network plugins
+    implementation 'Server:Paper:1.20.4-496'
+    implementation 'Plugin:PlayerReferrals:1.3.+'
+    implementation 'Plugin:Tebex:2.0.+'
+    implementation 'Plugin:ChatControlRed:10.26.+'
+    implementation 'Plugin:CommandPanels:3.+'
+    implementation 'Plugin:CoreProtect:22.+'
+    implementation 'Plugin:DecentHolograms:2.8.+'
+    implementation 'Plugin:Essentials:2.20.+'
+    implementation 'Plugin:EssentialsSpawn:2.20.+'
+    implementation 'Plugin:FastAsyncWorldEdit:2.9.+'
+    implementation 'Plugin:GadgetsMenu:5.16.+'
+    implementation 'Plugin:HexNicks:3.1.1'
+    implementation 'Plugin:GSit:1.+'
+    implementation 'Plugin:LibsDisguises:10.+'
+    implementation 'Plugin:Skript:2.8.5'
+    implementation 'Plugin:LuckPerms:5.4.+'
+    implementation 'Plugin:Multiverse-Core:4.+'
+    implementation 'Plugin:PlaceholderAPI:2.11.+'
+    implementation 'Plugin:ProtocolLib:5.2.+'
+    implementation 'Plugin:Plan-Bungee:5.+'
+    implementation 'Plugin:TAB:4.1.+'
+    implementation 'Plugin:mcMMO:2.2.+'
+    implementation 'Plugin:Vault:1.7.+'
+    implementation 'Plugin:VotingPlugin-Bungee:6.16.+'
+    implementation 'Plugin:WorldGuard:7.0.+'
+    // implementation 'Vulcan:Vulcan:2.7.5'
+
+    //PlaceholderAPI Expansions
+    implementation 'PAPI-Expansion:Expansion-Bungee:2.2'
+    implementation 'PAPI-Expansion:Expansion-Essentials:1.5.2'
+    implementation 'PAPI-Expansion:Expansion-Javascript:2.1.2'
+    implementation 'PAPI-Expansion:Expansion-LuckPerms:5.4'
+    implementation 'PAPI-Expansion:Expansion-Pinger:1.0.1'
+    implementation 'PAPI-Expansion:Expansion-Player:2.0.7'
+    implementation 'PAPI-Expansion:Expansion-Server:2.6.2'
+    implementation 'PAPI-Expansion:Expansion-VotingPlugin:1.5'
+    implementation 'PAPI-Expansion:Expansion-World:1.2.2'
+    
+    // K8s Plugins
+    implementation 'Plugin:UnifiedMetrics:0.3.8'
+}
