@@ -1,0 +1,18 @@
+command /createworlds <text> <number>:
+    trigger:
+        set {_name} to arg-1
+        set {_amount} to arg-2 parsed as integer
+        loop {_amount} times:
+            set {_worldName} to "%{_name}%%loop-number%"
+            execute console command "mv create %{_worldName}% normal"
+            send "Created world: %{_worldName}%" to player
+
+command /deleteworlds <text> <number>:
+    trigger:
+        set {_name} to arg-1
+        set {_amount} to arg-2 parsed as integer
+        loop {_amount} times:
+            set {_worldName} to "%{_name}%%loop-number%"
+            execute console command "mv delete %{_worldName}%"
+            execute console command "mv confirm"
+            send "Deleted world: %{_worldName}%" to player
