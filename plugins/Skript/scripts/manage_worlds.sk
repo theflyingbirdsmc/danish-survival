@@ -1,7 +1,7 @@
 command /createworlds <text> <number>:
     trigger:
         set {_name} to argument 1
-        set {_amount} to argument 2 parsed as integer
+        set {_amount} to argument 2
         loop {_amount} times:
             set {_worldName} to "%{_name}%%loop-number%"
             execute console command "mv create %{_worldName}% normal"
@@ -10,7 +10,7 @@ command /createworlds <text> <number>:
 command /deleteworlds <text> <number>:
     trigger:
         set {_name} to argument 1
-        set {_amount} to argument 2 parsed as integer
+        set {_amount} to argument 2
         loop {_amount} times:
             set {_worldName} to "%{_name}%%loop-number%"
             execute console command "mv delete %{_worldName}%"
