@@ -50,6 +50,8 @@ dependencies {
     implementation 'Plugin:PlaceholderAPI:2.11.+'
     implementation 'Plugin:ProtocolLib:5.2.+'
     implementation 'Plugin:Plan-Bungee:5.+'
+    implementation 'Plugin:TAB:4.1.+'
+    implementation 'Plugin:mcMMO:2.2.+'
     implementation 'Plugin:Vault:1.7.+'
     implementation 'Plugin:VotingPlugin-Bungee:6.16.+'
     implementation 'Plugin:WorldGuard:7.0.+'
