@@ -187,6 +187,12 @@ if (allowedPrefixes.any { prefix -> file.name.startsWith(prefix) } && file.name.
             if (version.contains(" ") || version.contains(";")) {
                 version = version.replace(" ", "-").replace(";", "-")
             }
+
+            // Check for Skript dependency
+            def dependencies = plugin.depend
+            if (dependencies != null && dependencies.contains("Skript")) {
+                groupId = "Skript-Addon"
+            }
             
             def path = file
 
