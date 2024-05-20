@@ -117,7 +117,7 @@ spec:
           - name: SERVER_NAME
             value: "danish-survival"
           - name: "MEMORY"
-            value: "8G"
+            value: "16G"
         ports:
           - containerPort: 30005
         volumeMounts:
