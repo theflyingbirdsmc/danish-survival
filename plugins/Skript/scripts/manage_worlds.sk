@@ -16,3 +16,13 @@ command /deleteworlds <text> <number>:
             execute console command "mv delete %{_worldName}%"
             execute console command "mv confirm"
             send "Deleted world: %{_worldName}%" to player
+
+command /visitworlds <text> <number>:
+    trigger:
+        set {_name} to argument 1
+        set {_amount} to argument 2
+        loop {_amount} times:
+            set {_worldName} to "%{_name}%%loop-number%"
+            execute console command "mvtp %player% %{_worldName}%"
+            send "Teleported to world: %{_worldName}%" to player
+            wait 3 seconds
