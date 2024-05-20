@@ -5,7 +5,7 @@ dependencies {
     implementation 'Plugin:Tebex:2.0.+'
     implementation 'Plugin:ChatControlRed:10.26.+'
     implementation 'Plugin:CommandPanels:3.+'
-    implementation 'Plugin:CoreProtect:22.+'
+    // implementation 'Plugin:CoreProtect:22.+'
     implementation 'Plugin:DecentHolograms:2.8.+'
     implementation 'Plugin:Essentials:2.20.+'
     implementation 'Plugin:EssentialsSpawn:2.20.+'
