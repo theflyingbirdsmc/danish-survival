@@ -2,6 +2,7 @@ panels:
   tfb:
     paneltype:
     - nocommand
+    - static
     perm: tfb
     refresh-delay: 4
     rows: 6
