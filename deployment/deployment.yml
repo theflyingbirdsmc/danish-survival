@@ -112,8 +112,6 @@ spec:
             value: "/data/server.jar"
           - name: ONLINE_MODE
             value: "FALSE"
-          - name: SERVER_PORT
-            value: "30005"
           - name: SERVER_NAME
             value: "danish-survival"
           - name: "MEMORY"
