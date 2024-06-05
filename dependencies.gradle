@@ -9,7 +9,7 @@ dependencies {
     implementation 'Plugin:DecentHolograms:2.8.+'
     implementation 'Plugin:Essentials:2.20.+'
     implementation 'Plugin:EssentialsSpawn:2.20.+'
-    implementation 'Plugin:FastAsyncWorldEdit:2.9.+'
+    implementation 'Plugin:FastAsyncWorldEdit:2.10.1-SNAPSHOT-790-a7e4d19'
     implementation 'Plugin:GadgetsMenu:5.16.+'
     implementation 'Plugin:GriefDefender:2.5.+'
     implementation 'Plugin:HexNicks:3.1.1'
