@@ -116,6 +116,8 @@ spec:
             value: "danish-survival"
           - name: "MEMORY"
             value: "16G"
+          - name: "ENABLE_SSH"
+            value: "TRUE"
         ports:
           - containerPort: 30005
         volumeMounts:
