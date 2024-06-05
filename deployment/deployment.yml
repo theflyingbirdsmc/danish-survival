@@ -120,6 +120,7 @@ spec:
             value: "TRUE"
         ports:
           - containerPort: 30005
+          - containerPort: 2222
         volumeMounts:
           - name: danish-survival-pv
             mountPath: /data
