@@ -118,6 +118,8 @@ spec:
             value: "16G"
           - name: "ENABLE_SSH"
             value: "TRUE"
+          - name: "EXEC_DIRECTLY"
+            value: "TRUE"
         ports:
           - containerPort: 30005
           - containerPort: 2222
