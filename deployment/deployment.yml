@@ -37,8 +37,6 @@ spec:
       volumes:
       - name: git-repo-volume
         emptyDir: {}
-      - name: screen-bin
-        emptyDir: {}
       - name: git-secret-volume
         secret:
           secretName: git-secret
@@ -47,17 +45,6 @@ spec:
         secret:
           secretName: gradle-credentials
       initContainers:
-      - name: install-screen
-        image: ubuntu:latest
-        command: ["/bin/sh", "-c"]
-        args: ["apt-get update && apt-get install -y screen && cp /usr/bin/screen /screen"]
-        securityContext:
-          runAsUser: 0
-          runAsGroup: 0
-          allowPrivilegeEscalation: true
-        volumeMounts:
-        - name: screen-bin
-          mountPath: /screen
       - name: delete-old-jar-files
         image: alpine
         command: ["/bin/sh", "-c"]
@@ -115,7 +102,7 @@ spec:
         args: ["cd /data && gradle update -PmavenUrl=$MAVEN_URL -PmavenUsername=$MAVEN_USERNAME -PmavenPassword=$MAVEN_PASSWORD"]
       containers:
       - name: danish-survival
-        image: itzg/minecraft-server
+        image: itzg/minecraft-server:java21
         env:
           - name: EULA
             value: "TRUE"
@@ -131,15 +118,16 @@ spec:
             value: "16G"
         ports:
           - containerPort: 30005
-          # - containerPort: 2222
-        command: ["/bin/sh", "-c", "cp /screen/screen /usr/local/bin/screen && screen -dmS minecraft /start && tail -f /dev/null"]
+        command: ["/bin/sh", "-c", "apt-get update && apt-get install -y screen && screen -dmS minecraft /start && tail -f /dev/null"]
+        securityContext:
+          runAsUser: 0
+          runAsGroup: 0
+          allowPrivilegeEscalation: true
         volumeMounts:
           - name: danish-survival-pv
             mountPath: /data
           - name: git-repo-volume
             mountPath: /git-data
-          - name: screen-bin
-            mountPath: /screen
         resources:
           requests:
             memory: "16Gi"
