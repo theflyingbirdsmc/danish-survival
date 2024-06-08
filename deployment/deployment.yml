@@ -45,6 +45,12 @@ spec:
         secret:
           secretName: gradle-credentials
       initContainers:
+      - name: install-screen
+        image: ubuntu:latest
+        command: ["/bin/sh", "-c", "apt-get update && apt-get install -y screen && cp /usr/bin/screen /screen"]
+        volumeMounts:
+        - name: screen-bin
+          mountPath: /screen
       - name: delete-old-jar-files
         image: alpine
         command: ["/bin/sh", "-c"]
@@ -123,7 +129,10 @@ spec:
         ports:
           - containerPort: 30005
           - containerPort: 2222
-        command: ["/bin/sh", "-c", "rm -rf /var/lib/apt/lists/lock && apt-get update && apt-get install -y screen && screen -dmS minecraft /start && tail -f /dev/null"]
+        command: ["/bin/sh", "-c", "cp /screen/screen /usr/local/bin/screen && screen -dmS minecraft /start && tail -f /dev/null"]
+        volumeMounts:
+        - name: screen-bin
+          mountPath: /screen
         volumeMounts:
           - name: danish-survival-pv
             mountPath: /data
