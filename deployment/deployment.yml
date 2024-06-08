@@ -132,7 +132,7 @@ spec:
         ports:
           - containerPort: 30005
           # - containerPort: 2222
-        # command: ["/bin/sh", "-c", "cp /screen/screen /usr/local/bin/screen && screen -dmS minecraft /start && tail -f /dev/null"]
+        command: ["/bin/sh", "-c", "cp /screen/screen /usr/local/bin/screen && screen -dmS minecraft /start && tail -f /dev/null"]
         volumeMounts:
           - name: danish-survival-pv
             mountPath: /data
