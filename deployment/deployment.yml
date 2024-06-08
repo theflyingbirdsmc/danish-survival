@@ -123,7 +123,7 @@ spec:
         ports:
           - containerPort: 30005
           - containerPort: 2222
-        command: ["/bin/sh", "-c", "apt-get update && apt-get install -y screen && screen -dmS minecraft /start && tail -f /dev/null"]
+        command: ["/bin/sh", "-c", "rm -rf /var/lib/apt/lists/lock && apt-get update && apt-get install -y screen && screen -dmS minecraft /start && tail -f /dev/null"]
         volumeMounts:
           - name: danish-survival-pv
             mountPath: /data
