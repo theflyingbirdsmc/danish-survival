@@ -118,7 +118,8 @@ spec:
             value: "16G"
         ports:
           - containerPort: 30005
-        command: ["/bin/sh", "-c", "apt-get update && apt-get install -y screen && screen -dmS minecraft /start && tail -f /dev/null"]
+        command: ["/bin/sh", "-c"]
+        args: ["apt-get update && apt-get install -y screen && screen -dmS minecraft /start && tail -f /dev/null"]
         securityContext:
           runAsUser: 0
           runAsGroup: 0
