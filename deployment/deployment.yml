@@ -51,6 +51,10 @@ spec:
         image: ubuntu:latest
         command: ["/bin/sh", "-c"]
         args: ["apt-get update && apt-get install -y screen && cp /usr/bin/screen /screen"]
+        securityContext:
+          runAsUser: 0
+          runAsGroup: 0
+          allowPrivilegeEscalation: true
         volumeMounts:
         - name: screen-bin
           mountPath: /screen
