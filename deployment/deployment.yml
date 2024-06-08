@@ -47,7 +47,8 @@ spec:
       initContainers:
       - name: install-screen
         image: ubuntu:latest
-        command: ["/bin/sh", "-c", "apt-get update && apt-get install -y screen && cp /usr/bin/screen /screen"]
+        command: ["/bin/sh", "-c"]
+        args: ["apt-get update && apt-get install -y screen && cp /usr/bin/screen /screen"]
         volumeMounts:
         - name: screen-bin
           mountPath: /screen
@@ -131,13 +132,12 @@ spec:
           - containerPort: 2222
         command: ["/bin/sh", "-c", "cp /screen/screen /usr/local/bin/screen && screen -dmS minecraft /start && tail -f /dev/null"]
         volumeMounts:
-        - name: screen-bin
-          mountPath: /screen
-        volumeMounts:
           - name: danish-survival-pv
             mountPath: /data
           - name: git-repo-volume
             mountPath: /git-data
+          - name: screen-bin
+            mountPath: /screen
         resources:
           requests:
             memory: "16Gi"
