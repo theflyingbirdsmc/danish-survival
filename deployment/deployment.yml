@@ -102,7 +102,7 @@ spec:
         args: ["cd /data && gradle update -PmavenUrl=$MAVEN_URL -PmavenUsername=$MAVEN_USERNAME -PmavenPassword=$MAVEN_PASSWORD"]
       containers:
       - name: danish-survival
-        image: itzg/minecraft-server:java21
+        image: itzg/minecraft-server
         env:
           - name: EULA
             value: "TRUE"
