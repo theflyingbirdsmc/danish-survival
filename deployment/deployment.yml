@@ -37,6 +37,8 @@ spec:
       volumes:
       - name: git-repo-volume
         emptyDir: {}
+      - name: screen-bin
+        emptyDir: {}
       - name: git-secret-volume
         secret:
           secretName: git-secret
@@ -123,14 +125,10 @@ spec:
             value: "danish-survival"
           - name: "MEMORY"
             value: "16G"
-          - name: "ENABLE_SSH"
-            value: "TRUE"
-          - name: "EXEC_DIRECTLY"
-            value: "TRUE"
         ports:
           - containerPort: 30005
-          - containerPort: 2222
-        command: ["/bin/sh", "-c", "cp /screen/screen /usr/local/bin/screen && screen -dmS minecraft /start && tail -f /dev/null"]
+          # - containerPort: 2222
+        # command: ["/bin/sh", "-c", "cp /screen/screen /usr/local/bin/screen && screen -dmS minecraft /start && tail -f /dev/null"]
         volumeMounts:
           - name: danish-survival-pv
             mountPath: /data
