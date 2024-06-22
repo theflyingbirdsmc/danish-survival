@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: danish-survival
   namespace: tfb-servers
+  labels:
+    backstage.io/kubernetes-id: danish-survival
 spec:
   type: NodePort
   ports:
@@ -12,7 +14,6 @@ spec:
     nodePort: 30005
   selector:
     run: danish-survival
-    backstage.io/kubernetes-id: danish-survival
 ---
 apiVersion: apps/v1
 kind: StatefulSet
@@ -21,6 +22,7 @@ metadata:
   namespace: tfb-servers
   labels:
     run: danish-survival
+    backstage.io/kubernetes-id: danish-survival
 spec:
   serviceName: "danish-survival"
   replicas: 1
