@@ -1,0 +1,616 @@
+# Controls all settings for chat GUI.
+chat:
+    # The timeout in seconds when chat GUI will clear all captured chat.
+    capture-clear-timeout: 60
+
+    # The idle timeout in seconds when chat GUI will stop capturing chat.
+    capture-idle-timeout: 30
+
+    # Whether to use ProtocolLib, if detected, to capture all messages directed toward a player. (Default: False)
+    # Note: As this is still experimental, it is important you test this option on a test server before enabling.
+    protocol-lib: false
+
+# Controls all general GUI settings.
+general:
+    # The idle timeout in seconds when a command GUI will stop waiting for player input.
+    command-input-idle-timeout: 15
+
+# Controls all settings for inventory GUI.
+inventory:
+    icons:
+        claim:
+            abandon:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:structure_void
+                row: 1
+                slot: 1
+                title: '&6Abandon'
+            claimgroup:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:diamond_shovel
+                row: 1
+                slot: 5
+                title: '&6Claim Group'
+            create:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:golden_shovel
+                row: 1
+                slot: 2
+                title: '&6Create'
+            debug:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:end_crystal
+                row: 1
+                slot: 7
+                title: '&6Debug'
+            info:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:book
+                row: 1
+                slot: 3
+                title: '&6Info'
+            list:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: material:white_banner
+                row: 1
+                slot: 4
+                title: '&6List'
+            schematic:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:map
+                row: 1
+                slot: 6
+                title: '&6Schematic'
+            snapshot:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:structure_block
+                title: '&6Snapshot'
+        claimgroup:
+            admin:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:golden_apple
+                row: 1
+                slot: 1
+                title: '&cAdmin'
+            listing:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:lantern
+                title: NOT_USED
+            user:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:apple
+                row: 1
+                slot: 2
+                title: '&aUser'
+        claiminfo:
+            deny_messages:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:paper
+                row: 1
+                slot: 4
+                title: Deny Messages
+            details:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:armor_stand
+                row: 1
+                slot: 1
+                title: Details
+            display_name:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:acacia_sign
+                row: 1
+                slot: 6
+                title: Display Name
+            id:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:birch_sign
+                row: 1
+                slot: 7
+                title: ID
+            inherit:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:slime_ball
+                row: 1
+                slot: 3
+                title: Inherit
+            notifications:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:crimson_sign
+                row: 1
+                slot: 8
+                title: Notifications
+            raid:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:gold_ingot
+                row: 1
+                slot: 5
+                title: Raid
+            teleports:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:ender_pearl
+                row: 1
+                slot: 2
+                title: Teleports
+        claiminfo_notifications:
+            enter_main_title:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:oak_sign
+                row: 1
+                slot: 3
+                title: Enter Title
+            enter_sub_title:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:warped_sign
+                row: 1
+                slot: 4
+                title: Enter Subtitle
+            exit_main_title:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:spruce_sign
+                row: 1
+                slot: 5
+                title: Exit Title
+            exit_sub_title:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:dark_oak_sign
+                row: 1
+                slot: 6
+                title: Exit Subtitle
+            farewell:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:acacia_sign
+                row: 1
+                slot: 1
+                title: Farewell
+            greeting:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:jungle_sign
+                row: 1
+                slot: 2
+                title: Greeting
+        claiminfo_teleport:
+            ne:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:lime_dye
+                row: 1
+                slot: 5
+                title: '&bNE'
+            nw:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:lime_dye
+                row: 1
+                slot: 4
+                title: '&bNW'
+            se:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:purple_dye
+                row: 1
+                slot: 3
+                title: '&bSE'
+            spawn:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:red_bed
+                row: 1
+                slot: 1
+                title: Spawn
+            sw:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:purple_dye
+                row: 1
+                slot: 2
+                title: '&bSW'
+        claimlist:
+            listing:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:lantern
+                title: NOT_USED
+            listing-temp:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:campfire
+                title: NOT_USED
+        claimsnapshot:
+            admin:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:enchanted_golden_apple
+                row: 1
+                slot: 1
+                title: '&cAdmin'
+            claim:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:golden_shovel
+                row: 1
+                slot: 3
+                title: '&6Claim'
+            listing:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:lantern
+                title: NOT_USED
+            public:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:golden_apple
+                row: 1
+                slot: 4
+                title: Public
+            user:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:apple
+                row: 1
+                slot: 2
+                title: '&aUser'
+        command:
+            listing:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:lantern
+                title: NOT_USED
+        common:
+            add:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: material:oak_button
+                slot: 9
+                title: Click here to add
+            back:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: material:red_stained_glass_pane
+                slot: 1
+                title: '&6Back'
+            confirm_accept:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:green_wool
+                row: 1
+                slot: 3
+                title: Confirm
+            confirm_cancel:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:red_wool
+                row: 1
+                slot: 7
+                title: Cancel
+            current:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:paper
+                slot: 5
+                title: '&6Current Page'
+            next:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:arrow
+                slot: 6
+                title: '&6Next'
+            previous:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:arrow
+                slot: 4
+                title: '&6Previous'
+        flag:
+            accessor:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:yellow_wool
+                row: 1
+                slot: 3
+                title: Accessors
+            builder:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:green_wool
+                row: 1
+                slot: 5
+                title: Builders
+            container:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:purple_wool
+                row: 1
+                slot: 4
+                title: Containers
+            manager:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:orange_wool
+                row: 1
+                slot: 6
+                title: Managers
+            owner:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: material:player_head
+                lore: Displays flags for owner and trusted players.
+                meta: 3
+                row: 1
+                slot: 2
+                title: Owner
+            public:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: material:skeleton_skull
+                lore: Displays flags for untrusted players.
+                row: 1
+                slot: 1
+                title: Public
+        main:
+            claim:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:golden_shovel
+                row: 1
+                slot: 2
+                title: '&6Claim'
+            command:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:command_block
+                row: 1
+                slot: 3
+                title: '&6Command'
+            flag:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:red_banner
+                row: 1
+                slot: 4
+                title: '&6Flag'
+            option:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:enchanting_table
+                row: 1
+                slot: 5
+                title: '&6Options'
+            player:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: material:player_head
+                row: 1
+                slot: 6
+                title: '&6Player'
+            wiki:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:beacon
+                row: 1
+                slot: 7
+                title: '&6WIKI'
+        option:
+            owner:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: material:player_head
+                lore: Displays options for owner and trusted players.
+                meta: 3
+                row: 1
+                slot: 2
+                title: Owner
+            public:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: material:skeleton_skull
+                lore: Displays options for untrusted players.
+                row: 1
+                slot: 1
+                title: Public
+        playerinfo:
+            info:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:book
+                row: 1
+                slot: 1
+                title: Info
+            trust:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: material:player_head
+                row: 1
+                slot: 2
+                title: Trust
+        trustlist:
+            accessor:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:yellow_wool
+                row: 1
+                slot: 1
+                title: Accessors
+            builder:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:green_wool
+                row: 1
+                slot: 2
+                title: Builders
+            container:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:purple_wool
+                row: 1
+                slot: 3
+                title: Containers
+            manager:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:orange_wool
+                row: 1
+                slot: 4
+                title: Managers
+            resident:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:magenta_wool
+                row: 1
+                slot: 5
+                title: Residents
+        trustlist_type:
+            clan:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:golden_sword
+                row: 1
+                slot: 3
+                title: Clan
+            group:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: minecraft:totem_of_undying
+                row: 1
+                slot: 2
+                title: Group
+            player:
+                enchanted: false
+                icon-flags:
+                    - hide_attributes
+                id: material:player_head
+                row: 1
+                slot: 1
+                title: Player
+
+    # The amount of rows each GUI should contain.
+    rows:
+        claim: 2
+        claimgroup: 2
+        claimgrouplist: 3
+        claiminfo: 2
+        claiminfo_notifications: 2
+        claiminfo_teleport: 2
+        claimlist: 3
+        claimsnapshot: 2
+        command: 3
+        confirm: 1
+        flag: 2
+        flag_definition: 3
+        flag_preset: 2
+        main: 2
+        option: 2
+        option_definition: 3
+        option_group: 2
+        option_preset: 2
+        playerinfo: 2
+        trustlist: 3
+        trustlist_type: 3
+    server-icon:
+        command: ""
+        id: modid:placeholder
+        lore: ""
+        title: placeholder
+
+# Controls wiki settings for both inventory and chat GUI.
+wiki:
+    # The wiki URL a player will be sent to on click.
+    click-url: https://docs.griefdefender.com
+
+    # The message shown to player on hover.
+    hover-message: Click here to open https://docs.griefdefender.com
+
+    # The wiki message sent to player when icon is clicked in inventory GUI.
+    message: '&aWIKI &d[&ahttps://docs.griefdefender.com&d]'

@@ -131,14 +131,11 @@ Channels:
     Usage: <player> <channel> <message>
     Description: Send message to a channel as player.
     Error: 'Sending as ''{0}'' failed: {1}'
-    
+
 # -------------------------------------------------------------------------------------------------
 # Messages related to commands
 # -------------------------------------------------------------------------------------------------
 Commands:
-  # true = https://i.imgur.com/us88BCT.png
-  # false = https://i.imgur.com/N7jLu7v.png
-  Simple_Help_Design: false
   No_Console: '&cYou may only use this command as a player.'
   No_BungeeCord: You need BungeeCord enabled use this feature.
   No_MySQL: This command requires MySQL enabled in settings.yml.
@@ -174,7 +171,6 @@ Commands:
   Label_Description: '&c&lDescription:'
   Label_Optional_Args: optional arguments
   Label_Required_Args: required arguments
-  Label_Usages: '&c&lUsages:'
   Label_Usage: '&c&lUsage:'
   Label_Help_For: Help for /{label}
   Label_Subcommand_Description: ' &f/{label} {sublabel} {usage+}{dash+}{description}'
@@ -837,17 +833,6 @@ Commands:
     - 'Available: {1}'
     Rule_Import_Success: '{prefix_success}Congratulations, you''ve successfuly imported {0} rule(s)! They were loaded and is ready to operate.'
     Rule_Import_Fail: '{prefix_error}There was an error importing rules, please see the console!'
-  
-  Script:
-    Usage: <expression>
-    Description: Evaluate JavaScript.
-    Usages:
-    - '/{label} {sublabel} 5 * (2/3) &7- Simple math.'
-    - '/{label} {sublabel} player.getHandle().ping &7- NMS, if player is Player.'
-    - '/{label} {sublabel} {variable} / 2 &7- PAPI, native or variables/.'
-    - '/{label} {sublabel} Java.type("org.bukkit.Bukkit").getOnlinePlayers()'
-    Error: 'Error in your expression: {0}'
-    Result: 'Result: &f{0}'
   
   Tag:
     Disabled: Please fill your Tag.Apply_On key in settings.yml first before using this command.

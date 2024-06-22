@@ -126,7 +126,7 @@ task update(dependsOn: ['server', 'plugins', 'expansions'])
 
 ext.dir = new File("_plugins")
 def files = ext.dir.listFiles().findAll { it.isFile() && it.name.endsWith('.jar') }
-def allowedPrefixes = ["Paper", "Flamecord","Purpur", "Expansion"]
+def allowedPrefixes = ["Paper", "FlameCord","Purpur", "Expansion"]
 
 def dists = []
 

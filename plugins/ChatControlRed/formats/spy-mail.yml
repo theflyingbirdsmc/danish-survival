@@ -2,7 +2,13 @@
 # The default chat format shown to spying players when a mail is sent.
 # In addition to player variables you can use these:
 # {sender} {receivers} {mail_title}
+#
+# See chat.yml for documentation on all available options in the "Parts" section.
 # -----------------------------------------------------------------------------------------
+
+# If true, each section in Parts will begin on a new line automatically.
+# See https://github.com/kangarko/ChatControl-Red/issues/2510
+New_Line_Per_Part: false
 
 # The parts of this format.
 Parts:

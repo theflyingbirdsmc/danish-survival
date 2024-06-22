@@ -1,7 +1,13 @@
 # -----------------------------------------------------------------------------------------
 # The default spy format shown to players spying a third party plugin party channel,
 # such as mcMMO or TownyChat
+#
+# See chat.yml for documentation on all available options in the "Parts" section.
 # -----------------------------------------------------------------------------------------
+
+# If true, each section in Parts will begin on a new line automatically.
+# See https://github.com/kangarko/ChatControl-Red/issues/2510
+New_Line_Per_Part: false
 
 # The parts of this format.
 Parts:

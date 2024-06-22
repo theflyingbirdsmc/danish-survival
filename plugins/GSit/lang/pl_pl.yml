@@ -16,6 +16,8 @@ Plugin:
 
 
 Messages:
+  action-sit-error: '[P]&c Due to an error you can''t sit here!'
+  action-pose-error: '[P]&c Due to an error you can''t pose here!'
   
   command-permission-error: '[P]&c Nie posiadasz uprawnień, aby użyć tej komendy!'
   command-sender-error: '[P]&c Nie możesz użyć tej komendy!'
@@ -52,7 +54,6 @@ Messages:
   action-crawl-world-error: '[P]&c Nie możesz się czołgać w tym świecie!'
   action-crawl-region-error: '[P]&c Nie możesz się czołgać w tym regionie!'
   action-crawl-info: '&aUżyj swojego przycisku&6 <lang:key.sneak>&a, aby wstać.'
-  
   action-emote-none-error: '[P]&c You''re not using an emote right now!'
   action-emote-stop-error: '[P]&c You can''t stop emoting!'
   action-emote-stop: '[P]&a You stopped emoting.'

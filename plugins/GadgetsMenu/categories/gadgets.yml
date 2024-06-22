@@ -212,6 +212,8 @@ Gadgets:
           - '&7Constructs a trampoline'
           - '&7that sends you into the'
           - '&7air. Invite your friends!'
+        Settings:
+          Jump-Power: 3
       Flower Giver:
         Name: '&9Flower Giver Gadget'
         Material: FLOWER_POT

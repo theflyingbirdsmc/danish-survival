@@ -1,0 +1,54 @@
+database:
+    # The database address and port. Use format host:port.
+    # Note: MySQL and MariaDB default port to 3306
+    address: tfb-database-mariadb
+
+    # Enable this setting to force GD to always read and write from database.
+    # Note: Enable this setting if you need to share database data across multiple servers.
+    # Note: This will disable GD's built-in claim data cache so performance will depend on database.
+    always-read-write-db: false
+
+    # The database name.
+    database-name: tfb_danish_survival_griefdefender
+    hikari-mysql-properties:
+        alwaysSendSetIsolation: "false"
+        cacheCallableStmts: "true"
+        cachePrepStmts: "true"
+        cacheResultSetMetadata: "true"
+        cacheServerConfiguration: "true"
+        elideSetAutoCommits: "true"
+        maintainTimeStats: "false"
+        prepStmtCacheSize: "250"
+        prepStmtCacheSqlLimit: "2048"
+        rewriteBatchedStatements: "true"
+        useLocalSessionState: "true"
+        useServerPrepStmts: "true"
+
+    # Whether database claims should be loaded async during server startup. (Default: true)
+    # Note: Set setting to 'false' if having issues with players joining before claims have fully loaded.
+    load-claims-async: true
+
+    # The database password.
+    password: "ZGF#qeibrfXtdSTmK$tFLdtMi9zQq9"
+    pool-settings:
+        # The maximum number of milliseconds to wait for a connection before timeout.
+        connection-timeout: 5000
+        keepalive-time: 0
+
+        # The maximum lifetime of a connection in milliseconds.
+        max-lifetime: 30
+
+        # The maximum pool size. (Default: 10)
+        max-pool-size: 10
+
+        # The minimum number of idle connections. (Default: 10)
+        min-idle: 10
+
+    # The prefix for all GriefDefender SQL tables. (Default: 'gd_'
+    table-prefix: gd_
+
+    # The database username. (Default: root)
+    username: danish_survival
+
+# The data storage method. Current available storage types : hocon, mariadb, mysql, postgresql
+storage-method: mariadb

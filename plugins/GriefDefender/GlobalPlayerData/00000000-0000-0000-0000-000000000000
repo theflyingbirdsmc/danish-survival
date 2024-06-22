@@ -1,0 +1,4 @@
+# How many claim blocks the player has earned in world via play time.
+accrued-claim-blocks=0
+# How many claim blocks the player has been gifted in world by admins, or purchased via economy integration.
+bonus-claim-blocks=0

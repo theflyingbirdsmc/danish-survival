@@ -1,10 +1,13 @@
-LastUpdated: 1690126938545
+LastUpdated: 1719059420855
 VotingPlugin:
   AutoCachePlaceholders: []
   AutoCacheUpdated: true
-  Version: 'git-Paper-83 (MC: 1.20.1)'
+  Version: 'git-Paper-496 (MC: 1.20.4)'
+  BungeeVotePartyCurrent: 0
+  BungeeVotePartyRequired: 0
 PluginVersions:
-  VotingPlugin: 6.13.1
-Month: JULY
-PrevWeek: 30
-PrevDay: 23
+  VotingPlugin: 6.16.1
+Month: JUNE
+PrevWeek: 25
+PrevDay: 22
+IgnoreTime: false

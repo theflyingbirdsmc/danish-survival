@@ -14,13 +14,13 @@ Plugin:
         Create_new_locale_file_on_next_enable: false
         Dev: false
         Delete_logs_after_days: 7
+        Log_untranslated_locale_keys: false
     Update_notifications:
         # Display update notification on the website
         Check_for_updates: true
         Notify_about_DEV_releases: false
     Configuration:
         Allow_proxy_to_manage_settings: true
-    Use_Legacy_Frontend: false
 # -----------------------------------------------------
 # Supported databases: SQLite, MySQL
 # -----------------------------------------------------
@@ -118,6 +118,9 @@ Data_gathering:
         Log_aliases_as_main_command: true
     # Does not affect already gathered data
     Preserve_join_address_case: false
+    # This can be changed to your own MaxMind URL if you have license https://dev.maxmind.com/geoip/updating-databases?lang=en#directly-downloading-databases
+    # e.g. https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=YOUR_KEY&suffix=tar.gz
+    Geolocation_Download_URL: "https://geodb.playeranalytics.net/GeoLite2-Country.mmdb"
 # -----------------------------------------------------
 # Supported time units: MILLISECONDS, SECONDS, MINUTES, HOURS, DAYS
 # -----------------------------------------------------
@@ -283,6 +286,8 @@ Plugins:
     Factions:
         HideFactions:
           - ExampleFaction
+    GriefDefender:
+        Enabled: true
     LuckPerms:
         Enabled: true
     Permission Groups (Vault):
@@ -298,7 +303,7 @@ Plugins:
           - ExampleTown
     ViaVersion:
         Enabled: true
+    mcMMO:
+        Enabled: true
 Customized_files:
     Path: "web"
-    # Web dev mode enables all customized files and disables webserver resource cache for instant changes on browser refresh.
-    Enable_web_dev_mode: false

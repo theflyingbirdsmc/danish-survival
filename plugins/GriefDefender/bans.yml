@@ -1,0 +1,16 @@
+# Controls which item/block/entity id's are banned globally from all events. 
+# Note: Id's support wildcards '?' and '*' by using Apache's wildcard matcher.
+# The wildcard '?' represents a single character.
+# The wildcard '*' represents zero or more characters.
+# For more information on usage, see https://commons.apache.org/proper/commons-io/javadocs/api-2.5/org/apache/commons/io/FilenameUtils.html#wildcardMatch(java.lang.String,%20java.lang.String)
+global:
+    blocks: {}
+    entities: {}
+    items: {}
+
+# Controls which item/block/entity id's are banned in a specific world from all events. 
+# Note: Id's support wildcards '?' and '*' by using Apache's wildcard matcher.
+# The wildcard '?' represents a single character.
+# The wildcard '*' represents zero or more characters.
+# For more information on usage, see https://commons.apache.org/proper/commons-io/javadocs/api-2.5/org/apache/commons/io/FilenameUtils.html#wildcardMatch(java.lang.String,%20java.lang.String)
+worlds: {}

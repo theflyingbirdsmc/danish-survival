@@ -97,6 +97,10 @@ Channels:
   # PLEASE NOTE THIS CAN CONFLICT WITH YOUR THIRD PARTY PLUGINS, MAKE SURE TO TEST THIS OPTION.
   Alternative_Console_Sending: false
   
+  # Do our best efforts to make http and https links clickable? Note that other plugins and
+  # older servers versions do that too so some links might still be made clickable.
+  Make_Links_Clickable: true
+  
   # Channels are preconfigured public chat rooms where players can message each other.
   # You can add various keys and remove those you don't use, see this tutorial:
   # https://github.com/kangarko/chatcontrol-Red/wiki/Channels
@@ -148,7 +152,7 @@ Channels:
   # - Message_Delay: This overrides Anti_Spam.Chat.Delay so you can chat chat delay per channel.
   #                  Put string values there like "5 seconds" or "1 minute" etc.
   #
-  # - Bungee: true/false option. If not set, we default to Integration.BungeeCord option. 
+  # - Bungee: true/false option. If not set, we default to bungee.yml file's Enabled option. 
   #
   # - Bungee_Spy: true/false option. True = we will send channel messages to spying administrators 
   #               over BungeeCord network. This works even if Bungee is disabled so you can spy
@@ -541,7 +545,7 @@ Private_Messages:
   # Should we enable this feature?
   Enabled: false
   
-  # Should we send PMs over bungee cord? Requires Integration.BungeeCord.Enabled to be true
+  # Should we send PMs over bungee cord? Requires bungee.yml file's Enabled key to be true
   Bungee: true
   
   # Send message as an advancement (requires Minecraft 1.12+)?
@@ -657,18 +661,6 @@ Messages:
   # The SHORTEST delay when sending timed messages. You CANNOT use "delay" operator lower than this
   # in your messages/timed.rs file. When no delay operator is used, we use Timed_Delay as default. 
   Timed_Delay: 10 seconds
-  
-  # Experimental option to move some message processing off of the main thread. DO NOT USE if you 
-  # use any world or data modification operators such as "require region" or javascripts that
-  # save/load data, chunks, worlds. Some variables will also not load properly.
-  #
-  # Will improve performance if you've got tons of player messages or flashing them rapidly.
-  #
-  # Async quit and kick messages will BREAK variables because the player has already disconnected!
-  #
-  # Example:
-  # Async: [join, quit, kick, death, timed]
-  Async: []
 
 # -------------------------------------------------------------------------------------------------
 # Represents settings for letting players use colors in their chat or select a custom color.
@@ -858,10 +850,6 @@ Motd:
 
   # Should we enable this feature?
   Enabled: false
-  
-  # Run motd on a separate thread? Experimental and may break custom variables calling Bukkit API
-  # Recommended if you are downloading images in your format
-  Async: false
   
   # How long to wait to show motd on join?
   Delay: 3 ticks
@@ -1330,18 +1318,17 @@ Integration:
     # [TIP] To disable join message, enable 'delayJoinMessage' in AuthMe's configuration.
     Hide_Quit_Message_If_Not_Logged: true
 
-  # Integration with BungeeCord.
-  BungeeCord:
- 
-    # Hook to BungeeCord?
-    #
-    # [IMPORTANT] Install BungeeControl Red: https://www.mc-market.org/resources/24248 first.
-    # [IMPORTANT] Please write the 'server-name' key to your server.properties according 
-    #             to https://mineacademy.org/server-properties
-    Enabled: true
-      
-    # The optional prefix before all messages so that you know where they are coming from.
-    Prefix: ''
+  # Integration with mineacademy.org/corearena
+  CoreArena:
+  
+    # Do not broadcast death messages from players in active arenas.
+    Ignore_Death_Messages: true
+    
+    # By default, CoreArena isolates player chat. Toggle whether arena players will be able to see
+    # messages from non-arena players here. CoreArena lets players having corearena.chat.global
+    # permission prepend messages with "!" send messages to out-of-arena players so if you want this
+    # feature, keep this on true.
+    Send_Channel_Messages: true
 
   # Integration with DiscordSRV. 
   Discord:
@@ -1407,12 +1394,20 @@ Integration:
     Spy_Channels_Whitelist:
     - '@blacklist'
 
-
 # -------------------------------------------------------------------------------------------------
 # The image file name in images/ folder (example: "creeper.png") used when you have Image_Head
 # or Image_Url in your format (see formats/chat.yml for example) and it fails to download.
 # -------------------------------------------------------------------------------------------------
 Fallback_Player_Image: ''
+
+# -------------------------------------------------------------------------------------------------
+# By default, we use Minotar or MC-Heads to lookup player heads when using "Image_Head" property
+# in your formats/ files. If you have your own endpoint or wish to use another one you can specify
+# it below. We will replace {PLAYER_NAME} and {HEIGHT} automatically.
+#
+# Example: https://yourdomain.com/avatar/{PLAYER_NAME}/{HEIGHT}.png
+# -------------------------------------------------------------------------------------------------
+Image_Head_Endpoint: ''
 
 # -------------------------------------------------------------------------------------------------
 # Show important informational messages such as what channels players is joining into, etc. ?
@@ -1444,13 +1439,20 @@ Register_Tools: false
 Strip_Oversized_Json: true
 
 # -------------------------------------------------------------------------------------------------
-# The format used in the {timestamp} placeholder (google "Java timestamp format" for options).
+# The formats used in the {date}, {date_short}, {date_month} and {location}. 
+#
+# See the link below to learn how to edit the date format:
+# https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
 # -------------------------------------------------------------------------------------------------
-Timestamp_Format: dd.MM.yyyy HH:mm:ss
+Date_Format: dd.MM.yyyy HH:mm:ss
+Date_Format_Short: dd.MM.yyyy HH:mm
+Date_Format_Month: dd.MM HH:mm
+Location_Format: '{world} {x}, {y}, {z}'
 
 # -------------------------------------------------------------------------------------------------
 # Advanced: Affects the order in which we format and check the chat. No need to touch.
 # See: https://github.com/kangarko/ChatControl-Red/wiki/Listener-Priorities
+# Also see: Modern_Chat_Listener below.
 #
 # Plugins which may require changing priority of Formatter: FactionsChat, BanManager
 # and WorldGuard. Visit the article above for help on how to configure.
@@ -1458,6 +1460,12 @@ Timestamp_Format: dd.MM.yyyy HH:mm:ss
 # NB! DO NOT RELOAD WHEN CHANGING THIS - DO NOT RELOAD WHEN CHANGING THIS - DO NOT RELOAD...
 # -------------------------------------------------------------------------------------------------
 Chat_Listener_Priority: HIGH
+
+# -------------------------------------------------------------------------------------------------
+# Use Paper chat event if available? This event is fired AFTER AsyncPlayerChatEvent so if you
+# see issues with other plugins, disable this. This is recommended for most servers.
+# -------------------------------------------------------------------------------------------------
+Modern_Chat_Listener: true
 
 # -------------------------------------------------------------------------------------------------
 # What commands should trigger the main plugin command?
@@ -1521,7 +1529,7 @@ Log_Lag_Over_Milis: 100
 # -------------------------------------------------------------------------------------------------
 # List of section names that will print informative messages about their features.
 # If you have issues, try enabling either of these sections to self-diagnose:
-# [mysql, points, bungee, channel, operator, rules, discord, component]
+# [bungee, discord, operator, tab-list, mysql, component]
 # -------------------------------------------------------------------------------------------------
 Debug: []
 

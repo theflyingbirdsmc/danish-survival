@@ -6,6 +6,7 @@
 # |        auto-update and minor-updates-only is HEAVILY RECOMMENDED
 # |------------------------------------------------------------------------
 config:
+  enable-import-command: false
   allow-unsafe-mini-message: false
   refresh-panels: true
   refresh-delay: 20
@@ -21,6 +22,7 @@ config:
   update-notifications: true
   panel-snooper: false
   format:
+    disabled: '&cThis feature is disabled in your plugin config.'
     tag: '&6[&bCommandPanels&6]'
     perms: '&cNo permission.'
     reload: '&aReloaded.'

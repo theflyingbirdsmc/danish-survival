@@ -16,6 +16,8 @@ Plugin:
 
 
 Messages:
+  action-sit-error: '[P]&c Due to an error you can''t sit here!'
+  action-pose-error: '[P]&c Due to an error you can''t pose here!'
   
   command-permission-error: '[P]&c このコマンドを実行する権限を持っていません！'
   command-sender-error: '[P]&c その人はそのコマンドを実行することができません！'
@@ -52,7 +54,6 @@ Messages:
   action-crawl-world-error: '[P]&c このワールドでクロールをすることはできません！'
   action-crawl-region-error: '[P]&c この領域でクロールをすることはできません！'
   action-crawl-info: '&6 <lang:key.sneak>&a キーで立ち上がる。'
-  
   action-emote-none-error: '[P]&c You''re not using an emote right now!'
   action-emote-stop-error: '[P]&c エモートを止めることはできません！'
   action-emote-stop: '[P]&a エモートを止めました。'

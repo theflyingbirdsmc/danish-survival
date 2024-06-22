@@ -1,0 +1,17 @@
+# -----------------------------------------------------------------------------------------------------
+# Network-wide settings for BungeeCord/Velocity.
+#
+# See https://github.com/kangarko/chatcontrol-red/wiki/BungeeCord for installation guide.
+# -----------------------------------------------------------------------------------------------------
+
+# Enable? See the link above to install our addon for BungeeCord/Velocity first.
+Enabled: false
+
+# Optional: Prefix all messages from another servers. Leave them to disable.
+Prefix: '&8[&eEnter Your Server Name Here&8] '
+
+# The unique server identifier, without colors and special characters. 
+Server_Name: ''
+
+# Enable the ability of ChatControl Red to forward console commands?
+Enable_Forward_Command: false

@@ -1311,7 +1311,6 @@
 "COBWEB": "COBWEB"
 
 # Used for the disguise option Material
-"GRASS": "GRASS"
 
 # Used for the disguise option Material
 "FERN": "FERN"
@@ -5683,3 +5682,219 @@
 
 # Used for the disguise option SoundGroup
 "TEXT_DISPLAY": "TEXT_DISPLAY"
+
+# Used for the disguise option Particle
+"DUST_PLUME": "DUST_PLUME"
+
+# Used for the disguise option Particle
+"WHITE_SMOKE": "WHITE_SMOKE"
+
+# Used for the disguise option Particle
+"GUST": "GUST"
+
+# Used for the disguise option Particle
+"GUST_EMITTER": "GUST_EMITTER"
+
+# Used for the disguise option Particle
+"GUST_DUST": "GUST_DUST"
+
+# Used for the disguise option Particle
+"TRIAL_SPAWNER_DETECTION": "TRIAL_SPAWNER_DETECTION"
+
+# Used for the disguise option EntityPose
+"LONG_JUMPING": "LONG_JUMPING"
+
+# Used for the disguise option EntityPose
+"CROAKING": "CROAKING"
+
+# Used for the disguise option EntityPose
+"USING_TONGUE": "USING_TONGUE"
+
+# Used for the disguise option EntityPose
+"SITTING": "SITTING"
+
+# Used for the disguise option EntityPose
+"ROARING": "ROARING"
+
+# Used for the disguise option EntityPose
+"EMERGING": "EMERGING"
+
+# Used for the disguise option Material
+"TUFF_SLAB": "TUFF_SLAB"
+
+# Used for the disguise option Material
+"TUFF_STAIRS": "TUFF_STAIRS"
+
+# Used for the disguise option Material
+"TUFF_WALL": "TUFF_WALL"
+
+# Used for the disguise option Material
+"CHISELED_TUFF": "CHISELED_TUFF"
+
+# Used for the disguise option Material
+"POLISHED_TUFF": "POLISHED_TUFF"
+
+# Used for the disguise option Material
+"POLISHED_TUFF_SLAB": "POLISHED_TUFF_SLAB"
+
+# Used for the disguise option Material
+"POLISHED_TUFF_STAIRS": "POLISHED_TUFF_STAIRS"
+
+# Used for the disguise option Material
+"POLISHED_TUFF_WALL": "POLISHED_TUFF_WALL"
+
+# Used for the disguise option Material
+"TUFF_BRICKS": "TUFF_BRICKS"
+
+# Used for the disguise option Material
+"TUFF_BRICK_SLAB": "TUFF_BRICK_SLAB"
+
+# Used for the disguise option Material
+"TUFF_BRICK_STAIRS": "TUFF_BRICK_STAIRS"
+
+# Used for the disguise option Material
+"TUFF_BRICK_WALL": "TUFF_BRICK_WALL"
+
+# Used for the disguise option Material
+"CHISELED_TUFF_BRICKS": "CHISELED_TUFF_BRICKS"
+
+# Used for the disguise option Material
+"CHISELED_COPPER": "CHISELED_COPPER"
+
+# Used for the disguise option Material
+"EXPOSED_CHISELED_COPPER": "EXPOSED_CHISELED_COPPER"
+
+# Used for the disguise option Material
+"WEATHERED_CHISELED_COPPER": "WEATHERED_CHISELED_COPPER"
+
+# Used for the disguise option Material
+"OXIDIZED_CHISELED_COPPER": "OXIDIZED_CHISELED_COPPER"
+
+# Used for the disguise option Material
+"WAXED_CHISELED_COPPER": "WAXED_CHISELED_COPPER"
+
+# Used for the disguise option Material
+"WAXED_EXPOSED_CHISELED_COPPER": "WAXED_EXPOSED_CHISELED_COPPER"
+
+# Used for the disguise option Material
+"WAXED_WEATHERED_CHISELED_COPPER": "WAXED_WEATHERED_CHISELED_COPPER"
+
+# Used for the disguise option Material
+"WAXED_OXIDIZED_CHISELED_COPPER": "WAXED_OXIDIZED_CHISELED_COPPER"
+
+# Used for the disguise option Material
+"SHORT_GRASS": "SHORT_GRASS"
+
+# Used for the disguise option Material
+"COPPER_DOOR": "COPPER_DOOR"
+
+# Used for the disguise option Material
+"EXPOSED_COPPER_DOOR": "EXPOSED_COPPER_DOOR"
+
+# Used for the disguise option Material
+"WEATHERED_COPPER_DOOR": "WEATHERED_COPPER_DOOR"
+
+# Used for the disguise option Material
+"OXIDIZED_COPPER_DOOR": "OXIDIZED_COPPER_DOOR"
+
+# Used for the disguise option Material
+"WAXED_COPPER_DOOR": "WAXED_COPPER_DOOR"
+
+# Used for the disguise option Material
+"WAXED_EXPOSED_COPPER_DOOR": "WAXED_EXPOSED_COPPER_DOOR"
+
+# Used for the disguise option Material
+"WAXED_WEATHERED_COPPER_DOOR": "WAXED_WEATHERED_COPPER_DOOR"
+
+# Used for the disguise option Material
+"WAXED_OXIDIZED_COPPER_DOOR": "WAXED_OXIDIZED_COPPER_DOOR"
+
+# Used for the disguise option Material
+"COPPER_TRAPDOOR": "COPPER_TRAPDOOR"
+
+# Used for the disguise option Material
+"EXPOSED_COPPER_TRAPDOOR": "EXPOSED_COPPER_TRAPDOOR"
+
+# Used for the disguise option Material
+"WEATHERED_COPPER_TRAPDOOR": "WEATHERED_COPPER_TRAPDOOR"
+
+# Used for the disguise option Material
+"OXIDIZED_COPPER_TRAPDOOR": "OXIDIZED_COPPER_TRAPDOOR"
+
+# Used for the disguise option Material
+"WAXED_COPPER_TRAPDOOR": "WAXED_COPPER_TRAPDOOR"
+
+# Used for the disguise option Material
+"WAXED_EXPOSED_COPPER_TRAPDOOR": "WAXED_EXPOSED_COPPER_TRAPDOOR"
+
+# Used for the disguise option Material
+"WAXED_WEATHERED_COPPER_TRAPDOOR": "WAXED_WEATHERED_COPPER_TRAPDOOR"
+
+# Used for the disguise option Material
+"WAXED_OXIDIZED_COPPER_TRAPDOOR": "WAXED_OXIDIZED_COPPER_TRAPDOOR"
+
+# Used for the disguise option Material
+"CRAFTER": "CRAFTER"
+
+# Used for the disguise option Material
+"BREEZE_SPAWN_EGG": "BREEZE_SPAWN_EGG"
+
+# Used for the disguise option Material
+"COPPER_GRATE": "COPPER_GRATE"
+
+# Used for the disguise option Material
+"EXPOSED_COPPER_GRATE": "EXPOSED_COPPER_GRATE"
+
+# Used for the disguise option Material
+"WEATHERED_COPPER_GRATE": "WEATHERED_COPPER_GRATE"
+
+# Used for the disguise option Material
+"OXIDIZED_COPPER_GRATE": "OXIDIZED_COPPER_GRATE"
+
+# Used for the disguise option Material
+"WAXED_COPPER_GRATE": "WAXED_COPPER_GRATE"
+
+# Used for the disguise option Material
+"WAXED_EXPOSED_COPPER_GRATE": "WAXED_EXPOSED_COPPER_GRATE"
+
+# Used for the disguise option Material
+"WAXED_WEATHERED_COPPER_GRATE": "WAXED_WEATHERED_COPPER_GRATE"
+
+# Used for the disguise option Material
+"WAXED_OXIDIZED_COPPER_GRATE": "WAXED_OXIDIZED_COPPER_GRATE"
+
+# Used for the disguise option Material
+"COPPER_BULB": "COPPER_BULB"
+
+# Used for the disguise option Material
+"EXPOSED_COPPER_BULB": "EXPOSED_COPPER_BULB"
+
+# Used for the disguise option Material
+"WEATHERED_COPPER_BULB": "WEATHERED_COPPER_BULB"
+
+# Used for the disguise option Material
+"OXIDIZED_COPPER_BULB": "OXIDIZED_COPPER_BULB"
+
+# Used for the disguise option Material
+"WAXED_COPPER_BULB": "WAXED_COPPER_BULB"
+
+# Used for the disguise option Material
+"WAXED_EXPOSED_COPPER_BULB": "WAXED_EXPOSED_COPPER_BULB"
+
+# Used for the disguise option Material
+"WAXED_WEATHERED_COPPER_BULB": "WAXED_WEATHERED_COPPER_BULB"
+
+# Used for the disguise option Material
+"WAXED_OXIDIZED_COPPER_BULB": "WAXED_OXIDIZED_COPPER_BULB"
+
+# Used for the disguise option Material
+"TRIAL_SPAWNER": "TRIAL_SPAWNER"
+
+# Used for the disguise option Material
+"TRIAL_KEY": "TRIAL_KEY"
+
+# Used for the disguise option SoundGroup
+"BREEZE": "BREEZE"
+
+# Used for the disguise option SoundGroup
+"WINDCHARGE": "WINDCHARGE"

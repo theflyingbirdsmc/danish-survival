@@ -308,3 +308,118 @@ Morphs:
       - '&7lasers by right-clicking with'
       - '&7the Slimeball item in your'
       - '&7hotbar.'
+  Cave Spider:
+    Name: '&9Cave Spider Morph'
+    Material: SPIDER_EYE
+    Cooldown: 0
+    Mystery Dust: 25
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Morph-Ability: true
+    Lore:
+      Locked:
+      - '&7Transform into a Cave Spider.'
+      - '&7While transformed, you can leap'
+      - '&7into the air by right-clicking'
+      - '&7with the Slimeball item in'
+      - '&7your hotbar.'
+      Unlocked:
+      - '&7Transform into a Cave Spider.'
+      - '&7While transformed, you can leap'
+      - '&7into the air by right-clicking'
+      - '&7with the Slimeball item in'
+      - '&7your hotbar.'
+  Wither Skeleton:
+    Name: '&9Wither Skeleton Morph'
+    Material: WITHER_SKELETON_SKULL
+    Cooldown: 0
+    Mystery Dust: 30
+    Rarity: Rare
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Morph-Ability: true
+    Lore:
+      Locked:
+      - '&7Transform into a Wither Skeleton.'
+      - '&7While transformed, you can throw'
+      - '&7wither skulls by right-clicking'
+      - '&7with the Slimeball item in'
+      - '&7your hotbar.'
+      Unlocked:
+      - '&7Transform into a Wither Skeleton.'
+      - '&7While transformed, you can throw'
+      - '&7wither skulls by right-clicking'
+      - '&7with the Slimeball item in'
+      - '&7your hotbar.'
+  Rabbit:
+    Name: '&5Rabbit Morph'
+    Material: CARROT
+    Cooldown: 0
+    Mystery Dust: 50
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Morph-Ability: true
+    Lore:
+      Locked:
+      - '&7Transform into a Rabbit.'
+      - '&7While transformed, you can jump'
+      - '&7super high by right-clicking'
+      - '&7with the Slimeball item in'
+      - '&7your hotbar.'
+      Unlocked:
+      - '&7Transform into a Rabbit.'
+      - '&7While transformed, you can jump'
+      - '&7super high by right-clicking'
+      - '&7with the Slimeball item in'
+      - '&7your hotbar.'
+  Wolf:
+    Name: '&6Wolf Morph'
+    Material: BONE
+    Cooldown: 10
+    Mystery Dust: 55
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Morph-Ability: true
+    Lore:
+      Locked:
+      - '&7Transform into a Wolf.'
+      - '&7While transformed, you can throw'
+      - '&7bones by right-clicking with'
+      - '&7the Slimeball item in your'
+      - '&7hotbar.'
+      Unlocked:
+      - '&7Transform into a Wolf.'
+      - '&7While transformed, you can throw'
+      - '&7bones by right-clicking with'
+      - '&7the Slimeball item in your'
+      - '&7hotbar.'
+  Grinch:
+    Name: '&5Grinch Morph'
+    Material: COAL_BLOCK
+    Cooldown: 3
+    Mystery Dust: 75
+    Rarity: Epic
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Morph-Ability: true
+    Lore:
+      Locked:
+      - '&7Transform into a Grinch.'
+      - '&7While transformed, you can throw'
+      - '&7coal by right-clicking with'
+      - '&7the Slimeball item in your'
+      - '&7hotbar.'
+      Unlocked:
+      - '&7Transform into a Grinch.'
+      - '&7While transformed, you can throw'
+      - '&7coal by right-clicking with'
+      - '&7the Slimeball item in your'
+      - '&7hotbar.'

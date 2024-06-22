@@ -189,6 +189,7 @@ Mystery-Boxes:
       - '&a{MYSTERY_BOXES} Available'
       - '&f{MYSTERY_BOXES} Available'
       Zero-Mystery-Box-Available: '&cNo Eggs Available'
+      Offset-Height: 1.21
     Hologram-Height: 1.21
   Broadcast:
     Opening-Mystery-Box:

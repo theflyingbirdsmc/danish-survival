@@ -1,0 +1,697 @@
+# 2.5.9
+# # If you need help with the configuration or have any issues related to GriefDefender,
+# # create a ticket on https://github.com/bloodmc/GriefDefender/issues.
+# # Note: If you have not purchased GriefDefender, please consider doing so to get 
+# # exclusive access to Discord for prompt support.
+
+claim:
+    # Radius used (in blocks) for auto-created claim when a chest is placed. Set to 0 to disable chest claim creation.
+    auto-chest-claim-block-radius: 4
+
+    # Set claim border of specified radius (in blocks), centered on claim. If set to 1, adds an additional 1 block protected radius around claim.
+    # Note: It is not recommended to set this value too high as performance can degrade due to deeper claim searches.
+    border-block-radius: 0
+
+    # Whether children claims should inherit parent permissions when inheritance is turned on. (Default: False)
+    # Note: This will impact performance as each child claim will need to perform additional permission lookups on parent claims.
+    # Note: This does NOT affect towns.
+    child-inherit-permissions: false
+
+    # Whether children claims should inherit parent trust when inheritance is turned on. (Default: False)
+    child-inherit-trust: false
+
+    # Whether claim block task should run to accrue blocks for players. (Default: True)
+    # Note: If in economy-mode, use setting 'use-claim-block-task' under economy category.
+    # Note: To configure amount accrued, see 'blocks-accrued-per-hour' option at https://github.com/bloodmc/GriefDefender/wiki/Options-(Meta)#global-options
+    claim-block-task: true
+
+    # The minimum threshold of movement (in blocks) required to receive accrued claim blocks. (Default: 0)
+    # Note: The claim block task runs every 5 minutes which is the time each player will get to move the required amount of blocks.
+    claim-block-task-move-threshold: 0
+
+    # The radius limit for the /claimcreate command. (Default: 256)
+    claim-create-radius-limit: 256
+
+    # Whether claiming is enabled or not. (0 = Disabled, 1 = Enabled)
+    claims-enabled: 1
+
+    # Controls claim creation default settings.
+    # Note: Admins are able to alter these settings per claim by using '/claiminfo' then clicking 'Admin Settings'.
+    creation-settings:
+        # Whether claims can expire by default. (Default: True)
+        expirable: true
+
+        # Whether claims should inherit their parent on creation. (Default: False)
+        # Note: This setting does not affect a claim whose parent is a town.
+        inherit-parent: false
+
+        # The maximum world height override used during claim creation.
+        # Note: Requires 'override-world-height' to be enabled.
+        max-world-height-override: 255
+
+        # The minimum world height override used during claim creation.
+        # Note: Requires 'override-world-height' to be enabled.
+        min-world-height-override: 0
+
+        # Whether claim heights are taken from config instead of world. (Default: False)
+        # Note: Enable this setting if using custom datapack that alters the default world height.
+        override-world-height: false
+
+        # Whether claims requires claim blocks on creation. (Default: True)
+        requires-claim-blocks: true
+
+        # Whether claims can be resized on creation. (Default: True)
+        resizable: true
+
+        # Whether claims can show deny messages to players by default. (Default: True)
+        show-deny-messages: true
+
+    # A list of source id's that cannot cause explosion damage to blocks above sea level.
+    # Ex. If you add "minecraft:creeper" to the list, creepers would not be able to cause blocks to explode above sea level.
+    # Note: This will have higher priority than 'explosion-block' flag.
+    # Note: All id's added to the list must be surrounded in quotes. Ex. ["minecraft:creeper"]
+    explosion-block-surface-blacklist: []
+
+    # A list of id's that cannot cause explosion damage to entities above sea level.
+    # Ex. If you add "minecraft:creeper" to the list, creepers would not be able to hurt entities above sea level.
+    # Note: This will have higher priority than 'explosion-entity' flag.
+    # Note: All id's added to the list must be surrounded in quotes. Ex. ["minecraft:creeper"]
+    explosion-entity-surface-blacklist: []
+
+    # The 'Y' block level that is considered the surface for explosions. (Default: 63)
+    explosion-surface-block-level: 63
+
+    # The item used to inspect claims with a right-click.
+    # Note: Set to empty quotes if you want to assign no item and use '/claim' mode exclusively.
+    inspection-tool: minecraft:stick
+
+    # The item used to create/resize claims with a right click.
+    # Note: Set to empty quotes if you want to assign no item and use '/claim' mode exclusively.
+    modification-tool: minecraft:golden_shovel
+
+    # Whether piston protection should be enabled within claims. Note: This does not affect pistons crossing into another claim, that is always protected. This only determines whether or not GD should process pistons if it doesn't cross into another claim.
+    piston-protection-in-claims: false
+
+    # The cooldown time, in seconds, when using the '/trapped' command. (Default: 300)
+    player-trapped-cooldown: 300
+
+    # Whether tamed entities should be protected in claims from non-owners. Default: true
+    protect-tamed-entities: true
+
+    # Controls claim removal/expiration settings.
+    removal-settings:
+        # If enabled, all expired claims will become admin claims giving all users build trust. The claim will remain in this state until 'expiration-admin-keep' time runs out. (Default: False)
+        admin-feature: false
+
+        # The time in minutes for keeping an expired claim as an admin claim. When time expires, the admin claim will be deleted allowing any player to re-claim area. (Default: 1440)
+        admin-feature-keep: 1440
+
+        # The minimum claim size, in claimblocks, required for an expiration announcement message to be sent to all players. (Default: 5000)
+        admin-feature-message-claimblock-threshold: 5000
+
+        # Whether the admin expiration message should show the coordinates for players to see. (Default: False)
+        admin-feature-message-show-coords: false
+
+        # Whether survival claims will be automatically restored to world generated state when expired. 
+        # Note: This only supports world generated blocks. Consider using 'auto-schematic-restore' if using a custom world.
+        auto-nature-restore: false
+
+        # Whether survival claims will be automatically restored to its claim creation schematic on abandon/expiration. 
+        # Note: Enabling this feature will cause ALL newly created claims to automatically create a special schematic that will be used to restore claim on abandon/expiration.
+        # Note: Enabling this feature will disable ability to resize claims.
+        # Note: It is HIGHLY recommended to disable building in the wilderness before using this feature to avoid players exploiting.
+        # Note: It is also recommended to ONLY use this feature in newly created worlds where there is no existing player data.
+        # Note: This does NOT affect deletions. If admins want to restore back to original schematic, they can select '__restore__' by using /claimschematic command.
+        auto-schematic-restore: false
+
+        # The interval in minutes for cleaning up expired claims. Default: 0. Set to 0 to disable.
+        cleanup-interval: 0
+
+        # If 'true', claims will expire after owner inactivity exceeds set amount of 'expiration' days.
+        # If 'false', claims will expire after set amount of 'expiration' days has passed.
+        # Note: If this setting is changed to 'false', ALL existing claims will be affected. Use with CAUTION.
+        expiration-inactivity: true
+
+    # A list of reserved claim names for use only by administrators.
+    # Note: Names support wildcards '?' and '*' by using Apache's wildcard matcher.
+    # The wildcard '?' represents a single character.
+    # The wildcard '*' represents zero or more characters.
+    # For more information on usage, see https://commons.apache.org/proper/commons-io/javadocs/api-2.5/org/apache/commons/io/FilenameUtils.html#wildcardMatch(java.lang.String,%20java.lang.String)
+    reserved-claim-names: []
+
+    # Whether respawns trigger claim border events. Default: True.
+    # Note: Set to False if you want 'enter-claim' and 'exit-claim' to not be triggered by respawns.
+    respawns-use-border-event: true
+
+    # Whether to restrict claiming to world max height. (Default: True)
+    restrict-world-max-height: true
+
+    # Whether teleports trigger claim border events. Default: True.
+    # Note: Set to False if you want 'enter-claim' and 'exit-claim' to not be triggered by teleports.
+    teleports-use-border-event: true
+
+    # Controls temporary claim settings.
+    temporary-settings:
+        # The block identifier used to create temporary claims that will expire based on amount of days set in 'expiration' option. (Default: minecraft:campfire)
+        # Note: Temporary claim will be created when right-clicked with 'modification-tool'.
+        claim-block-id: minecraft:campfire
+
+        # The radius, in chunks, used to determine how large a temporary claim should be. (Default: 3)
+        # Note: This value must be an odd number such as 1,3,5,7, or 9. If even number is used, the value will be increased by 1.
+        claim-chunk-radius: 3
+
+        # The amount of temporary claims a single player can have at one time. (Default: 5)
+        claim-create-limit: 5
+
+        # The amount in days that a temporary claim will expire.
+        expiration-days: 9
+
+        # If enabled, allows players to create temporary claims that expire after a set amount of time. (Default: false)
+        use-temporary-claims: false
+
+    # Adds an unclaimable border of specified radius (in blocks), centered on claim.
+    # Note: This only affects non-trusted players attempting to create a new claim next to another player's claim.
+    # Note: It is not recommended to set this value too high as performance can degrade due to deeper claim searches.
+    unclaimable-block-radius: 1
+command:
+    # The default root command aliases. (Default: 'gd|griefdefender')
+    # Note: If you want to supply additional aliases, use separator '|'.
+    root-command-aliases: gd|griefdefender
+context:
+    # Whether item enchantment contexts should be applied during permission checks. (Default: false)
+    enchantments: false
+
+    # A list of ignored context values during debug.
+    ignored-debug-contexts:
+        - '#azalea_root_replaceable'
+        - '#base_stone_overworld'
+        - '#dripstone_replaceable_blocks'
+        - '#goats_spawnable_on'
+        - '#lush_ground_replaceable'
+        - '#mineable/pickaxe'
+        - '#minecraft:azalea_root_replaceable'
+        - '#minecraft:base_stone_overworld'
+        - '#minecraft:dripstone_replaceable_blocks'
+        - '#minecraft:goats_spawnable_on'
+        - '#minecraft:lush_ground_replaceable'
+        - '#minecraft:mineable/pickaxe'
+        - '#minecraft:moss_replaceable'
+        - '#minecraft:stone_ore_replaceables'
+        - '#stone_ore_replaceables'
+        - '#moss_replaceable'
+        - '#minecraft:foxes_spawnable_on'
+        - '#minecraft:inside_step_sound_blocks'
+        - '#minecraft:mineable/shovel'
+        - '#minecraft:rabbits_spawnable_on'
+        - '#minecraft:wolves_spawnable_on'
+        - '#foxes_spawnable_on'
+        - '#inside_step_sound_blocks'
+        - '#rabbits_spawnable_on'
+        - '#wolves_spawnable_on'
+
+    # Whether player equipment contexts should be applied during permission checks. (Default: true)
+    player-equipment: true
+
+    # Whether potion effect contexts should be applied during permission checks. (Default: true)
+    potion-effects: true
+economy:
+    # Whether to enable the bank system for claims. Set to true to enable.
+    bank-system: false
+
+    # The amount of transactions to keep for history. Default: 60
+    bank-transaction-log-limit: 60
+
+    # The currency symbol for economy messages. Default: $
+    currency-symbol: $
+
+    # Whether the currency symbol should be shown after the amount. Default: False
+    currency-symbol-after-amount: false
+
+    # Uses economy instead of player claim blocks for claim creation.
+    # If true, disables the claim block system in favor of economy.
+    # Note: Using this mode disables the '/buyblocks' command as claim creation will pull funds directly from a player's economy balance.
+    # Note: If players have existing claimblocks from past configurations, an admin must use the '/ecomigrateblocks' command to convert remainder to currency.
+    economy-mode: false
+    rent:
+        rent-blacklist: []
+        # The specific hour in day to attempt to get owed claim rent balances from delinquent renters. Note: This uses military time and accepts values between 0-23. Default: 0
+        rent-delinquent-task-apply-hour: 0
+
+        # Controls the maximum time limit(hours or days) that a claim owner can have their rental max set to.
+        # Note: This only affects claim rentals that have a max specified. If no max is specified by the claim owner, a renter may rent as long as they want.
+        rent-max-time-limit: 100
+
+        # Controls which day a player should start to receive warnings about their rented claim nearing expiration. 
+        # Ex. If set to '5', this will begin to send players messaging on login and at the rent apply hour when 5 days are remaining before expiration.
+        # Note: This only applies if the owner has 'rent-restore' option enabled and the rent owner sets a max.
+        rent-restore-day-warning: 5
+
+        # Controls whether rented admin claims will use a schematic for restoration.
+        # Note: If set, the claim will create a schematic on rental start and restore it back when rental ends.
+        rent-schematic-restore-admin: false
+
+        # Whether rent signs are enabled.
+        rent-sign: false
+
+        # Controls whether the rent system is enabled. Note: This is currently experimental, use with caution.
+        rent-system: false
+
+        # The interval in minutes for checking claim rent payments that are due. Default: 1. Set to 0 to disable.
+        rent-task-interval: 1
+
+        # The amount of transactions to keep for history. Default: 60
+        rent-transaction-log-limit: 60
+
+    # Whether sell signs are enabled.
+    sell-sign: false
+
+    # The interval in minutes for updating sign data. Default: 1. Set to 0 to disable.
+    sign-update-interval: 1
+
+    # Whether to apply tax on 2d claims. Default: True
+    tax-2d-claims: true
+
+    # Whether to apply tax on 3d claims. Default: True
+    tax-3d-claims: true
+
+    # The specific hour in day to apply tax to all claims. Note: This uses military time and accepts values between 0-23. Default: 0
+    tax-apply-hour: 0
+
+    # Whether to enable the tax system for claims. Set to true to enable.
+    tax-system: false
+
+    # The amount of transactions to keep for history. Default: 60
+    tax-transaction-log-limit: 60
+
+    # Claim blocks earned will be converted to economy based on 'economy-block-cost'.
+    # (Default: false)
+    # Note: This setting can only be used if 'economy-mode' is true.
+    use-claim-block-task: false
+message:
+    # Controls whether to send claim deny messages to action bar. (Default: true)
+    # Note: Setting to false will send messages to chat.
+    # Note: ActionBar is only available in MC 1.11+
+    deny-message-action-bar: true
+
+    # Controls whether exit chat messages are displayed when both enter and exit messages are being sent to a player at the same time.For example, if both an enter and exit title message is configured in a claim then the exit title would be sent to chat if this setting is true.
+    enable-exit-chat-messages: false
+
+    # Controls whether to display playername and claim display name as enter message if not set. (Default: 2)
+    # Set to '1' to send messages to chat.
+    # Set to '2' to send messages to actionbar.
+    # Set to '3' to send messages to title.
+    # Set to 0 to disable.
+    enter-claim-player-messages: 2
+
+    # Whether GD prefix should be shown in enter/exit chat messages. (Default: true)
+    enter-exit-chat-show-gd-prefix: true
+
+    # Controls the prefix used when sending messages.
+    gd-prefix: '[&bGD&r] '
+
+    # Controls whether to send greeting/farewell messages to action bar by default.
+    # (Default: false)
+    # Note: Setting to true will send messages to actionbar.
+    # Note: This will only be set if there is no actionbar already set in claim. If so, it will use chat instead.
+    # Note: ActionBar is only available in MC 1.11+
+    greeting-farewell-action-bar: false
+
+    # Set the locale to use for GD messages. (Default: en_US)
+    # Available languages: de_DE, en_US, es_ES, fr_FR, it_IT, nl_NL, pl_PL, pt_BR, ru_RU, tr_TR, zh_CN, zh_HK. The data is stored under assets in jar.
+    # Note: The language code must be lowercase and the country code must be uppercase.
+    locale: en_US
+
+    # Attempts to adjust unicode fonts to represent minecraft default fonts better. (Default: true)
+    # Note: If you are using 'pl_PL' or 'ru_RU', this setting should be set to false.
+    # Note: Any other languages that experience misalignment in chat menus should disable this setting.
+    locale-unicode-fix: true
+
+    # Used to check all messages stored in GD with provided regex filters. If match is found, message will not be able to be set.
+    regex-filters: []
+
+    # Controls whether wilderness default enter message is sent to players. (Default: false)
+    wilderness-default-message: false
+
+# List of migrators that convert old or other protection data into the current GD claim data format.
+# Note: It is recommended to backup data before using.
+migrator:
+    # Set to true to enable the classic migrator.
+    # Note: Migrates GP bukkit classic claim data and GPFlags data, if available, to current format.
+    # Note: It is recommended to backup data before using.
+    classic: false
+    classic-database:
+        # The database address and port. Use format host:port.
+        address: localhost
+
+        # The GriefPrevention database name.
+        database: ""
+
+        # Set to true to enable the classic database migrator.
+        # Note: Migrates GriefPrevention bukkit classic database data and GPFlags data, if available, to current format.
+        # Note: It is recommended to backup data before using.
+        enabled: false
+
+        # The GriefPrevention database password
+        password: ""
+
+        # The GriefPrevention database username.
+        username: ""
+
+    # Controls the last active player day threshold in order to avoid migrating inactive GP playerdata. To disable, set value to 0. (Default: 180)
+    # Note: For example, with the default value of '180' the the migrator will only migrate playerdata for players that played within the past 180 days.
+    # Note: This only handles a player's playerdata where accrued/bonus block information is stored. This setting has no effect on claim migration.
+    # Note: This avoids storing inactive user data in LuckPerms which helps keep '/lp editor' view clean.
+    classic-playerdata-threshold: 180
+
+    # Set to true to migrate from file format to database.
+    # Note: The storage method must be set to hocon in order for this to work properly.
+    # Note: After migration is complete, switch storage to database.
+    # Note: This will NOT remove existing files in case you want to go back.
+    griefdefender-file-to-database: false
+
+    # Set to true to migrate player accrued/bonus block data from LP to GD.
+
+    # Note: It is recommended to backup data before using.
+    # Note: Only enable this setting if using GD 2.4.8+ and have not migrated GD playerdata from LP.
+    # Note: If using GD database storage, Do NOT run this migrator on more than one server if multiple servers share the same GD database.
+    luckperms-playerdata: false
+
+    # Set to true to enable the legacy GriefDefender playerdata file migrator.
+    # Note: This setting is not for migrating GriefPrevention playerdata. Use 'classic' option instead.
+    # Note: Migrates legacy playerdata file format to permissions storage such as LuckPerms json or mysql storage.
+    # Note: Before turning this on, make sure you properly set 'context-storage-type' in the the playerdata section of this config.
+    # Note: It is HIGHLY recommended to backup your permissions database before running this migrator as all local playerdata files will be migrated to it.
+    # Note: Do NOT run this migrator on more than one server if multiple servers share the same permissions database.
+    playerdata: false
+
+    # Set to true to enable RedProtect data migrator.
+    # Note: All RedProtect data will be converted into basic claim data.
+    red-protect: false
+
+    # Set to true to enable Residence data migrator.
+    residence: true
+
+    # Set to true to enable WorldGuard data migrator.
+    # Note: Only cuboid regions are supported.
+    # Note: It is recommended to backup data before using.
+    worldguard: false
+mod:
+    BKCommonLib:
+        # Allows GD's enter-claim and exit-claim to support non-player movement such as monsters and animals. Default: false
+        entity-move-event: false
+
+    # Used to override generic block id's to their actual id during TE and item usage if available. Add the target block id to list if you want to force a conversion when detected.
+    # Note: This is useful for mods such as IC2 which uses the generic id 'ic2:te' for its multi-block.
+    block-id-convert-list:
+        - gregtech:machine
+        - ic2:te
+
+    # Contains a list of strings used to identify a fakeplayer by UUID or name. To use, add the fakeplayer UUID or name.
+    # Note: Strings support wildcards '?' and '*' by using Apache's wildcard matcher.
+    # The wildcard '?' represents a single character.
+    # The wildcard '*' represents zero or more characters.
+    # For more information on usage, see https://commons.apache.org/proper/commons-io/javadocs/api-2.5/org/apache/commons/io/FilenameUtils.html#wildcardMatch(java.lang.String,%20java.lang.String)
+    fakeplayer-identifiers:
+        - 41C82C87-7AfB-4024-BA57-13D2C99CAE77
+        - BFC3377F-C3C9-3382-9DA6-79B50A9AFE57
+        - 0D0C4CA0-4FF1-11E4-916C-0800200C9A66
+        - '[Minecraft]'
+        - OpenModsFakethis*
+
+    # Used to map an unknown mod item/block/entity to a mod id. To use, add the mod package with a mapping to a mod id.
+    # Ex. 'com.pixelmonmod.*', 'pixelmon' would map an entity containing class name 'com.pixelmonmod.*' to 'pixelmon'.
+    # Note: Strings support wildcards '?' and '*' by using Apache's wildcard matcher.
+    # The wildcard '?' represents a single character.
+    # The wildcard '*' represents zero or more characters.
+    # For more information on usage, see https://commons.apache.org/proper/commons-io/javadocs/api-2.5/org/apache/commons/io/FilenameUtils.html#wildcardMatch(java.lang.String,%20java.lang.String)
+    mod-id-map:
+        com.pixelmonmod.*: pixelmon
+        net.minecraftforge.*: forge
+        openblocks.*: openblocks
+        openmods.*: openmods
+
+    # Used to override generic tileentity id's to their actual id during TE usage. Add the target TE id as key and NBT key where ID is stored as value.
+    # Note: This is useful for mods such as Gregtech which uses the generic id 'gregtech:machine' for its TE and NBT key 'MetaId' to store the actual ID.
+    tile-id-nbt-map:
+        gregtech:machine: MetaId
+optimization:
+    # Whether to process player claim tool actions async for performance. (Default: true)
+    # Note: If you encounter any async thread issues, disable this setting.
+    async-claim-tool-actions: true
+
+    # Whether to process player claim visuals async for performance. (Default: true)
+    # Note: If you encounter any async thread issues, disable this setting.
+    async-player-claim-visuals: true
+
+    # Controls whether to ignore item drops from block sources. (Default: true)
+    # Note: This is only triggered when a player breaks a block.
+    block-item-drops: true
+
+    # Controls the amount of time, in seconds, for db cache of player claim block lookups. (Default: 5)
+    # Note: Setting this too high may result in players not getting accurate claim block counts.
+    cache-db-player-claim-block-lookup-expiration: 5
+
+    # Controls the amount of time, in seconds, for the permission cache of all entity damage actions in world. If the cache is accessed before expiration then the time is reset. (Default: 5)
+    # Note: Setting this too high may result in wrong entity damage permission results.
+    cache-entity-damage-expiration: 5
+
+    # Controls the amount of time, in seconds, for the permission cache of all entity spawn actions in world. If the cache is accessed before expiration then the time is reset. (Default: 5)
+    # Note: Setting this too high may result in wrong entity spawn permission results.
+    cache-entity-spawn-expiration: 5
+
+    # Controls the amount of time, in seconds, for the permission lookup cache of all actions in world. If the cache is accessed before expiration then the time is reset. (Default: 3)
+    # Note: This cache will occur after special caches such as entity damage, explosions, and physics.
+    # Note: Setting this too high may result in players not seeing proper results with their actions.
+    cache-permission-lookup-expiration: 3
+
+    # Controls the amount of time, in seconds, for the permission cache of all block physic changes in world. (Default: 5)
+    # Note: Blocks such as redstone will usually cache longer due to the repeated calls made.
+    # Note: Setting this too high may result in players not being tracked properly during block changes.
+    cache-physics-tracking-expiration: 5
+
+    # Controls the amount of time, in seconds, for the playerdata lookup cache of highest claim trust. If the cache is accessed before expiration then the time is reset. (Default: 60)
+    # Note: Setting this too high may result in players not seeing proper results with their actions.
+    cache-player-highest-trust: 60
+
+    # Controls whether dispener item spawns are ignored. (Default: true)
+    dispenser-item-spawns: true
+
+    # Controls whether entity damage events that contain both a source/target living passive entity, such as two animals fighting, are ignored. (Default: true)
+    entity-damage-living-passive: true
+
+    # Controls whether entity damage events that contain both a source/target monster are ignored. (Default: true)
+    entity-damage-monster: true
+
+    # Controls whether entity damage events that contain a monster and other entity, except players, are ignored. (Default: true)
+    entity-damage-monster-other: true
+
+    # Controls whether entity damage source or block that target a living passive are ignored. (Default: true)
+    entity-damage-source-living-passive: true
+
+    # Controls whether entity damage source or block that target a monster are ignored. (Default: true)
+    entity-damage-source-monster: true
+
+    # Controls whether an entity interacting with a block is ignored. (Default: true)
+    entity-interact-block: true
+
+    # Controls whether entity item pickups made by non-players are ignored. (Default: true)
+    entity-item-pickup-non-player: true
+
+    # Controls whether non-player falls are ignored. (Default: true)
+    fall-non-player: true
+
+    # Controls whether monster attacks against a player are ignored. (Default: false)
+    # Note: This does not include explosion damage.
+    # Note: If you need to prevent damage from monsters in claims then this should remain false.
+    monster-player-damage: false
+
+    # Controls whether player attacks against a monster are ignored. (Default: true)
+    # Note: This does not include explosion damage.
+    player-monster-damage: true
+
+    # Controls whether ambient spawns, such as bats, are ignored in wilderness. (Default: true)
+    # Note: If you want to control aquatic spawns in wilderness, set this to false.
+    wilderness-ambient-spawns: true
+
+    # Controls whether animal spawns, such as pigs, are ignored in wilderness. (Default: true)
+    # Note: If you want to control animal spawns in wilderness, set this to false.
+    wilderness-animal-spawns: true
+
+    # Controls whether aquatic spawns, such as squids, are ignored in wilderness. (Default: true)
+    # Note: If you want to control aquatic spawns in wilderness, set this to false.
+    wilderness-aquatic-spawns: true
+
+    # Controls whether liquid flow is ignored in wilderness. (Default: true)
+    # Note: If you want to control liquid flow in wilderness, set this to false.
+    wilderness-liquid-flow: true
+
+    # Controls whether monster spawns, such as creepers, are ignored in wilderness. (Default: true)
+    # Note: If you want to control monster spawns in wilderness, set this to false.
+    wilderness-monster-spawns: true
+
+    # Controls whether experience orbs are ignored when dropped. (Default: true)
+    xp-orb-drop: true
+permission:
+    griefdefender-claim-group-priority: -75
+    griefdefender-claim-priority: -60
+    griefdefender-default-priority: -100
+    griefdefender-definition-priority: -80
+    griefdefender-option-priority: 0
+    griefdefender-override-priority: -40
+    griefdefender-trust-accessor-priority: -73
+    griefdefender-trust-builder-priority: -71
+    griefdefender-trust-container-priority: -72
+    griefdefender-trust-manager-priority: -70
+    griefdefender-trust-resident-priority: -74
+playerdata:
+    # Determines which claim block system to use for claims. (Default: AREA)
+    # If set to VOLUME, claim blocks will use the chunk count system to balance 3d claiming.
+    # If set to AREA, the standard 2d block count system will be used.
+    claim-block-system: AREA
+
+    # The context type used when storing playerdata within GD's database.
+    # Available types are : global, server, world. (Default: global)
+    # Global will store data globally shared by all servers.
+    # Server will store data per server. Note: This requires servername to be properly set in permissions config.
+    # World will store data per world.
+    context-storage-type: global
+
+    # If set to true, GD will only calculate player block data for claims loaded on THIS server. It will not include other servers with same LP server context.
+    # Note: This setting is only used with GD DB storage.
+    # Note: Use with CAUTION!
+    force-server-only: false
+
+    # The rate to divide each accrued claim blocks total by.
+    # Set to a value greater than -1 to enable. (Default: 256).
+    # Note: This should only be used when migrating from volume (3D system) to area (2D system).
+    # In this system, a chunk costs 256 blocks.
+    # This requires 'claim-block-system' to be set to AREA.
+    migrate-area-rate: -1
+
+    # The rate to multiply each accrued claim blocks total by.
+    # Set to a value greater than -1 to enable. (Default: 256).
+    # Note: This should only be used when migrating from area (2D system) to volume (3D system).
+    # Each chunk is worth 65,536 blocks in the new system compared to 256 in old.
+    # This requires 'claim-block-system' to be set to VOLUME.
+    migrate-volume-rate: -1
+
+    # If enabled, resets all playerdata accrued claim blocks to match total cost of claims owned.
+    # Example: If a player has 5 basic claims with a total cost of 1000, this will set their accrued claim blocks to 1000.
+    # Note: This will also reset all bonus claim blocks to 0. It is highly recommended to backup before using.
+    reset-accrued-claim-blocks: false
+
+    # If enabled, resets all playerdata migration flags to allow for another migration.
+    # Note: Use this with caution as it can easily mess up claim block data. It is highly recommended to backup before using.
+    reset-migrations: false
+
+# Manages plugin providers that GD hooks into for extended functionality.
+provider:
+    Slimefun: true
+pvp:
+    # Whether flying is allowed during PvP.
+    allow-fly: false
+
+    # Whether players should be killed if they logout while in pvp combat.
+    combat-logout: false
+
+    # Whether players receive pvp deny messages. (Default: True)
+    deny-messages: true
+
+    # Whether pvp protection is enabled for players.
+    enabled: true
+town:
+    # Whether survival towns will be automatically restored to nature when auto-deleted.
+    auto-nature-restore: false
+
+    # The interval in minutes for restoring blocks in an expired town. Set to 0 to disable. Note: This only supports vanilla blocks. Use with caution if using custom biomes.
+    cleanup-task-interval: 5
+
+    # The required amount of funds to create a town. (Default: 0)
+    # Note: This requires an Economy plugin.
+    creation-cost: 0.0
+visual:
+    # The active time, in seconds, to keep a claim's visuals shown to a player. (Default: 60)
+    # Note: If value is <= 0, GD will use the default value.
+    active-claim-visual-time: 60
+
+    # The active time, in seconds, to keep a claim's create block visual shown to a player. (Default: 180)
+    # Note: This only applies during claim creation.
+    # Note: If value is <= 0, GD will use the default value.
+    active-create-block-visual-time: 180
+
+    # The visual accent block used for admin claims. (Default: minecraft:pumpkin)
+    admin-accent-block: minecraft:pumpkin
+
+    # The visual corner block used for admin claims. (Default: minecraft:glowstone)
+    admin-corner-block: minecraft:glowstone
+
+    # The visual filler block used for admin claims. (Default: minecraft:pumpkin)
+    admin-filler-block: minecraft:pumpkin
+
+    # The visual accent block used for basic claims. (Default: minecraft:gold_block)
+    basic-accent-block: minecraft:gold_block
+
+    # The visual corner block used for basic claims. (Default: minecraft:glowstone)
+    basic-corner-block: minecraft:glowstone
+
+    # The visual filler block used for basic claims. (Default: minecraft:gold_block)
+    basic-filler-block: minecraft:gold_block
+
+    # The visual block used during claim creation. (Default: minecraft:diamond_block)
+    claim-create-block: minecraft:diamond_block
+
+    # The amount of block visuals a client can receive per tick when showing/hiding claims. Default: 12
+    client-visuals-per-tick: 12
+
+    # Whether to use cuboid visuals, in 2D claims, during inspection with owner min/max claim levels between 0 and 255.
+    # Note: WECUI visuals are not associated to this option.
+    # Note: If enabled, this will send many block updates to players causing more client strain depending on size of claim. Use with caution.
+    cuboid-level-visuals-2d: false
+
+    # The visual accent block used to visualize an error in a claim. (Default: minecraft:netherrack)
+    error-accent-block: minecraft:netherrack
+
+    # The visual corner block used to visualize an error in a claim. (Default: minecraft:redstone_ore)
+    error-corner-block: minecraft:redstone_ore
+
+    # The visual filler block used to visualize an error in a claim. (Default: minecraft:netherrack)
+    error-filler-block: minecraft:netherrack
+
+    # The space between each filler visual block.
+    filler-spacing: 10
+
+    # Whether to hide the glowstone/gold block borders when using WECUI.
+    hide-borders-when-using-wecui: false
+
+    # Whether to hide the block fillers when using WECUI.
+    hide-fillers-when-using-wecui: true
+
+    # Whether drag visuals should be shown while creating a claim in 2D mode.
+    hide-wecui-drag-visuals-2d: true
+
+    # The visual accent block used while in restore nature mode. (Default: minecraft:diamond_block)
+    nature-accent-block: minecraft:diamond_block
+
+    # The visual corner block used while in restore nature mode. (Default: minecraft:diamond_block)
+    nature-corner-block: minecraft:diamond_block
+
+    # The visual accent block used for subdivision claims. (Default: minecraft:white_wool or minecraft:wool for legacy versions)
+    subdivision-accent-block: minecraft:white_wool
+
+    # The visual corner block used for subdivision claims. (Default: minecraft:iron_block)
+    subdivision-corner-block: minecraft:iron_block
+
+    # The visual filler block used for subdivision claims. (Default: minecraft:white_wool or minecraft:wool for legacy versions)
+    subdivision-filler-block: minecraft:white_wool
+
+    # The visual accent block used for town claims. (Default: minecraft:emerald_block)
+    town-accent-block: minecraft:emerald_block
+
+    # The visual corner block used for town claims. (Default: minecraft:glowstone)
+    town-corner-block: minecraft:glowstone
+
+    # The visual filler block used for town claims. (Default: minecraft:emerald_block)
+    town-filler-block: minecraft:emerald_block
+world:
+    # A list of worlds by name or resource location that GriefDefender should protect. If empty, GriefDefender will protect all worlds.
+    protected-worlds: []

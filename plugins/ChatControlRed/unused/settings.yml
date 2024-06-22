@@ -1,3 +1,20 @@
 Sync_Period: 1 second
 Channels:
   Async: false
+Integration:
+  BungeeCord:
+    
+    # Hook to BungeeCord?
+    #
+    # [IMPORTANT] Install BungeeControl Red: https://www.mc-market.org/resources/24248 first.
+    # [IMPORTANT] Please write the 'server-name' key to your server.properties according 
+    #             to https://mineacademy.org/server-properties
+    Enabled: true
+    
+    # The optional prefix before all messages so that you know where they are coming from.
+    Prefix: ''
+Messages:
+  Async: []
+Motd:
+  Async: false
+Timestamp_Format: dd.MM.yyyy HH:mm:ss

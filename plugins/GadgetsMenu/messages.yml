@@ -35,7 +35,7 @@ Items:
     Show-In-Lore: true
     Lore:
     - ''
-    - '&7Unlocked: &c{HASPERMISSION}/{SIZE} &8({PERCENTAGE}%)'
+    - '&7Unlocked: &c{UNLOCKED_ITEMS}/{SIZE} &8({PERCENTAGE}%)'
     - ''
     - '&eClick to browse!'
   Settings:
@@ -482,24 +482,27 @@ GUI-Menus:
   Open-Multiple-Boxes-Menu:
     GUI-Name: Open Multiple Eggs
     Items:
-      Open-20-Boxes:
+      Open-Multiple-Boxes-Type-1:
         Name: '&aOpen 20 Eggs'
         Material: NETHER_STAR
         Slot: 19
+        Number-Of-Boxes: 20
         Lore:
         - '&7Open up to 20 Eggs at the'
         - '&7same time.'
-      Open-50-Boxes:
+      Open-Multiple-Boxes-Type-2:
         Name: '&aOpen 50 Eggs'
         Material: NETHER_STAR
         Slot: 22
+        Number-Of-Boxes: 50
         Lore:
         - '&7Open up to 50 Eggs at the'
         - '&7same time.'
-      Open-250-Boxes:
+      Open-Multiple-Boxes-Type-3:
         Name: '&aOpen 250 Eggs'
         Material: NETHER_STAR
         Slot: 25
+        Number-Of-Boxes: 50
         Lore:
         - '&7Open up to 250 Eggs at the'
         - '&7same time.'
@@ -995,3 +998,9 @@ Failed-To-Reload-Plugin: '{PREFIX}&cUnable to reload GadgetsMenu plugin. The plu
   has been disabled. You need to restart the server to re-enable the plugin.'
 Target-Player-No-Permission: '{PREFIX}&c{PLAYER} does not have the required permissions
   to equip this cosmetic.'
+Player-Receive-Menu-Item: '{PREFIX}&eA menu selector has been added into your inventory!'
+Not-Allow-Due-To-Entity-Nearby: '{PREFIX}&cMake sure no entity/player within the area
+  before activating the cosmetic.'
+Reset-Pet-Name: '&eSuccessfully reset the pet name.'
+Reset-Pet-Name-For-Player: '&eSuccessfully reset {PLAYER} {TYPE} pet''s name.'
+Invalid: Invalid

@@ -1,0 +1,24 @@
+# A map of block/item/entity tags to a list of one or more identifiers.
+# Note: Always store tag keys with '#' prefix. For example, '#signs'.
+# Note: MC 1.13+ contains an existing tag system that GD will load on startup. Use this map to add additional custom tags.
+# Note: Id's support wildcards '?' and '*' by using Apache's wildcard matcher.
+# The wildcard '?' represents a single character.
+# The wildcard '*' represents zero or more characters.
+# For more information on usage, see https://commons.apache.org/proper/commons-io/javadocs/api-2.5/org/apache/commons/io/FilenameUtils.html#wildcardMatch(java.lang.String,%20java.lang.String)
+tags:
+    '#shulker_boxes':
+        - minecraft:silver_shulker_box
+        - minecraft:brown_shulker_bo
+        - minecraft:yellow_shulker_bo
+        - minecraft:green_shulker_box
+        - minecraft:purple_shulker_box
+        - minecraft:orange_shulker_box
+        - minecraft:lime_shulker_box
+        - minecraft:white_shulker_box
+        - minecraft:gray_shulker_box
+        - minecraft:blue_shulker_box
+        - minecraft:magenta_shulker_box
+        - minecraft:cyan_shulker_box
+        - minecraft:pink_shulker_box
+        - minecraft:red_shulker_box
+        - minecraft:light_blue_shulker_box

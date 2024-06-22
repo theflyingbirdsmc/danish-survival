@@ -79,6 +79,18 @@ Commands:
   Book:
     Save: '''Saved mail as book to books/{0}.yml.'' + (override ? '' Your old file
       was overriden.'' : '''')'
+  Script:
+    Usage: <expression>
+    Description: Evaluate JavaScript.
+    Usages:
+    - /{label} {sublabel} 5 * (2/3) &7- Simple math.
+    - /{label} {sublabel} player.getHandle().ping &7- NMS, if player is Player.
+    - /{label} {sublabel} {variable} / 2 &7- PAPI, native or variables/.
+    - /{label} {sublabel} Java.type("org.bukkit.Bukkit").getOnlinePlayers()
+    Error: 'Error in your expression: {0}'
+    Result: 'Result: &f{0}'
+  Simple_Help_Design: false
+  Label_Usages: '&c&lUsages:'
 Player:
   Cannot_Chat_Vanished: You can't write chat messages directly when you're vanished.
     Use '/{label_channel} send' instead.

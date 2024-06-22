@@ -1,0 +1,86 @@
+# Controls which item/block/entity id's are blacklisted from events either on a per-flag basis or globally. 
+# Note: Id's support wildcards '?' and '*' by using Apache's wildcard matcher.
+# The wildcard '?' represents a single character.
+# The wildcard '*' represents zero or more characters.
+# For more information on usage, see https://commons.apache.org/proper/commons-io/javadocs/api-2.5/org/apache/commons/io/FilenameUtils.html#wildcardMatch(java.lang.String,%20java.lang.String)
+
+# A global list of entity damage sources that are ignored in events by default.
+entity-damage-source-blacklist:
+    - contact
+    - cramming
+    - drowning
+    - falling_block
+    - flyintowall
+    - fire
+    - fire_tick
+    - hot_floor
+    - poison
+    - starvation
+    - suffocation
+    - suicide
+    - void
+
+# A list of id's ignored by flags.
+flag-id-blacklist:
+    block-break:
+        - minecraft:fire
+    block-grow: []
+    block-modify:
+        - minecraft:weathered_*
+        - minecraft:netherrack
+        - minecraft:farmland
+        - minecraft:sheep
+        - minecraft:dirt
+        - minecraft:frosted_ice
+    block-place: []
+    block-spread:
+        - minecraft:vine
+        - minecraft:grass_block
+        - minecraft:mycelium
+        - minecraft:twisting_vines
+        - minecraft:weeping_vines
+        - minecraft:kelp
+    collide-block: []
+    collide-entity: []
+    command-execute: []
+    command-execute-pvp: []
+    enter-claim: []
+    entity-chunk-spawn: []
+    entity-damage: []
+    entity-riding: []
+    entity-spawn: []
+    entity-teleport-from: []
+    entity-teleport-to: []
+    exit-claim: []
+    explosion-block: []
+    explosion-entity: []
+    interact-block-primary: []
+    interact-block-secondary: []
+    interact-entity-primary: []
+    interact-entity-secondary:
+        - minecraft:villager
+        - minecraft:falling_block
+    interact-inventory: []
+    interact-inventory-click: []
+    interact-item-primary: []
+    interact-item-secondary: []
+    inventory-item-move: []
+    item-damage: []
+    item-drop: []
+    item-pickup: []
+    item-spawn: []
+    item-use: []
+    leaf-decay: []
+    liquid-flow: []
+    portal-use: []
+    projectile-impact-block: []
+    projectile-impact-entity:
+        - minecraft:ender_pearl
+
+# A global list of source id's that are ignored by events. 
+# Note: This only affects events where the id specified is the source.
+global-source: []
+
+# A global list of target id's that are ignored by events. 
+# Note: This only affects events where the id specified is the target.
+global-target: []

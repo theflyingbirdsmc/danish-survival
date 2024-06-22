@@ -1,0 +1,132 @@
+default-flags:
+    # The default flag settings used by claims. The group name represents the claim type.
+    # Ex: The group admin will ONLY affect admin claims.
+    # Supported groups are : user, admin, basic, subdivision, town, and wilderness.
+    # Note: User represents all claim types EXCEPT wilderness.
+    # Note: Specific types, such as wilderness, have higher priority than user.
+    # Note: Defaults do not force flags onto user claims. A newly created claim will have no flags set and use these default settings until a claim owner sets flags.
+    default-claim-flags:
+        user:
+            block-break: false
+            block-grow: true
+            block-modify: true
+            block-place: false
+            block-spread: true
+            collide-block: false
+            collide-entity: false
+            command-execute: true
+            command-execute-pvp: true
+            enter-claim: true
+            entity-chunk-spawn: true
+            entity-damage: true
+            entity-riding: true
+            entity-spawn: true
+            entity-teleport-from: true
+            entity-teleport-to: true
+            exit-claim: true
+            explosion-block: false
+            explosion-entity: false
+            interact-block-primary: false
+            interact-block-secondary: false
+            interact-entity-primary: false
+            interact-entity-secondary: true
+            interact-inventory: false
+            interact-inventory-click: true
+            interact-item-primary: true
+            interact-item-secondary: true
+            inventory-item-move: true
+            item-damage: true
+            item-drop: true
+            item-pickup: true
+            item-spawn: true
+            item-use: true
+            leaf-decay: true
+            liquid-flow: false
+            portal-use: true
+            projectile-impact-block: false
+            projectile-impact-entity: true
+        wilderness:
+            block-break: true
+            block-grow: true
+            block-modify: true
+            block-place: true
+            block-spread: true
+            collide-block: true
+            collide-entity: true
+            command-execute: true
+            command-execute-pvp: true
+            enter-claim: true
+            entity-chunk-spawn: true
+            entity-damage: true
+            entity-riding: true
+            entity-spawn: true
+            entity-teleport-from: true
+            entity-teleport-to: true
+            exit-claim: true
+            explosion-block: true
+            explosion-entity: true
+            interact-block-primary: true
+            interact-block-secondary: true
+            interact-entity-primary: true
+            interact-entity-secondary: true
+            interact-inventory: true
+            interact-inventory-click: true
+            interact-item-primary: true
+            interact-item-secondary: true
+            inventory-item-move: true
+            item-damage: true
+            item-drop: true
+            item-pickup: true
+            item-spawn: true
+            item-use: true
+            leaf-decay: true
+            liquid-flow: true
+            portal-use: true
+            projectile-impact-block: true
+            projectile-impact-entity: true
+
+# The default flag preset and group users will default to when running the '/cf' command. (Default: 'minecraft:user')
+default-user-preset: minecraft:user
+
+# Controls which flags are enabled.
+# Note: Disabling a flag will cause GD to bypass all functionality for it.
+# Note: If you want full protection, it is recommended to keep everything enabled.
+flag-control:
+    block-break: true
+    block-grow: false
+    block-modify: true
+    block-place: true
+    block-spread: true
+    collide-block: true
+    collide-entity: true
+    command-execute: true
+    command-execute-pvp: false
+    enter-claim: true
+    entity-chunk-spawn: false
+    entity-damage: true
+    entity-riding: true
+    entity-spawn: true
+    entity-teleport-from: true
+    entity-teleport-to: true
+    exit-claim: true
+    explosion-block: true
+    explosion-entity: true
+    interact-block-primary: false
+    interact-block-secondary: true
+    interact-entity-primary: true
+    interact-entity-secondary: true
+    interact-inventory: true
+    interact-inventory-click: false
+    interact-item-primary: false
+    interact-item-secondary: true
+    inventory-item-move: true
+    item-damage: true
+    item-drop: true
+    item-pickup: false
+    item-spawn: true
+    item-use: true
+    leaf-decay: false
+    liquid-flow: true
+    portal-use: false
+    projectile-impact-block: true
+    projectile-impact-entity: true

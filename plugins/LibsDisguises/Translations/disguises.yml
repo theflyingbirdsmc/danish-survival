@@ -550,3 +550,12 @@
 
 # Name for the TextDisplay EntityType, this is used in radius commands
 "TextDisplay": "TextDisplay"
+
+# Name for the BREEZE disguise
+"Breeze": "Breeze"
+
+# Name for the WIND_CHARGE disguise
+"Wind Charge": "Wind Charge"
+
+# Name for the WindCharge EntityType, this is used in radius commands
+"WindCharge": "WindCharge"
