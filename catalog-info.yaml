@@ -6,7 +6,7 @@ metadata:
   annotations:
     github.com/project-slug: theflyingbirdsmc/danish-survival
     backstage.io/kubernetes-namespace: tfb-servers
-    backstage.io/kubernetes-id: danish-survival-0
+    backstage.io/kubernetes-id: danish-survival
   #   backstage.io/techdocs-ref: dir:.
 spec:
   type: website
