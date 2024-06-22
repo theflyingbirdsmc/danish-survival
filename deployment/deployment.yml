@@ -12,6 +12,7 @@ spec:
     nodePort: 30005
   selector:
     run: danish-survival
+    backstage.io/kubernetes-id: danish-survival
 ---
 apiVersion: apps/v1
 kind: StatefulSet
@@ -30,6 +31,7 @@ spec:
     metadata:
       labels:
         run: danish-survival
+        backstage.io/kubernetes-id: danish-survival
     spec:
       securityContext:
         runAsUser: 1000
