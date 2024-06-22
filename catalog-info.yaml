@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Danish-Survival
+  description: TFB Danish Survival
+  annotations:
+    github.com/project-slug: theflyingbirdsmc/danish-survival
+    backstage.io/kubernetes-namespace: tfb-servers
+    backstage.io/kubernetes-id: danish-survival
+  #   backstage.io/techdocs-ref: dir:.
+spec:
+  type: website
+  owner: theflyingbirdsmc/services
+  lifecycle: production
