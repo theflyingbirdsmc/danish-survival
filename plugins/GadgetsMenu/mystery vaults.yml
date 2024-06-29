@@ -1,8 +1,15 @@
 Mystery-Vaults:
-  vanilla:
-    BlockFace: NORTH
+  danish-survival-right:
+    BlockFace: WEST
     Location:
-      world: world_vanilla
-      x: 13.0
-      y: 195.0
-      z: 24.0
+      world: world_danish_survival
+      x: 9.0
+      y: 66.0
+      z: -17.0
+  danish-survival-left:
+    BlockFace: EAST
+    Location:
+      world: world_danish_survival
+      x: -9.0
+      y: 66.0
+      z: -17.0
