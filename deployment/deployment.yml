@@ -119,7 +119,7 @@ spec:
           - name: SERVER_NAME
             value: "danish-survival"
           - name: "MEMORY"
-            value: "16G"
+            value: "12G"
         ports:
           - containerPort: 30005
         command: ["/bin/sh", "-c"]
@@ -135,7 +135,7 @@ spec:
             mountPath: /git-data
         resources:
           requests:
-            memory: "16Gi"
+            memory: "12Gi"
         readinessProbe:
           exec:
             command: [ "/usr/local/bin/mc-monitor", "status", "--host", "localhost", "-port", "30005" ]
