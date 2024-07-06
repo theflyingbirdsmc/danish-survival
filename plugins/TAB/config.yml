@@ -121,7 +121,7 @@ scoreboard:
       - ''
       - '&6Server Info:'
       - '&f* &eBiome&7: &f%world_biome%'
-      - '&f* &e⌚&7: &f%world_time_<world_danish_surival>%'
+      - '&f* &e⌚&7: &f%world_time_<world_danish_survival>%'
 placeholders:
   date-format: dd.MM.yyyy
   time-format: '[HH:mm:ss / h:mm a]'
