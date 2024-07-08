@@ -1,6 +1,6 @@
 var lang = "";
 var type = "";
-function tfbShop() {
+function tfb_english_survival() {
     if (args.length == 2) {
         type = args[0];
         lang = args[1];
@@ -9,29 +9,29 @@ function tfbShop() {
     if (type == "name") {
         switch (lang) {
             case "da":
-                return "#ee2b23T#3551d7F#00ff00B #235babShop";
+                return "&2Survival";
                 break;
             default:
-                return "#ee2b23T#3551d7F#00ff00B #235babShop";
+                return "&2Survival";
         }
 
     } else if (type == "lore") {
         switch (lang) {
             case "da":
-                return "&eKlik her for et link i chatten!";
+                return "&eSprog&8: &7Engelsk\\n&eKlik for at joine nu!";
                 break;
             default:
-                return "&eClick me to get a link in chat!";
+                return "&eLanguage&8: &7English\\n&eClick to connect now!";
         }
     } else if (type == "message") {
         switch (lang) {
             case "da":
-                return "&ashop.theflyingbirds.net&r &8<- &eKlik her for at besøge vores shop!";
+                return "&ahttps://stats.theflyingbirds.net:8804 &8<- &eKlik her for at joine!";
                 break;
             default:
-                return "&ashop.theflyingbirds.net&r &8- &eClick me to visit our shop!";
+                return "&ahttps://stats.theflyingbirds.net:8804 &8<- &eClick me to see stats";
         }
     } else { return "error"; }
 }
 
-tfbShop();
+tfb_english_survival();
