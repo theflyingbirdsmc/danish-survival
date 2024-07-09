@@ -16,6 +16,7 @@ dependencies {
     implementation 'Plugin:GSit:1.+'
     implementation 'Plugin:LibsDisguises:10.+'
     implementation 'Plugin:Skript:2.8.5'
+    implementation 'Plugin:SimpleRTP:5.0'
     implementation 'Plugin:LuckPerms:5.4.+'
     implementation 'Plugin:Multiverse-Core:4.+'
     implementation 'Plugin:PlaceholderAPI:2.11.+'
