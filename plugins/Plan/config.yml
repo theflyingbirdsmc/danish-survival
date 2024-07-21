@@ -27,11 +27,11 @@ Plugin:
 Database:
     Type: MySQL
     MySQL:
-        Host: tfb-database-mariadb
+        Host: tfb-network-db
         Port: 3306
-        User: tfb_plan
+        User: tfb_network
         Password: $Z@jJKSLcd7xUekU5qF&VW3#ndU&mm
-        Database: plan
+        Database: tfb_network_plan
         # Launch options to append after mysql driver address
         Launch_options: "?rewriteBatchedStatements=true&useSSL=false&serverTimezone=UTC"
         Max_connections: 8

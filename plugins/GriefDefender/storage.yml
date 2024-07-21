@@ -1,7 +1,7 @@
 database:
     # The database address and port. Use format host:port.
     # Note: MySQL and MariaDB default port to 3306
-    address: tfb-database-mariadb
+    address: tfb-danish-survival-db
 
     # Enable this setting to force GD to always read and write from database.
     # Note: Enable this setting if you need to share database data across multiple servers.
@@ -29,7 +29,7 @@ database:
     load-claims-async: true
 
     # The database password.
-    password: "ZGF#qeibrfXtdSTmK$tFLdtMi9zQq9"
+    password: "EhR3su7tKALaSpz#8V$MhF^8cs@7c*"
     pool-settings:
         # The maximum number of milliseconds to wait for a connection before timeout.
         connection-timeout: 5000
@@ -48,7 +48,7 @@ database:
     table-prefix: gd_
 
     # The database username. (Default: root)
-    username: danish_survival
+    username: tfb_danish_survival
 
 # The data storage method. Current available storage types : hocon, mariadb, mysql, postgresql
 storage-method: mariadb

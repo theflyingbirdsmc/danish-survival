@@ -63,11 +63,11 @@ blocked-nicknames:
 # Database settings
 # Only enable this if you know what you're doing and have an existing database
 database-enabled: true
-host: tfb-database-mariadb
+host: tfb-network-db
 port: '3306'
-database: hexnicks
-username: tfb_hexnicks
-password: j77RqV*scJQ2RSjcx@nRNiXNU&Yow*
+database: tfb_network_hexnicks
+username: tfb_network
+password: $Z@jJKSLcd7xUekU5qF&VW3#ndU&mm
 use-ssl: false
 auto-reconnect: false
 # The maximum lifetime of a connection in milliseconds. This should be lower than your database's wait timeout.

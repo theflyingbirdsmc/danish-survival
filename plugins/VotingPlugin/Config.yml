@@ -14,12 +14,12 @@ DataStorage: MYSQL
 # Information for mysql
 # See the end of the config for cache options
 MySQL:
-  Host: 'tfb-database-mariadb'
+  Host: 'tfb-network-db'
   # Default port is 3306
   Port: 3306
-  Database: 'votingplugin'
-  Username: 'tfb_votingplugin'
-  Password: '5wZw5@ySSE@zZSd4b#QFrPfsedwhzz'
+  Database: 'tfb_network_votingplugin'
+  Username: 'tfb_network'
+  Password: '$Z@jJKSLcd7xUekU5qF&VW3#ndU&mm'
   # Max number of connections
   MaxConnections: 1
   # Table name prefix, for use with mutliple servers

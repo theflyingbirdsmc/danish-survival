@@ -7,11 +7,11 @@
 Player-Data:
   Storage: mysql
   MySQL:
-    hostname: tfb-database-mariadb
-    username: tfb_gadgetsmenu
-    database: gadgetsmenu
+    hostname: tfb-network-db
+    username: tfb_network
+    database: tfb_network_gadgetsmenu
     port: '3306'
-    password: vF53CRgmZt*@8y6y3f#ku&L*d4*fj^
+    password: $Z@jJKSLcd7xUekU5qF&VW3#ndU&mm
     useSSL: false
 
 Cosmetic-Item-Purchase:

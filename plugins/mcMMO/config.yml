@@ -182,8 +182,8 @@ MySQL:
     Enabled: true
     Debug: false
     Database:
-        User_Name: danish_survival
-        User_Password: j77RqV*scJQ2RSjcx@nRNiXNU&Yow*
+        User_Name: tfb_danish_survival
+        User_Password: EhR3su7tKALaSpz#8V$MhF^8cs@7c*
         Name: tfb_danish_survival_mcmmo
         TablePrefix: mcmmo_
         # This setting is the max simultaneous mysql connections allowed at a time, needs to be
@@ -201,7 +201,7 @@ MySQL:
     Server:
         SSL: true
         Port: 3306
-        Address: tfb-database-mariadb
+        Address: tfb-danish-survival-db
         allowPublicKeyRetrieval: true
 
 #
