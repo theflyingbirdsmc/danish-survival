@@ -183,7 +183,7 @@ MySQL:
     Debug: false
     Database:
         User_Name: tfb_danish_survival
-        User_Password: EhR3su7tKALaSpz#8V$MhF^8cs@7c*
+        User_Password: WaLFY@^9!yc8Kg*y^DPt6urL6MS$HV
         Name: tfb_danish_survival_mcmmo
         TablePrefix: mcmmo_
         # This setting is the max simultaneous mysql connections allowed at a time, needs to be

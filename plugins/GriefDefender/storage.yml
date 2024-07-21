@@ -29,7 +29,7 @@ database:
     load-claims-async: true
 
     # The database password.
-    password: "EhR3su7tKALaSpz#8V$MhF^8cs@7c*"
+    password: "WaLFY@^9!yc8Kg*y^DPt6urL6MS$HV"
     pool-settings:
         # The maximum number of milliseconds to wait for a connection before timeout.
         connection-timeout: 5000
