@@ -1,9 +1,9 @@
 spawns:
   default:
-    world: f717b685-24fc-4f41-9bff-037195902266
-    world-name: world_vanilla
-    x: 0.500
-    y: 201.0
-    z: 0.500
-    yaw: 0.0
-    pitch: 0.0
+    world: 3e1aabc7-09f3-432d-9f70-f92bc8acf5dc
+    world-name: world_danish_survival
+    x: 0.5
+    y: 69.0
+    z: 0.5
+    yaw: -179.9469757080078
+    pitch: -3.8282289505004883
