@@ -5,7 +5,7 @@ dependencies {
     implementation 'Plugin:AdvancedRegionMarket:3.5.3'
     implementation 'Plugin:ChatControlRed:10.27.+'
     implementation 'Plugin:CommandPanels:3.+'
-    // implementation 'Plugin:CoreProtect:22.+'
+    implementation 'Plugin:CoreProtect:22.4'
     implementation 'Plugin:DecentHolograms:2.8.+'
     implementation 'Plugin:EzChestShop:1.6.5'
     implementation 'Plugin:Essentials:2.21.0-dev+110-f1a5caf'

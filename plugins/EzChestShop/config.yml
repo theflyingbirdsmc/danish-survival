@@ -135,15 +135,15 @@ tasks:
 #databases section
 database:
   #available types SQLite & MySQL  (MySQL is recommended for the best  & big servers)
-  type: SQLite
+  type: MySQL
   #MySQL database information in case of usage
   mysql:
-    ip: 127.0.0.1
+    ip: tfb-danish-survival-db
     port: 3306
     tables-prefix: ecs_
-    database: TheDatabaseName
-    username: TheUsername
-    password: ThePassword
+    database: tfb_danish_survival_ecs
+    username: tfb_danish_survival
+    password: WaLFY@^9!yc8Kg*y^DPt6urL6MS$HV
     max-pool: 10
     ssl: false
 integration:
