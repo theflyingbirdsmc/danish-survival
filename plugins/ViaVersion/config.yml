@@ -152,7 +152,7 @@ handle-invalid-item-count: false
 prevent-collision: true
 # If the above is true, should we automatically team players until you do?
 auto-team: true
-# When enabled if certain metadata can't be read, we won't tell you about it
+# When enabled if certain entity data can't be read, we won't tell you about it
 suppress-metadata-errors: false
 # When enabled, 1.9+ will be able to block by using shields
 shield-blocking: true
@@ -184,7 +184,7 @@ replace-pistons: false
 replacement-piston-id: 0
 # Fix 1.9+ clients not rendering the far away chunks and improve chunk rendering when moving fast (Increases network usage and decreases client fps slightly)
 chunk-border-fix: false
-# Minimize the cooldown animation in 1.8 servers
-minimize-cooldown: true
 # Allows 1.9+ left-handedness (main hand) on 1.8 servers
 left-handed-handling: true
+# Tries to cancel block break/place sounds sent by 1.8 servers to 1.9+ clients to prevent them from playing twice
+cancel-block-sounds: true

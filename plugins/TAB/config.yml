@@ -176,6 +176,6 @@ playerlist-objective:
   enabled: true
   value: '%ping%'
   disable-condition: '%world%=disabledworld'
-  fancy-value: '%ping%'
+  fancy-value: '&7%ping%'
 ping-spoof:
   enabled: false

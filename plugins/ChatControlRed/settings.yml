@@ -1462,8 +1462,8 @@ Location_Format: '{world} {x}, {y}, {z}'
 Chat_Listener_Priority: HIGH
 
 # -------------------------------------------------------------------------------------------------
-# Use Paper chat event if available? This event is fired AFTER AsyncPlayerChatEvent so if you
-# see issues with other plugins, disable this. This is recommended for most servers.
+# 1.19+: Use Paper chat event? This event is fired AFTER the old chat event. We provide this toggle
+# for compatibility. See https://github.com/kangarko/ChatControl-Red/wiki/Listener-Priorities
 # -------------------------------------------------------------------------------------------------
 Modern_Chat_Listener: true
 

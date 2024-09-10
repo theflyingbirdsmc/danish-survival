@@ -812,10 +812,11 @@ Commands:
     Rule_Creator_Type:
     - 'Awesome, preparing rule ''{0}'' for you. Please enter the rule''s type. This also determines to which file we''ll place the rule. '
     - 'Available: {1}'
+    Rule_Creator_Match: Enter the word that should be matched.
+    Rule_Creator_Match_Already_Exists: A rule with this match already exists! Please enter a different word.
     Invalid_Type: '{prefix_error}Rule type ''{0}'' is invalid!'
     Encode: Should we automatically encode the matching word you enter in the next question to be harder to bypass? Type yes/no.
     Invalid_Encode: '{error_prefix}Wrong answer! Type ''yes'' or ''no'', or ''exit'' to give up.'
-    Rule_Creator_Match: Enter the word that should be matched.
     Group_Name: 'Almost ready! Now, enter what group this rule should belong to, or ''none'' if no group. Installed groups: {0}'
     Invalid_Group: '{prefix_error}Group {0} does not exists!'
     Rule_Creator_Success: '{prefix_success}Congratulations, you''ve successfuly created a new rule! It was loaded and is ready to operate. Here''s how it looks like:'
