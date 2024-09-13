@@ -755,9 +755,7 @@ world-home-permissions: false
 # For more information, visit http://wiki.ess3.net/wiki/Multihome
 sethome-multiple:
   default: 3
-  budgie: 4
-  colibri: 5
-  phoenix: 10
+  budgie: 10
 
 # In this example someone with 'essentials.sethome.multiple' and 'essentials.sethome.multiple.vip' will have 5 homes.
 # Remember, they MUST have both permission nodes in order to be able to set multiple homes.
