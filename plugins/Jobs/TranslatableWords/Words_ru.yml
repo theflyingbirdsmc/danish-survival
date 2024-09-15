@@ -1596,9 +1596,13 @@ EntityList:
   0-CAMEL: Camel
   0-SNIFFER: Sniffer
   0-BREEZE: Breeze
+  0-ARMADILLO: Armadillo
+  0-BOGGED: Bogged
   0-PLAYER: Player
 EnchantList:
+  Density: Density
   Swiftsneak: Swiftsneak
+  Breach: Breach
   Protectionfall: Protectionfall
   Arrowinfinite: Arrowinfinite
   Arrowfire: Arrowfire
@@ -1613,7 +1617,6 @@ EnchantList:
   Protectionfire: Protectionfire
   Channeling: Громовержец
   Bindingcurse: Bindingcurse
-  Sweepingedge: Sweepingedge
   Quickcharge: Quickcharge
   Damagearthropods: Damagearthropods
   Frostwalker: Frostwalker
@@ -1621,6 +1624,7 @@ EnchantList:
   Protectionprojectile: Protectionprojectile
   Waterworker: Waterworker
   Soulspeed: Soulspeed
+  Windburst: Windburst
   Lootbonusmobs: Lootbonusmobs
   Damageundead: Damageundead
   Piercing: Пронзающая стрела
@@ -1632,13 +1636,13 @@ EnchantList:
   Fireaspect: Fireaspect
   Oxygen: Oxygen
   Thorns: Шипы
+  Sweepingedge: Sweepingedge
   Arrowknockback: Arrowknockback
   Damageall: Damageall
   Digspeed: Digspeed
   Lootbonusblocks: Lootbonusblocks
   Durability: Durability
 PotionEffects:
-  Uncraftable: Uncraftable
   Water: Water
   Mundane: Mundane
   Thick: Thick
@@ -1647,12 +1651,12 @@ PotionEffects:
   Long night vision: Long night vision
   Invisibility: Invisibility
   Long invisibility: Long invisibility
-  Jump: Jump
+  Leaping: Leaping
   Long leaping: Long leaping
   Strong leaping: Strong leaping
   Fire resistance: Fire resistance
   Long fire resistance: Long fire resistance
-  Speed: Speed
+  Swiftness: Swiftness
   Long swiftness: Long swiftness
   Strong swiftness: Strong swiftness
   Slowness: Slowness
@@ -1660,14 +1664,14 @@ PotionEffects:
   Strong slowness: Strong slowness
   Water breathing: Water breathing
   Long water breathing: Long water breathing
-  Instant heal: Instant heal
+  Healing: Healing
   Strong healing: Strong healing
-  Instant damage: Instant damage
+  Harming: Harming
   Strong harming: Strong harming
   Poison: Poison
   Long poison: Long poison
   Strong poison: Strong poison
-  Regen: Regen
+  Regeneration: Regeneration
   Long regeneration: Long regeneration
   Strong regeneration: Strong regeneration
   Strength: Strength
@@ -1681,6 +1685,10 @@ PotionEffects:
   Strong turtle master: Strong turtle master
   Slow falling: Slow falling
   Long slow falling: Long slow falling
+  Wind charged: Wind charged
+  Weaving: Weaving
+  Oozing: Oozing
+  Infested: Infested
 ColorList:
   0-white: '&fБелый'
   1-orange: '&6Оражевый'

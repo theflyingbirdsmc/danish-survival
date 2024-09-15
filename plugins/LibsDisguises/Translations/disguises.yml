@@ -559,3 +559,21 @@
 
 # Name for the WindCharge EntityType, this is used in radius commands
 "WindCharge": "WindCharge"
+
+# Name for the ARMADILLO disguise
+"Armadillo": "Armadillo"
+
+# Name for the BOGGED disguise
+"Bogged": "Bogged"
+
+# Name for the BREEZE_WIND_CHARGE disguise
+"Breeze Wind Charge": "Breeze Wind Charge"
+
+# Name for the OMINOUS_ITEM_SPAWNER disguise
+"Ominous Item Spawner": "Ominous Item Spawner"
+
+# Name for the BreezeWindCharge EntityType, this is used in radius commands
+"BreezeWindCharge": "BreezeWindCharge"
+
+# Name for the OminousItemSpawner EntityType, this is used in radius commands
+"OminousItemSpawner": "OminousItemSpawner"

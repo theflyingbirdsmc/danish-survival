@@ -166,8 +166,14 @@ claim:
         # The amount in days that a temporary claim will expire.
         expiration-days: 9
 
+        # Whether temporary claims require claim blocks. (Default: True)
+        require-claim-blocks: true
+
         # If enabled, allows players to create temporary claims that expire after a set amount of time. (Default: false)
         use-temporary-claims: false
+
+    # This setting controls whether trusted players are affected by 'unclaimable-block-radius' checks in wilderness. (Default: True)
+    unclaimable-allow-trust: true
 
     # Adds an unclaimable border of specified radius (in blocks), centered on claim.
     # Note: This only affects non-trusted players attempting to create a new claim next to another player's claim.

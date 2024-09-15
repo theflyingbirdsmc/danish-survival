@@ -9,23 +9,11 @@
 # Reference: ACTIVE_DISGUISES_COUNT
 "<dark_green>There are %s disguises active": "<dark_green>There are %s disguises active"
 
-# Reference: ACTIVE_DISGUISES_DISGUISE
-"<green>%s: <aqua>%s": "<green>%s: <aqua>%s"
-
-# Reference: ACTIVE_DISGUISES
-"<dark_green>The disguises in use are: %s": "<dark_green>The disguises in use are: %s"
-
-# Reference: ACTIVE_DISGUISES_SEPERATOR
-"<red>, <green>": "<red>, <green>"
-
 # Reference: BLOWN_DISGUISE
 "<red>Your disguise was blown!": "<red>Your disguise was blown!"
 
 # Reference: EXPIRED_DISGUISE
 "<red>Your disguise has expired!": "<red>Your disguise has expired!"
-
-# Reference: CAN_USE_DISGS
-"<dark_green>You can use the disguises:<green> %s": "<dark_green>You can use the disguises:<green> %s"
 
 # Reference: CANNOT_FIND_PLAYER
 "<red>Cannot find the player/uuid '%s'": "<red>Cannot find the player/uuid '%s'"
@@ -44,9 +32,6 @@
 
 # Reference: CLONE_HELP2
 "<dark_green>Security note: Any references you create will be available to all players able to use disguise references.": "<dark_green>Security note: Any references you create will be available to all players able to use disguise references."
-
-# Reference: CLONE_HELP3
-"<dark_green>/disguiseclone IgnoreEquipment<dark_green>(<green>Optional<dark_green>)": "<dark_green>/disguiseclone IgnoreEquipment<dark_green>(<green>Optional<dark_green>)"
 
 # Reference: CUSTOM_DISGUISE_SAVED
 "<gold>Custom disguise has been saved as '%s'!": "<gold>Custom disguise has been saved as '%s'!"
@@ -74,18 +59,6 @@
 
 # Reference: DHELP_HELP2
 "<red>/disguisehelp <DisguiseOption> <green>- View information about the disguise values such as 'RabbitType'": "<red>/disguisehelp <DisguiseOption> <green>- View information about the disguise values such as 'RabbitType'"
-
-# Reference: DHELP_HELP3
-"<red>/disguisehelp <dark_green>%s<green> - %s": "<red>/disguisehelp <dark_green>%s<green> - %s"
-
-# Reference: DHELP_HELP4
-"<red>%s: <green>%s": "<red>%s: <green>%s"
-
-# Reference: DHELP_HELP6
-"<red>%s: <dark_green>%s <green>%s": "<red>%s: <dark_green>%s <green>%s"
-
-# Reference: DHELP_OPTIONS
-"%s options: %s": "%s options: %s"
 
 # Reference: DISABLED_LIVING_TO_MISC
 "<red>Can't disguise a living entity as a misc disguise. This has been disabled in the config!": "<red>Can't disguise a living entity as a misc disguise. This has been disabled in the config!"
@@ -141,9 +114,6 @@
 # Reference: DMODIFY_HELP2
 "<dark_green>/disguisemodify setBaby true setSprinting true": "<dark_green>/disguisemodify setBaby true setSprinting true"
 
-# Reference: DMODIFY_HELP3
-"<dark_green>You can modify the disguises:<green> %s": "<dark_green>You can modify the disguises:<green> %s"
-
 # Reference: DMODIFY_MODIFIED
 "<red>Your disguise has been modified!": "<red>Your disguise has been modified!"
 
@@ -186,9 +156,6 @@
 # Reference: DCLONE_ADDEDANIMATIONS
 "doAddedAnimations": "doAddedAnimations"
 
-# Reference: DMODRADIUS_HELP2
-"<dark_green>/disguisemodifyradius <<green>DisguiseType<dark_green>(<green>Optional<dark_green>)> <<green>Radius<dark_green>> <<green>Disguise Methods<dark_green>>": "<dark_green>/disguisemodifyradius <<green>DisguiseType<dark_green>(<green>Optional<dark_green>)> <<green>Radius<dark_green>> <<green>Disguise Methods<dark_green>>"
-
 # Reference: DMODRADIUS_HELP3
 "<dark_green>See the DisguiseType's usable by <green>/disguisemodifyradius DisguiseType": "<dark_green>See the DisguiseType's usable by <green>/disguisemodifyradius DisguiseType"
 
@@ -207,26 +174,11 @@
 # Reference: DMODRADIUS_UNRECOGNIZED
 "<red>Unrecognised DisguiseType %s": "<red>Unrecognised DisguiseType %s"
 
-# Reference: DMODRADIUS_USABLE
-"<dark_green>DisguiseTypes usable are: %s<dark_green>.": "<dark_green>DisguiseTypes usable are: %s<dark_green>."
-
 # Reference: DPLAYER_SUPPLY
 "<red>You need to supply a disguise as well as the player/uuid": "<red>You need to supply a disguise as well as the player/uuid"
 
-# Reference: DRADIUS_ENTITIES
-"<dark_green>EntityTypes usable are: %s": "<dark_green>EntityTypes usable are: %s"
-
 # Reference: DRADIUS_HELP1
 "<dark_green>Disguise all entities in a radius! Caps at %s blocks!": "<dark_green>Disguise all entities in a radius! Caps at %s blocks!"
-
-# Reference: DRADIUS_HELP3
-"<dark_green>/disguiseradius <<green>EntityType<dark_green>(<green>Optional<dark_green>)> <<green>Radius<dark_green>> player <<green>Name<dark_green>>": "<dark_green>/disguiseradius <<green>EntityType<dark_green>(<green>Optional<dark_green>)> <<green>Radius<dark_green>> player <<green>Name<dark_green>>"
-
-# Reference: DRADIUS_HELP4
-"<dark_green>/disguiseradius <<green>EntityType<dark_green>(<green>Optional<dark_green>)> <<green>Radius<dark_green>> <<green>DisguiseType<dark_green>> <<green>Baby<dark_green>(<green>Optional<dark_green>)>": "<dark_green>/disguiseradius <<green>EntityType<dark_green>(<green>Optional<dark_green>)> <<green>Radius<dark_green>> <<green>DisguiseType<dark_green>> <<green>Baby<dark_green>(<green>Optional<dark_green>)>"
-
-# Reference: DRADIUS_HELP5
-"<dark_green>/disguiseradius <<green>EntityType<dark_green>(<green>Optional<dark_green>)> <<green>Radius<dark_green>> <<green>Dropped_Item/Falling_Block<dark_green>> <<green>Id<dark_green>> <<green>Durability<dark_green>(<green>Optional<dark_green>)>": "<dark_green>/disguiseradius <<green>EntityType<dark_green>(<green>Optional<dark_green>)> <<green>Radius<dark_green>> <<green>Dropped_Item/Falling_Block<dark_green>> <<green>Id<dark_green>> <<green>Durability<dark_green>(<green>Optional<dark_green>)>"
 
 # Reference: DRADIUS_HELP6
 "<dark_green>See the EntityType's usable by <green>/disguiseradius EntityTypes": "<dark_green>See the EntityType's usable by <green>/disguiseradius EntityTypes"
@@ -366,26 +318,8 @@
 # Reference: NOT_NUMBER
 "<red>Error! %s is not a number": "<red>Error! %s is not a number"
 
-# Reference: PARSE_CANT_DISG_UNKNOWN
-"<red>Error! You cannot disguise as <green>Unknown!": "<red>Error! You cannot disguise as <green>Unknown!"
-
 # Reference: PARSE_CANT_LOAD
 "<red>Error! This disguise couldn't be loaded!": "<red>Error! This disguise couldn't be loaded!"
-
-# Reference: PARSE_DISG_NO_EXIST
-"<red>Error! The disguise <green>%s<red> doesn't exist!": "<red>Error! The disguise <green>%s<red> doesn't exist!"
-
-# Reference: PARSE_EXPECTED_RECEIVED
-"<red>Expected <green>%s<red>, received <green>%s<red> instead for <green>%s": "<red>Expected <green>%s<red>, received <green>%s<red> instead for <green>%s"
-
-# Reference: PARSE_PARTICLE_BLOCK
-"<red>Expected <green>%s:Material<red>, received <green>%s<red> instead": "<red>Expected <green>%s:Material<red>, received <green>%s<red> instead"
-
-# Reference: PARSE_PARTICLE_ITEM
-"<red>Expected <green>%s:Material,Amount?,Glow?<red>, received <green>%s<red> instead": "<red>Expected <green>%s:Material,Amount?,Glow?<red>, received <green>%s<red> instead"
-
-# Reference: PARSE_PARTICLE_REDSTONE
-"<red>Expected <green>%s:Color,Size.0?<red>, received <green>%s<red> instead": "<red>Expected <green>%s:Color,Size.0?<red>, received <green>%s<red> instead"
 
 # Reference: PARSE_NO_ARGS
 "No arguments defined": "No arguments defined"
@@ -447,15 +381,6 @@
 # Reference: UNDISRADIUS
 "<red>Successfully undisguised %s entities!": "<red>Successfully undisguised %s entities!"
 
-# Reference: UPDATE_READY
-"<red>[LibsDisguises] <dark_red>There is a update ready to be downloaded! You are using <red>v%s<dark_red>, the new version is <red>v%s<dark_red>!": "<red>[LibsDisguises] <dark_red>There is a update ready to be downloaded! You are using <red>v%s<dark_red>, the new version is <red>v%s<dark_red>!"
-
-# Reference: UPDATE_READY_SNAPSHOT
-"<red>[LibsDisguises] <dark_red>There is a new build of Lib's Disguises! You are using <red>%s<dark_red>, the latest build is <red>#%s<dark_red>!": "<red>[LibsDisguises] <dark_red>There is a new build of Lib's Disguises! You are using <red>%s<dark_red>, the latest build is <red>#%s<dark_red>!"
-
-# Reference: UPDATE_HOW
-"<dark_aqua>Use <aqua>/libsdisgusies changelog<dark_aqua> to see what changed, use <aqua>/libsdisguises update!<dark_aqua> to download the update!": "<dark_aqua>Use <aqua>/libsdisgusies changelog<dark_aqua> to see what changed, use <aqua>/libsdisguises update!<dark_aqua> to download the update!"
-
 # Reference: VIEW_SELF_ON
 "<green>Toggled viewing own disguise on!": "<green>Toggled viewing own disguise on!"
 
@@ -467,9 +392,6 @@
 
 # Reference: VIEW_BAR_OFF
 "<green>Toggled disguised notify bar off!": "<green>Toggled disguised notify bar off!"
-
-# Reference: CLICK_TO_COPY
-"<green>Click to Copy:": "<green>Click to Copy:"
 
 # Reference: SKIN_DATA
 "<green>Skin Data: <yellow>%s": "<green>Skin Data: <yellow>%s"
@@ -485,9 +407,6 @@
 
 # Reference: COPY_DISGUISE_NO_COPY
 "<green>Data: <yellow>%s": "<green>Data: <yellow>%s"
-
-# Reference: CLICK_TO_COPY_HOVER
-"<gold>Click to Copy": "<gold>Click to Copy"
 
 # Reference: CLICK_COPY
 "<yellow><bold>%s": "<yellow><bold>%s"
@@ -513,9 +432,6 @@
 # Reference: SKIN_API_FAILED_URL
 "<red>Invalid url provided! mineskin.org failed to grab it!": "<red>Invalid url provided! mineskin.org failed to grab it!"
 
-# Reference: SKIN_API_FAIL_CODE
-"<red>Error %s! %s": "<red>Error %s! %s"
-
 # Reference: SKIN_API_403
 "mineskin.org denied access to that url": "mineskin.org denied access to that url"
 
@@ -533,9 +449,6 @@
 
 # Reference: SKIN_API_TIMEOUT
 "<red>Took too long to connect to mineskin.org!": "<red>Took too long to connect to mineskin.org!"
-
-# Reference: SKIN_API_IMAGE_HAS_ERROR
-"Your image has the error: %s": "Your image has the error: %s"
 
 # Reference: SKIN_API_USING_URL
 "<gray>Url provided, now attempting to connect to mineskin.org": "<gray>Url provided, now attempting to connect to mineskin.org"
@@ -621,9 +534,6 @@
 # Reference: SKIN_API_INTERNAL_ERROR
 "<red>Internal error in the skin API, perhaps bad data?": "<red>Internal error in the skin API, perhaps bad data?"
 
-# Reference: META_INFO
-"<green>Name: %s, Watcher: %s, Index: %s, Type: %s, Default: %s": "<green>Name: %s, Watcher: %s, Index: %s, Type: %s, Default: %s"
-
 # Reference: META_NOT_FOUND
 "<red>No meta exists under that name!": "<red>No meta exists under that name!"
 
@@ -632,12 +542,6 @@
 
 # Reference: META_VALUES_NO_CLICK
 "<blue>Metas, use as param for more info: <dark_aqua>": "<blue>Metas, use as param for more info: <dark_aqua>"
-
-# Reference: META_VALUE_SEPERATOR
-"<aqua>, <dark_aqua>": "<aqua>, <dark_aqua>"
-
-# Reference: META_CLICK_SHOW
-"<gold>Click to show %s": "<gold>Click to show %s"
 
 # Reference: LIBS_PERM_CHECK_NON_PREM
 "<red>This server is not premium, non-admins should not be able to use commands": "<red>This server is not premium, non-admins should not be able to use commands"
@@ -687,30 +591,6 @@
 # Reference: SWITCH_WORLD_DISGUISE_REMOVED
 "<red>Disguise removed as you've switched worlds!": "<red>Disguise removed as you've switched worlds!"
 
-# Reference: ACTION_BAR_MESSAGE
-"<gold>Currently disguised as %s": "<gold>Currently disguised as %s"
-
-# Reference: ITEM_SERIALIZED
-"<gold>Json Serialized, click to copy: ": "<gold>Json Serialized, click to copy: "
-
-# Reference: ITEM_SERIALIZED_MC
-"<gold>MC Serialized, click to copy: ": "<gold>MC Serialized, click to copy: "
-
-# Reference: ITEM_SERIALIZED_MC_LD
-"<gold>MC Serialized for LD, click to copy: ": "<gold>MC Serialized for LD, click to copy: "
-
-# Reference: ITEM_SIMPLE_STRING
-"<gold>Simple, click to copy: ": "<gold>Simple, click to copy: "
-
-# Reference: ITEM_SERIALIZED_NO_COPY
-"<gold>Json Serialized: <yellow>%s": "<gold>Json Serialized: <yellow>%s"
-
-# Reference: ITEM_SERIALIZED_MC_NO_COPY
-"<gold>MC Serialized: <yellow>%s": "<gold>MC Serialized: <yellow>%s"
-
-# Reference: ITEM_SERIALIZED_MC_LD_NO_COPY
-"<gold>MC Serialized for LD: <yellow>%s": "<gold>MC Serialized for LD: <yellow>%s"
-
 # Reference: ITEM_SIMPLE_STRING_NO_COPY
 "<gold>Simple: <yellow>%s": "<gold>Simple: <yellow>%s"
 
@@ -726,17 +606,8 @@
 # Reference: LIBS_SCOREBOARD_IGNORE_TEST
 "<green>This was a seperate test from the self disguising collision test that will follow!": "<green>This was a seperate test from the self disguising collision test that will follow!"
 
-# Reference: USING_DEFAULT_CONFIG
-"<dark_green>Using the default config!": "<dark_green>Using the default config!"
-
-# Reference: LIBS_SCOREBOARD_ISSUES
-"<green>Too many issues found, hidden %s": "<green>Too many issues found, hidden %s"
-
 # Reference: LIBS_SCOREBOARD_NO_ISSUES
 "<green>No issues found in player disguise scoreboard name teams": "<green>No issues found in player disguise scoreboard name teams"
-
-# Reference: LD_COMMAND_UPDATEPROTOCOLLIB
-"<blue>/libsdisguises updateprotocollib - <aqua>Updates ProtocolLib to the latest development version": "<blue>/libsdisguises updateprotocollib - <aqua>Updates ProtocolLib to the latest development version"
 
 # Reference: LD_COMMAND_HELP
 "<blue>/libsdisguises help - <aqua>Returns this!": "<blue>/libsdisguises help - <aqua>Returns this!"
@@ -786,5 +657,209 @@
 # Reference: SELF_DISGUISE_HIDDEN
 "<green>Self disguise hidden as it's too tall..": "<green>Self disguise hidden as it's too tall.."
 
+# Reference: ACTIVE_DISGUISES_DISGUISE
+"<green>%s:</green> <aqua>%s</aqua>": "<green>%s:</green> <aqua>%s</aqua>"
+
+# Reference: ACTIVE_DISGUISES
+"<dark_green>The disguises in use are:</dark_green> <green>%s</green>": "<dark_green>The disguises in use are:</dark_green> <green>%s</green>"
+
+# Reference: ACTIVE_DISGUISES_SEPERATOR
+"<red>,</red>": "<red>,</red>"
+
+# Reference: BLOWN_DISGUISE_BLOCK_PLACE
+"<red>Placing a block blew your disguise!": "<red>Placing a block blew your disguise!"
+
+# Reference: BLOWN_DISGUISE_BLOCK_BREAK
+"<red>Breaking a block blew your disguise!": "<red>Breaking a block blew your disguise!"
+
+# Reference: CAN_USE_DISGS
+"<dark_green>You can use the disguises:</dark_green> <green>%s</green>": "<dark_green>You can use the disguises:</dark_green> <green>%s</green>"
+
+# Reference: CAN_USE_DISGS_SEPERATOR
+"<red>, </red>": "<red>, </red>"
+
+# Reference: CLONE_HELP3
+"<dark_green>/disguiseclone IgnoreEquipment<dark_green>(<green>Optional</green>)": "<dark_green>/disguiseclone IgnoreEquipment<dark_green>(<green>Optional</green>)"
+
+# Reference: DHELP_HELP3
+"<red>/disguisehelp <dark_green>%s</dark_green> - <green>%s</green>": "<red>/disguisehelp <dark_green>%s</dark_green> - <green>%s</green>"
+
+# Reference: DHELP_HELP4
+"<red>%s:</red> <green>%s</green>": "<red>%s:</red> <green>%s</green>"
+
+# Reference: DHELP_HELP6
+"<red>%s:</red> <dark_green>%s</dark_green> <green>%s</green>": "<red>%s:</red> <dark_green>%s</dark_green> <green>%s</green>"
+
+# Reference: DHELP_OPTIONS
+"<gold>%s options:</gold> <green>%s</green>": "<gold>%s options:</gold> <green>%s</green>"
+
+# Reference: DHELP_OPTIONS_JOINER
+"<dark_red>, </dark_red>": "<dark_red>, </dark_red>"
+
+# Reference: DHELP_OPTIONS_METHOD
+"%s<dark_red>(<green>%s</green>)</dark_red>": "%s<dark_red>(<green>%s</green>)</dark_red>"
+
+# Reference: DHELP_OPTIONS_METHOD_VERY_SPECIFIC
+"<yellow>%s</yellow>": "<yellow>%s</yellow>"
+
+# Reference: DHELP_OPTIONS_METHOD_SOMEWHAT_SPECIFIC
+"<aqua>%s</aqua>": "<aqua>%s</aqua>"
+
+# Reference: DHELP_OPTIONS_METHOD_GENERIC
+"<gray>%s</gray>": "<gray>%s</gray>"
+
+# Reference: DMODIFY_HELP3
+"<dark_green>You can modify the disguises:</dark_green> <green>%s</green>": "<dark_green>You can modify the disguises:</dark_green> <green>%s</green>"
+
+# Reference: DMODRADIUS_HELP2
+"<dark_green>/disguisemodifyradius <<green>DisguiseType</green>(<green>Optional</green>)> <<green>Radius</green>> <<green>Disguise Methods</green>>": "<dark_green>/disguisemodifyradius <<green>DisguiseType</green>(<green>Optional</green>)> <<green>Radius</green>> <<green>Disguise Methods</green>>"
+
+# Reference: DMODRADIUS_USABLE
+"<dark_green>DisguiseTypes usable are: %s.</dark_green>": "<dark_green>DisguiseTypes usable are: %s.</dark_green>"
+
+# Reference: DRADIUS_ENTITIES
+"<dark_green>EntityTypes usable are:</dark_green> <green>%s</green>": "<dark_green>EntityTypes usable are:</dark_green> <green>%s</green>"
+
+# Reference: DRADIUS_JOINER
+"<dark_green>, </dark_green>": "<dark_green>, </dark_green>"
+
+# Reference: DRADIUS_HELP3
+"<dark_green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> player <<green>Name<dark_green>>": "<dark_green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> player <<green>Name<dark_green>>"
+
+# Reference: DRADIUS_HELP4
+"<dark_green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> <<green>DisguiseType</green>> <<green>Baby</green>(<green>Optional</green>)>": "<dark_green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> <<green>DisguiseType</green>> <<green>Baby</green>(<green>Optional</green>)>"
+
+# Reference: DRADIUS_HELP5
+"</green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> <<green>Dropped_Item/Falling_Block<dark_green>> <<green>Id</green>> <<green>Durability</green>(<green>Optional</green>)>": "</green>/disguiseradius <<green>EntityType</green>(<green>Optional</green>)> <<green>Radius</green>> <<green>Dropped_Item/Falling_Block<dark_green>> <<green>Id</green>> <<green>Durability</green>(<green>Optional</green>)>"
+
+# Reference: PARSE_BLOCK_STATE_UNKNOWN_BLOCK
+"<red>Error! The block <green>%s</green> could not be found when parsing <green>%s</green>": "<red>Error! The block <green>%s</green> could not be found when parsing <green>%s</green>"
+
+# Reference: PARSE_BLOCK_STATE_ILLEGAL_BLOCK
+"<red>Error! <green>%s</green> can not be parsed to a valid block state!": "<red>Error! <green>%s</green> can not be parsed to a valid block state!"
+
+# Reference: PARSE_BLOCK_STATE_UNKNOWN_BLOCK_SYNTAX
+"<red>Error! Invalid <green>block_data<dark_green>[</dark_green>key<dark_green>=</dark_green>value<dark_green>,</dark_green>key<dark_green>=</dark_green>value<dark_green>]</dark_green></green> syntax was encountered when parsing <green>%s</green>!": "<red>Error! Invalid <green>block_data<dark_green>[</dark_green>key<dark_green>=</dark_green>value<dark_green>,</dark_green>key<dark_green>=</dark_green>value<dark_green>]</dark_green></green> syntax was encountered when parsing <green>%s</green>!"
+
+# Reference: PARSE_BLOCK_STATE_UNKNOWN_BLOCK_DATA_KEY
+"<red>Error! Unknown block data key <green>%s</green> was not found on block <green>%s</green> when parsing <green>%s</green>!": "<red>Error! Unknown block data key <green>%s</green> was not found on block <green>%s</green> when parsing <green>%s</green>!"
+
+# Reference: PARSE_BLOCK_STATE_UNKNOWN_BLOCK_DATA_VALUE
+"<red>Error! Unknown block data value <green>%s</green> for key <green>%s</green> on block <green>%s</green> when parsing <green>%s</green>!": "<red>Error! Unknown block data value <green>%s</green> for key <green>%s</green> on block <green>%s</green> when parsing <green>%s</green>!"
+
+# Reference: PARSE_CANT_DISG_UNKNOWN
+"<red>Error! You cannot disguise as <green>Unknown!</green>>": "<red>Error! You cannot disguise as <green>Unknown!</green>>"
+
 # Reference: PARSE_CANT_LOAD_DETAILS
-"<red>Error! This disguise couldn't be loaded! Tried to parse <green>%s<red> for <green>%s": "<red>Error! This disguise couldn't be loaded! Tried to parse <green>%s<red> for <green>%s"
+"<red>Error! This disguise couldn't be loaded! Tried to parse <green>%s</green> for <green>%s</green>": "<red>Error! This disguise couldn't be loaded! Tried to parse <green>%s</green> for <green>%s</green>"
+
+# Reference: PARSE_DISG_NO_EXIST
+"<red>Error! The disguise <green>%s</green> doesn't exist!": "<red>Error! The disguise <green>%s</green> doesn't exist!"
+
+# Reference: PARSE_EXPECTED_RECEIVED
+"<red>Expected <green>%s</green>, received <green>%s</green> instead for <green>%s": "<red>Expected <green>%s</green>, received <green>%s</green> instead for <green>%s"
+
+# Reference: PARSE_PARTICLE_BLOCK
+"<red>Expected <green>%s:Material</green>, received <green>%s</green> instead": "<red>Expected <green>%s:Material</green>, received <green>%s</green> instead"
+
+# Reference: PARSE_COLOR
+"<red>Expected <green>Color(3 numbers or color name)</green>, received <green>%s</green> instead</red>": "<red>Expected <green>Color(3 numbers or color name)</green>, received <green>%s</green> instead</red>"
+
+# Reference: PARSE_PARTICLE_COLOR
+"<red>Expected <green>%s:Color(3 numbers, 1 number, or color name)</green>, received <green>%s</green> instead": "<red>Expected <green>%s:Color(3 numbers, 1 number, or color name)</green>, received <green>%s</green> instead"
+
+# Reference: PARSE_PARTICLE_VIBRATION
+"<red>Expected <green>%s:SourceBlockX,SourceBlockY,SourceBlockZ,(Optional: StartBlockX,StartBlockY,StartBlockZ),Ticks</green>, received <green>%s</green> instead": "<red>Expected <green>%s:SourceBlockX,SourceBlockY,SourceBlockZ,(Optional: StartBlockX,StartBlockY,StartBlockZ),Ticks</green>, received <green>%s</green> instead"
+
+# Reference: PARSE_PARTICLE_ITEM
+"<red>Expected <green>%s:Material,Amount?,Glow?<red>, received <green>%s</green> instead": "<red>Expected <green>%s:Material,Amount?,Glow?<red>, received <green>%s</green> instead"
+
+# Reference: PARSE_PARTICLE_SHULK_CHARGE
+"<red>Expected <green>%s:Roll(number.0)</green>, received <green>%s</green> instead": "<red>Expected <green>%s:Roll(number.0)</green>, received <green>%s</green> instead"
+
+# Reference: PARSE_PARTICLE_SHRIEK
+"<red>Expected <green>%s:Delay(number.0)</green>, received <green>%s</green> instead": "<red>Expected <green>%s:Delay(number.0)</green>, received <green>%s</green> instead"
+
+# Reference: PARSE_PARTICLE_DUST
+"<red>Expected <green>%s:Size(Optional Number),Color(3 numbers or red/blue/etc)</green>, received <green>%s</green> instead": "<red>Expected <green>%s:Size(Optional Number),Color(3 numbers or red/blue/etc)</green>, received <green>%s</green> instead"
+
+# Reference: PARSE_PARTICLE_DUST_TRANSITION
+"<red>Expected <green>%s:Size(Optional),Color(3 numbers or red/blue/etc),Color(Same)</green>, received <green>%s</green> instead": "<red>Expected <green>%s:Size(Optional),Color(3 numbers or red/blue/etc),Color(Same)</green>, received <green>%s</green> instead"
+
+# Reference: PARSE_DISPLAY_BRIGHTNESS
+"<red>Expected <green>(Block Light),(Sky Light)</green> from 0-15, received <green>%s</green> instead": "<red>Expected <green>(Block Light),(Sky Light)</green> from 0-15, received <green>%s</green> instead"
+
+# Reference: UPDATE_READY
+"<red>[LibsDisguises] <dark_red>There is a update ready to be downloaded! You are using <red>v%s</red>, the new version is <red>v%s</red>!": "<red>[LibsDisguises] <dark_red>There is a update ready to be downloaded! You are using <red>v%s</red>, the new version is <red>v%s</red>!"
+
+# Reference: UPDATE_READY_SNAPSHOT
+"<red>[LibsDisguises]</red> <dark_red>There is a new build of Lib's Disguises! You are using <red>%s</red>, the latest build is</dark_red> <red>#%s</red>!": "<red>[LibsDisguises]</red> <dark_red>There is a new build of Lib's Disguises! You are using <red>%s</red>, the latest build is</dark_red> <red>#%s</red>!"
+
+# Reference: UPDATE_HOW
+"<dark_aqua>Use <aqua>/libsdisgusies changelog</aqua> to see what changed, use <aqua>/libsdisguises update!</aqua> to download the update!": "<dark_aqua>Use <aqua>/libsdisgusies changelog</aqua> to see what changed, use <aqua>/libsdisguises update!</aqua> to download the update!"
+
+# Reference: VIEW_SELF_TALL_NOTE
+"<green>Your disguise is too tall, self disguise is automatically disabled. You wouldn't be able to see anything otherwise!": "<green>Your disguise is too tall, self disguise is automatically disabled. You wouldn't be able to see anything otherwise!"
+
+# Reference: CLICK_TO_COPY
+"<green>Click to Copy: </green>": "<green>Click to Copy: </green>"
+
+# Reference: CLICK_TO_COPY_HOVER
+"<gold>%s / %s. Click to Copy</gold>\n<green>%s</green>": "<gold>%s / %s. Click to Copy</gold>\n<green>%s</green>"
+
+# Reference: CLICK_TO_COPY_HOVER_CLIPBOARD
+"<gold>%s / %s. Click to Copy to Clipboard</gold>\n<green>%s</green>": "<gold>%s / %s. Click to Copy to Clipboard</gold>\n<green>%s</green>"
+
+# Reference: SKIN_API_FAIL_CODE
+"<red>Error! Mineskin gave code %s, %s": "<red>Error! Mineskin gave code %s, %s"
+
+# Reference: SKIN_API_IMAGE_HAS_ERROR
+"Mineskin tells us this error and that's all we know: %s": "Mineskin tells us this error and that's all we know: %s"
+
+# Reference: SKIN_API_TOO_MANY_FAILURES
+"<red>Too many failures when trying to resolve skin for <light_purple>%s</light_purple>, to prevent backend spam you will not be able to make any more requests until a hour has passed from your last failed request. Try /grabskin if you need to test.": "<red>Too many failures when trying to resolve skin for <light_purple>%s</light_purple>, to prevent backend spam you will not be able to make any more requests until a hour has passed from your last failed request. Try /grabskin if you need to test."
+
+# Reference: SKIN_API_TOO_MANY_FAILURES_NON_PLAYER
+"<red>Too many failures when trying to resolve skin for <light_purple>%s</light_purple>, Lib's Disguises will not attempt to grab this skin. This timeout is only for that specific skin and will increase with every failure.": "<red>Too many failures when trying to resolve skin for <light_purple>%s</light_purple>, Lib's Disguises will not attempt to grab this skin. This timeout is only for that specific skin and will increase with every failure."
+
+# Reference: META_INFO
+"<green>Name: %s, Watcher: %s, Index: %s, Type: %s, Serializer Type: %s, Default: %s": "<green>Name: %s, Watcher: %s, Index: %s, Type: %s, Serializer Type: %s, Default: %s"
+
+# Reference: META_VALUE_SEPERATOR
+"<aqua>, </aqua>": "<aqua>, </aqua>"
+
+# Reference: META_CLICK_SHOW
+"<gold>Click to show %s</gold>": "<gold>Click to show %s</gold>"
+
+# Reference: ACTION_BAR_MESSAGE
+"<gold>Currently disguised as %s</gold>": "<gold>Currently disguised as %s</gold>"
+
+# Reference: ITEM_SERIALIZED
+"<gold>Json Serialized, click to copy: </gold>": "<gold>Json Serialized, click to copy: </gold>"
+
+# Reference: ITEM_SERIALIZED_MC
+"<gold>MC Serialized, click to copy: </gold>": "<gold>MC Serialized, click to copy: </gold>"
+
+# Reference: ITEM_SERIALIZED_MC_LD
+"<gold>MC Serialized for LD, click to copy: </gold>": "<gold>MC Serialized for LD, click to copy: </gold>"
+
+# Reference: ITEM_SIMPLE_STRING
+"<gold>Simple, click to copy: </gold>": "<gold>Simple, click to copy: </gold>"
+
+# Reference: ITEM_SERIALIZED_NO_COPY
+"<gold>Json Serialized:</gold> <yellow>%s</yellow>": "<gold>Json Serialized:</gold> <yellow>%s</yellow>"
+
+# Reference: ITEM_SERIALIZED_MC_NO_COPY
+"<gold>MC Serialized:</gold> <yellow>%s</yellow>": "<gold>MC Serialized:</gold> <yellow>%s</yellow>"
+
+# Reference: ITEM_SERIALIZED_MC_LD_NO_COPY
+"<gold>MC Serialized for LD:</gold> <yellow>%s</yellow>": "<gold>MC Serialized for LD:</gold> <yellow>%s</yellow>"
+
+# Reference: USING_DEFAULT_CONFIG
+"<dark_green>Using the default config!</dark_green>": "<dark_green>Using the default config!</dark_green>"
+
+# Reference: LIBS_SCOREBOARD_ISSUES
+"<green>Too many issues found, hidden %s</green>": "<green>Too many issues found, hidden %s</green>"
+
+# Reference: LD_COMMAND_UPDATE_PACKET_EVENTS
+"<blue>/libsdisguises updatepacketevents - <aqua>Updates PacketEvents to the latest release": "<blue>/libsdisguises updatepacketevents - <aqua>Updates PacketEvents to the latest release"

@@ -330,7 +330,6 @@
 "setBlock": "setBlock"
 
 # Found in the disguise options for FallingBlock and uses a BlockData
-"setBlockData": "setBlockData"
 
 # Found in the disguise options for FallingBlock and uses a boolean
 "setGridLocked": "setGridLocked"
@@ -664,3 +663,15 @@
 
 # Found in the disguise options for Display and uses a int
 "setTeleportDuration": "setTeleportDuration"
+
+# Found in the disguise options for Entity and uses a boolean
+"setScalePlayerToDisguise": "setScalePlayerToDisguise"
+
+# Found in the disguise options for Armadillo and uses a ArmadilloState
+"setState": "setState"
+
+# Found in the disguise options for Display and uses a Brightness
+"setBrightness": "setBrightness"
+
+# Found in the disguise options for TextDisplay and uses a byte
+"setTextOpacity": "setTextOpacity"

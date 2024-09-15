@@ -27,6 +27,8 @@ settings:
   log-villager-deaths: true
   log-named-deaths: true
   attribute:
+    maxAbsorption:
+      max: 2048.0
     maxHealth:
       max: 2048.0
     movementSpeed:
@@ -65,6 +67,7 @@ stats:
   forced-stats: {}
 world-settings:
   default:
+    unload-frozen-chunks: false
     seed-trialchambers: 94251327
     seed-trailruins: 83469867
     seed-ancientcity: 20083232

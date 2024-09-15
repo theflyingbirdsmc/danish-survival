@@ -5,10 +5,10 @@
 Bisect-Hosted: false
 Server-IP: 
 # Should the plugin be doing release or dev builds updating?
-ReleaseBuild: true
+ReleaseBuild: false
 # Make sure the plugin aint spamming update requests
 LastUpdateCheck: 0
 HittingRateLimit: false
-LastGithubETag: W/"a64092edd9ed9a4ce5731a965c8260315737173726e840dbab1091da68cd2de4"
+LastGithubETag: W/"5ad972cfc6e48f507d575a0fabacc416beff34f0773d84497e7acfc9c54f56f3"
 LastPluginVersion: 10.0.44
 Data: null

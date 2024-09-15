@@ -1,4 +1,11 @@
 mode: "PUSHGATEWAY"
+http:
+  host: "0.0.0.0"
+  port: 9100
+  authentication:
+    scheme: "NONE"
+    username: "username"
+    password: "password"
 pushGateway:
   job: "unifiedmetrics"
   url: "http://prometheus-prometheus-pushgateway.observability.svc:9091"

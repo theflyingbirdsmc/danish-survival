@@ -1,5 +1,5 @@
 server:
-  name: "tfb-vanilla"
+  name: "danish-survival"
 metrics:
   enabled: true
   driver: "prometheus"

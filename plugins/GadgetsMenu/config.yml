@@ -68,9 +68,9 @@ Settings:
   # Set to false will disable damage if disguised.
   Enabled-Mob-Disguise-Damage: false
   # Auto equip cosmetic after player purchase.
-  Auto-Equip-After-Purchase: true
+  Auto-Equip-After-Purchase: false
   # Auto equip cosmetic when player found loot from mystery box.
-  Auto-Equip-On-Loot-Found: true
+  Auto-Equip-On-Loot-Found: false
   # Set to true will shows particle effect to everyone,
   # otherwise will only show to the player itself.
   Show-Particle-Effect-To-Everyone: true
