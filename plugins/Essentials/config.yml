@@ -440,7 +440,7 @@ list:
 real-names-on-list: false
 
 # More output to the console.
-debug: false
+debug: true
 
 # Set the locale for all messages.
 # If you don't set this, the default locale of the server will be used.
