@@ -30,7 +30,7 @@ Database:
         Host: tfb-network-db
         Port: 3306
         User: tfb_network
-        Password: $Z@jJKSLcd7xUekU5qF&VW3#ndU&mm
+        Password: ifFfF4cUeEYVXCZ4a5494sjVS8oBZL
         Database: tfb_network_plan
         # Launch options to append after mysql driver address
         Launch_options: "?rewriteBatchedStatements=true&useSSL=false&serverTimezone=UTC"
@@ -116,11 +116,17 @@ Data_gathering:
     Commands:
         Log_unknown: false
         Log_aliases_as_main_command: true
-    # Does not affect already gathered data
-    Preserve_join_address_case: false
     # This can be changed to your own MaxMind URL if you have license https://dev.maxmind.com/geoip/updating-databases?lang=en#directly-downloading-databases
     # e.g. https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-Country&license_key=YOUR_KEY&suffix=tar.gz
     Geolocation_Download_URL: "https://geodb.playeranalytics.net/GeoLite2-Country.mmdb"
+    Join_addresses:
+        # Does not affect already gathered data
+        Preserve_case: false
+        Enabled: true
+        Preserve_invalid: false
+        # Replaces these join addresses with unknown
+        Filter_out_from_data:
+          - "play.example.com"
 # -----------------------------------------------------
 # Supported time units: MILLISECONDS, SECONDS, MINUTES, HOURS, DAYS
 # -----------------------------------------------------
@@ -300,6 +306,8 @@ Plugins:
         Tracked_player_placeholders:
           - '%example_placeholder%'
         Enabled: true
+        Skip_storing_invalid_placeholder_values:
+          - "Missing player info"
     Towny:
         HideTowns:
           - ExampleTown

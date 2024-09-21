@@ -103,7 +103,7 @@ data:
 
   # Credentials for the database.
   username: tfb_network
-  password: '$Z@jJKSLcd7xUekU5qF&VW3#ndU&mm'
+  password: 'ifFfF4cUeEYVXCZ4a5494sjVS8oBZL'
 
   # These settings apply to the MySQL connection pool.
   # - The default values will be suitable for the majority of users.

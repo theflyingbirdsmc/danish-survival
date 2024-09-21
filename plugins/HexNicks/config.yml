@@ -67,7 +67,7 @@ host: tfb-network-db
 port: '3306'
 database: tfb_network_hexnicks
 username: tfb_network
-password: $Z@jJKSLcd7xUekU5qF&VW3#ndU&mm
+password: ifFfF4cUeEYVXCZ4a5494sjVS8oBZL
 use-ssl: false
 auto-reconnect: false
 # The maximum lifetime of a connection in milliseconds. This should be lower than your database's wait timeout.
