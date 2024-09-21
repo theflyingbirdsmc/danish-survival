@@ -6,7 +6,7 @@
 
 claim:
     # Radius used (in blocks) for auto-created claim when a chest is placed. Set to 0 to disable chest claim creation.
-    auto-chest-claim-block-radius: 4
+    auto-chest-claim-block-radius: 0
 
     # Set claim border of specified radius (in blocks), centered on claim. If set to 1, adds an additional 1 block protected radius around claim.
     # Note: It is not recommended to set this value too high as performance can degrade due to deeper claim searches.
