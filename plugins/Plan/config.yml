@@ -303,6 +303,7 @@ Plugins:
     PlaceholderAPI:
         Load_these_placeholders_on_join:
           - '%plan_server_uuid%'
+          - '%plan_player_geolocation%'
         Tracked_player_placeholders:
           - '%example_placeholder%'
         Enabled: true
