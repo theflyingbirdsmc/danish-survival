@@ -8,7 +8,7 @@ function tfbCompass() {
 
     if (type == "name") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#ee2b23T#3551d7F#00ff00B &eMenu &7(&a/tfb&7)";
                 break;
             default:
@@ -17,7 +17,7 @@ function tfbCompass() {
 
     } else if (type == "lore") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&7Servere, Discord, Shop & meget mere!\\n\\n&aHøjreklik for at åbne";
                 break;
             default:

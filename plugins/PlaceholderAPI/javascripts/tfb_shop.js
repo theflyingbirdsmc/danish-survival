@@ -8,7 +8,7 @@ function tfbShop() {
 
     if (type == "name") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#ee2b23T#3551d7F#00ff00B #235babShop";
                 break;
             default:
@@ -17,7 +17,7 @@ function tfbShop() {
 
     } else if (type == "lore") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&eKlik her for et link i chatten!";
                 break;
             default:
@@ -25,7 +25,7 @@ function tfbShop() {
         }
     } else if (type == "message") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&ashop.theflyingbirds.net&r &8<- &eKlik her for at besøge vores shop!";
                 break;
             default:

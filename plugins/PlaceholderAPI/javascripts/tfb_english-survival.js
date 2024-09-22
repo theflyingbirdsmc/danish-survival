@@ -8,7 +8,7 @@ function tfb_english_survival() {
 
     if (type == "name") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&2Survival";
                 break;
             default:
@@ -17,7 +17,7 @@ function tfb_english_survival() {
 
     } else if (type == "lore") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&eSprog&8: &7Engelsk\\n&eKlik for at joine nu!";
                 break;
             default:
@@ -25,7 +25,7 @@ function tfb_english_survival() {
         }
     } else if (type == "message") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&ahttps://stats.theflyingbirds.net:8804 &8<- &eKlik her for at joine!";
                 break;
             default:

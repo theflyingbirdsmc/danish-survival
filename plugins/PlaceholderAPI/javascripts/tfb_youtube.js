@@ -8,7 +8,7 @@ function tfbYoutube() {
 
     if (type == "name") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#ee2b23T#3551d7F#00ff00B #FF0000YouTube";
                 break;
             default:
@@ -17,7 +17,7 @@ function tfbYoutube() {
 
     } else if (type == "lore") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&eKlik her for et link i chatten!";
                 break;
             default:
@@ -25,7 +25,7 @@ function tfbYoutube() {
         }
     } else if (type == "message") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&ayoutube.com/user/theflyingbirdsmc&r &8<- &eKlik her for at besøge vores YouTube!";
                 break;
             default:

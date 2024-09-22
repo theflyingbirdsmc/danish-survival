@@ -23,7 +23,7 @@ function translate() {
 
     if (type == "name") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#ee2b23T#3551d7F#00ff00B &cHjælp &8[" + danishStatus() + "&8]";
                 break;
             default:
@@ -32,7 +32,7 @@ function translate() {
 
     } else if (type == "lore") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&7Chat med staff på netværket!\\n&dGenvej: &a/h &8<&abesked&8>\\n\\n&eVenstreklik &7for at &askrive\\n&eHøjreklik &7for at &blæse\\n&eShift + højreklik &7for at &cforlade";
                 break;
             default:

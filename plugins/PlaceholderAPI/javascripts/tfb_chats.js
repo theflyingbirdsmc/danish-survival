@@ -8,7 +8,7 @@ function tfbDiscord() {
 
     if (type == "name") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#ee2b23T#3551d7F#00ff00B &eNetværk Chats";
                 break;
             default:
@@ -17,7 +17,7 @@ function tfbDiscord() {
 
     } else if (type == "lore") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&7Skriv i chats på tværs af netværket!\\n&aKlik &7for at se dine chats";
                 break;
             default:

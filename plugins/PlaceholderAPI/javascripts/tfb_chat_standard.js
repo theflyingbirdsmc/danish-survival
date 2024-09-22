@@ -23,7 +23,7 @@ function translate() {
 
     if (type == "name") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&eStandard &8[" + danishStatus() + "&8]";
                 break;
             default:
@@ -32,7 +32,7 @@ function translate() {
 
     } else if (type == "lore") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&7Chat kun med spillere på denne server!\\n&dGenvej: &7ingen\\n\\n&eVenstreklik &7for at &askrive\\n&eHøjreklik &7for at &blæse\\n&eShift + højreklik &7for at &cforlade";
                 break;
             default:

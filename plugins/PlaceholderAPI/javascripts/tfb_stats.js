@@ -8,7 +8,7 @@ function tfbStats() {
 
     if (type == "name") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#ee2b23T#3551d7F#00ff00B #368F17Statistikker";
                 break;
             default:
@@ -17,7 +17,7 @@ function tfbStats() {
 
     } else if (type == "lore") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&eKlik her for et link i chatten!\\n\\n&f- &aSe statistikker om dig selv og andre spillere\\n&f- &aHar du en rank, så kan du se serverens statistikker!";
                 break;
             default:
@@ -25,7 +25,7 @@ function tfbStats() {
         }
     } else if (type == "message") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&ahttps://stats.theflyingbirds.net &8<- &eKlik her for at joine!";
                 break;
             default:

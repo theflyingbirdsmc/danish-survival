@@ -8,7 +8,7 @@ function translate() {
 
     if (type == "name") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&cTilbage";
                 break;
             default:
@@ -17,7 +17,7 @@ function translate() {
 
     } else if (type == "lore") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "";
                 break;
             default:

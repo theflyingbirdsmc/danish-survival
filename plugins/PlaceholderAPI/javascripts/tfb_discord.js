@@ -8,7 +8,7 @@ function tfbDiscord() {
 
     if (type == "name") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#ee2b23T#3551d7F#00ff00B #5865F2Discord";
                 break;
             default:
@@ -17,7 +17,7 @@ function tfbDiscord() {
 
     } else if (type == "lore") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&eKlik her for et link i chatten!\\n\\n&f- &aBliv opdateret om alt med #ee2b23T#3551d7F#00ff00B &a;)\\n&f- &aFå din #ee2b23T#3551d7F#00ff00B &arank på vores Discord\\n&f- &aMød andre fugle du kan spille med :>";
                 break;
             default:
@@ -25,7 +25,7 @@ function tfbDiscord() {
         }
     } else if (type == "message") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "&adiscord.theflyingbirds.net&r &8<- &eKlik her for at joine!";
                 break;
             default:

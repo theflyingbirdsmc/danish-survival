@@ -38,7 +38,7 @@ function translate() {
 
     if (type == "header") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return getRandomMessage(greetings);
                 break;
             default:
@@ -47,7 +47,7 @@ function translate() {
 
     } else if (type == "1") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#f0f0f0Brug &a/tfb #f0f0f0for at komme i gang";
                 break;
             default:
@@ -55,7 +55,7 @@ function translate() {
         }
     } else if (type == "2") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "";
                 break;
             default:
@@ -63,7 +63,7 @@ function translate() {
         }
     } else if (type == "3") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#f0f0f0Henvist af en ven?";
                 break;
             default:
@@ -71,7 +71,7 @@ function translate() {
         }
     } else if (type == "4") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#f0f0f0Brug &a/refer &8<&aven&8> #f0f0f0for belønninger!";
                 break;
             default:
@@ -79,7 +79,7 @@ function translate() {
         }
     } else if (type == "5") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "";
                 break;
             default:
@@ -87,7 +87,7 @@ function translate() {
         }
     } else if (type == "6") {
         switch (lang) {
-            case "da":
+            case "danish":
                 return "#f0f0ffVi håber, at din tid hos os når nye højder!";
                 break;
             default:
