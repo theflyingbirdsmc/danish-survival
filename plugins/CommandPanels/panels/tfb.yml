@@ -22,59 +22,59 @@ panels:
       '2':
         material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg3M2MxMmJmZmI1MjUxYTBiODhkNWFlNzVjNzI0N2NiMzlhNzVmZjFhODFjYmU0YzhhMzliMzExZGRlZGEifX19
         stack: 1
-        name: '%javascript_tfb_discord_name,{player_locale_short}%'
+        name: '%javascript_tfb_discord_name,{luckperms_meta_tfb-language}%'
         lore:
-        - '%javascript_tfb_discord_lore,{player_locale_short}%'
+        - '%javascript_tfb_discord_lore,{luckperms_meta_tfb-language}%'
         commands:
-        - msg= %javascript_tfb_discord_message,{player_locale_short}%
+        - msg= %javascript_tfb_discord_message,{luckperms_meta_tfb-language}%
         - cpc
       '3':
         material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjdkNmJlMWRjYTUzNTJhNTY5M2UyOWVhMzVkODA2YjJhMjdjNGE5N2I2NGVlYmJmNjMyYzk5OGQ1OTQ4ZjFjNCJ9fX0=
         stack: 1
-        name: '%javascript_tfb_stats_name,{player_locale_short}%'
+        name: '%javascript_tfb_stats_name,{luckperms_meta_tfb-language}%'
         lore:
-        - '%javascript_tfb_stats_lore,{player_locale_short}%'
+        - '%javascript_tfb_stats_lore,{luckperms_meta_tfb-language}%'
         commands:
-        - msg= %javascript_tfb_stats_message,{player_locale_short}%
+        - msg= %javascript_tfb_stats_message,{luckperms_meta_tfb-language}%
         - cpc
       # '4':
       #   material: cps= self
       #   stack: 1
-      #   name: '%javascript_tfb_profile_name,{player_locale_short}%'
+      #   name: '%javascript_tfb_profile_name,{luckperms_meta_tfb-language}%'
       #   lore:
-      #   - '%javascript_tfb_profile_lore,{player_locale_short}%'
+      #   - '%javascript_tfb_profile_lore,{luckperms_meta_tfb-language}%'
       '4':
         material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ3ZmNjNWQ3ZDJhZDIwNGZiMjVmM2ZiNmYxODRhNmVkMTdkZGVmNWEzNTc4ZWJhNWEzNzc3NWUyZTIzMzlkOSJ9fX0=
         stack: 1
-        name: '%javascript_tfb_chats_name,{player_locale_short}%'
+        name: '%javascript_tfb_chats_name,{luckperms_meta_tfb-language}%'
         lore:
-        - '%javascript_tfb_chats_lore,{player_locale_short}%'
+        - '%javascript_tfb_chats_lore,{luckperms_meta_tfb-language}%'
         commands:
         - cp tfb_chats
       '5':
         material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2JkYjhmMzc5NjE0MmFhYTNlYjg5Y2NiZWM3MTcwNWQ0YTIxNjkyZWI3Yzg0NjZkMmE3OWIyMWFlMTRiMzI2In19fQ==
         stack: 1
-        name: '%javascript_tfb_shop_name,{player_locale_short}%'
+        name: '%javascript_tfb_shop_name,{luckperms_meta_tfb-language}%'
         lore:
-        - '%javascript_tfb_shop_lore,{player_locale_short}%'
+        - '%javascript_tfb_shop_lore,{luckperms_meta_tfb-language}%'
         commands:
-        - msg= %javascript_tfb_shop_message,{player_locale_short}%
+        - msg= %javascript_tfb_shop_message,{luckperms_meta_tfb-language}%
         - cpc
       '6':
         material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDJmNmMwN2EzMjZkZWY5ODRlNzJmNzcyZWQ2NDU0NDlmNWVjOTZjNmNhMjU2NDk5YjVkMmI4NGE4ZGNlIn19fQ==
         stack: 1
-        name: '%javascript_tfb_youtube_name,{player_locale_short}%'
+        name: '%javascript_tfb_youtube_name,{luckperms_meta_tfb-language}%'
         lore:
-        - '%javascript_tfb_youtube_lore,{player_locale_short}%'
+        - '%javascript_tfb_youtube_lore,{luckperms_meta_tfb-language}%'
         commands:
-        - msg= %javascript_tfb_youtube_message,{player_locale_short}%
+        - msg= %javascript_tfb_youtube_message,{luckperms_meta_tfb-language}%
         - cpc
       '13':
         material: NETHER_STAR
         stack: 1
         name: '#ee2b23T#3551d7F#00ff00B &aCosmetics'
         lore:
-        - '%javascript_tfb_cosmetics_lore,{player_locale_short}%'
+        - '%javascript_tfb_cosmetics_lore,{luckperms_meta_tfb-language}%'
         commands:
         - gmenu main
       # '12':
@@ -101,37 +101,37 @@ panels:
       '29':
         material: CRAFTING_TABLE
         stack: 1
-        name: '%javascript_tfb_danish-survival_name,{player_locale_short}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30005%&8)'
+        name: '%javascript_tfb_danish-survival_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30005%&8)'
         lore:
         - '&eOnline&7: &a%bungee_danish-survival%'
-        - '%javascript_tfb_danish-survival_lore,{player_locale_short}%'
+        - '%javascript_tfb_danish-survival_lore,{luckperms_meta_tfb-language}%'
         commands:
         - server= danish-survival
       # '30':
       #   material: SLIME_BLOCK
       #   stack: 1
-      #   name: '%javascript_tfb_parkoureu_name,{player_locale_short}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30003%&8)'
+      #   name: '%javascript_tfb_parkoureu_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30003%&8)'
       #   lore:
       #   - '&eOnline&7: &a%bungee_parkour%'
-      #   - '%javascript_tfb_parkoureu_lore,{player_locale_short}%'
+      #   - '%javascript_tfb_parkoureu_lore,{luckperms_meta_tfb-language}%'
       #   commands:
       #   - server= parkour
       '31':
         material: END_CRYSTAL
         stack: 1
-        name: '%javascript_tfb_lobby_name,{player_locale_short}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30001%&8)'
+        name: '%javascript_tfb_lobby_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30001%&8)'
         lore:
         - '&eOnline&7: &a%bungee_lobby%'
-        - '%javascript_tfb_lobby_lore,{player_locale_short}%'
+        - '%javascript_tfb_lobby_lore,{luckperms_meta_tfb-language}%'
         commands:
         - server= lobby
       '33':
         material: CRAFTING_TABLE
         stack: 1
-        name: '%javascript_tfb_english-survival_name,{player_locale_short}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30100%&8)'
+        name: '%javascript_tfb_english-survival_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30100%&8)'
         lore:
         - '&eOnline&7: &a%bungee_english-survival%'
-        - '%javascript_tfb_english-survival_lore,{player_locale_short}%'
+        - '%javascript_tfb_english-survival_lore,{luckperms_meta_tfb-language}%'
         commands:
         - server= english-survival
       '36':

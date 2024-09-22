@@ -8,15 +8,15 @@ panels:
       '0':
         material: arrow
         stack: 1
-        name: '%javascript_back_name,{player_locale_short}%'
+        name: '%javascript_back_name,{luckperms_meta_tfb-language}%'
         commands:
         - cp tfb
       '2':
         material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFjNjJmOGRlM2IwZDQwZDYyYTNjNGNlNjUzMTRmMDNhNGIxNjQwMWQ4OTViYWRjMWRkMDhmZTg1YjlmYzFhMyJ9fX0=
         stack: 1
-        name: '%javascript_tfb_chat_player_name,{player_locale_short}%'
+        name: '%javascript_tfb_chat_player_name,{luckperms_meta_tfb-language}%'
         lore:
-        - '%javascript_tfb_chat_player_lore,{player_locale_short}%'
+        - '%javascript_tfb_chat_player_lore,{luckperms_meta_tfb-language}%'
         commands:
         - left= ch j TFB-Chat write
         - right= ch j TFB-Chat read
@@ -24,9 +24,9 @@ panels:
       '4':
         material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjY3OWY0OGNkNDExZmViMTVjMjgwYjVkMTVkOWQ2NjBmM2ZjMDA0NWJkMmE4NmQ4NGJkNDU1YWJiYmRlYjY1MyJ9fX0=
         stack: 1
-        name: '%javascript_tfb_chat_standard_name,{player_locale_short}%'
+        name: '%javascript_tfb_chat_standard_name,{luckperms_meta_tfb-language}%'
         lore:
-        - '%javascript_tfb_chat_standard_lore,{player_locale_short}%'
+        - '%javascript_tfb_chat_standard_lore,{luckperms_meta_tfb-language}%'
         commands:
         - left= ch j Danish write
         - right= ch j Danish read
@@ -34,9 +34,9 @@ panels:
       '6':
         material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGEyZmRlMzRkMzRjODU4OGU1OGJmZDc5MGNlMTgwMjVmNzg0MzM5OWRlZTJhYjRjZWRjMmMwYjQ2M2ZkMWUifX19
         stack: 1
-        name: '%javascript_tfb_chat_help_name,{player_locale_short}%'
+        name: '%javascript_tfb_chat_help_name,{luckperms_meta_tfb-language}%'
         lore:
-        - '%javascript_tfb_chat_help_lore,{player_locale_short}%'
+        - '%javascript_tfb_chat_help_lore,{luckperms_meta_tfb-language}%'
         commands:
         - left= ch j TFB-Help write
         - right= ch j TFB-Help read
@@ -48,9 +48,9 @@ panels:
           compare0: chatcontrol.panel.staff
           material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFjNjJmOGRlM2IwZDQwZDYyYTNjNGNlNjUzMTRmMDNhNGIxNjQwMWQ4OTViYWRjMWRkMDhmZTg1YjlmYzFhMyJ9fX0=
           stack: 1
-          name: '%javascript_tfb_chat_staff_name,{player_locale_short}%'
+          name: '%javascript_tfb_chat_staff_name,{luckperms_meta_tfb-language}%'
           lore:
-          - '%javascript_tfb_chat_staff_lore,{player_locale_short}%'
+          - '%javascript_tfb_chat_staff_lore,{luckperms_meta_tfb-language}%'
           commands:
           - left= ch j TFB-Staff write
           - right= ch j TFB-Staff read
