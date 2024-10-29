@@ -6,12 +6,11 @@ metadata:
   labels:
     backstage.io/kubernetes-id: danish-survival
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - name: danish-survival
     port: 30005
     targetPort: 30005
-    nodePort: 30005
   selector:
     run: danish-survival
 ---
