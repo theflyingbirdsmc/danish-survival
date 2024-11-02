@@ -5,7 +5,7 @@ dependencies {
     implementation 'Plugin:AdvancedRegionMarket:3.5.3'
     implementation 'Plugin:ArmorStandTools:4.4.6'
     implementation 'Plugin:ChatControlRed:10.28.0'
-    implementation 'Plugin:CommandPanels:3.21.4.1'
+    implementation 'Plugin:CommandPanels:3.21.4.2'
     implementation 'Plugin:CoreProtect:22.4'
     implementation 'Plugin:DecentHolograms:2.8.11'
     implementation 'Plugin:eShulkerBox:0.5.4'
@@ -51,5 +51,5 @@ dependencies {
     // implementation 'Skript-Addon:Skellett:2.0.10'
     
     // K8s Plugins
-    implementation 'Plugin:UnifiedMetrics:0.3.8'
+    // implementation 'Plugin:UnifiedMetrics:0.3.8'
 }
