@@ -1,13 +1,13 @@
-LastUpdated: 1726425103463
+LastUpdated: 1730081107145
 VotingPlugin:
   AutoCachePlaceholders: []
   AutoCacheUpdated: true
-  Version: '1.21.1-77-4ff58c4 (MC: 1.21.1)'
+  Version: '1.21.1-122-4430e96 (MC: 1.21.1)'
   BungeeVotePartyCurrent: 0
   BungeeVotePartyRequired: 0
 PluginVersions:
   VotingPlugin: 6.16.1
-Month: SEPTEMBER
-PrevWeek: 38
-PrevDay: 15
+Month: OCTOBER
+PrevWeek: 44
+PrevDay: 27
 IgnoreTime: false

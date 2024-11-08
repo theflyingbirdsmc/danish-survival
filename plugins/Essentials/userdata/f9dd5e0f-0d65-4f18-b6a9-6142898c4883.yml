@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 0:0:0:0:0:0:0:1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1730069053825
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1730069087791
+  login: 1730068955067
+money: '0'
+last-account-name: Fuglen
+lastlocation:
+  world: 898304f4-36ad-4c56-91fb-f835befe1c99
+  world-name: world_danish_survival
+  x: 11.455344874658609
+  y: 64.0
+  z: 6.62423870799562
+  yaw: -106.90796661376953
+  pitch: 37.19260787963867
+logoutlocation:
+  world: 898304f4-36ad-4c56-91fb-f835befe1c99
+  world-name: world_danish_survival
+  x: 2.018850476819041
+  y: 63.0
+  z: -1.5652248546823508
+  yaw: 87.7098388671875
+  pitch: -64.4314193725586

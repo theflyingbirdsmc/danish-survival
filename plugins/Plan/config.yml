@@ -292,6 +292,8 @@ Plugins:
     Factions:
         HideFactions:
           - ExampleFaction
+    Floodgate:
+        Enabled: true
     GriefDefender:
         Enabled: true
     Jobs:

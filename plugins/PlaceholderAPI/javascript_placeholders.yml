@@ -43,8 +43,10 @@ tfb_vanilladk:
   file: tfb_vanilladk.js
 tfb_danish-survival:
   file: tfb_danish-survival.js
-tfb_english-survival:
-  file: tfb_english-survival.js
+tfb_cs-tmm:
+  file: tfb_cs-tmm.js
+tfb_cs-tmm:
+  file: tfb_cs-tmm.js
 tfb_parkoureu:
   file: tfb_parkoureu.js
 tfb_lobby:
@@ -63,3 +65,5 @@ tfb_chat_help:
   file: tfb_chat_help.js
 tfb_chat_staff:
   file: tfb_chat_staff.js
+example:
+  file: example.js

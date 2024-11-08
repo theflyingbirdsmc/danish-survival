@@ -1,0 +1,21 @@
+panels:
+  tfb_cs:
+    rows: 1
+    title: '#ee2b23T#3551d7F#00ff00B &5Community Servers'
+    empty:
+    item:
+      '0':
+        material: arrow
+        stack: 1
+        name: '%javascript_back_name,{luckperms_meta_tfb-language}%'
+        commands:
+        - open= tfb
+      '4':
+        material: cps= eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FkOWYzNTJkZTYwODA2ZjhlYWM1NDA2MzkwZGJmOGM2ODg4YWVjNjc2ZDBkZGRiZTY4ZWNhYTkzM2YxYTg2NCJ9fX0=
+        stack: 1
+        name: '%javascript_tfb_cs-tmm_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_cs-tmm:30100%&8)'
+        lore:
+        - '&eOnline&7: &a%bungee_cs-tmm%'
+        - '%javascript_tfb_cs-tmm_lore,{luckperms_meta_tfb-language}%'
+        commands:
+        - server= cs-tmm

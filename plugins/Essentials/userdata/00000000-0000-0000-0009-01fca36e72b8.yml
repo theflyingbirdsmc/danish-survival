@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1730069077701
+  login: 1730068932601
+money: '0'
+last-account-name: .SimonBird883
+lastlocation:
+  world: 898304f4-36ad-4c56-91fb-f835befe1c99
+  world-name: world_danish_survival
+  x: 0.5
+  y: 69.0
+  z: 0.5
+  yaw: -179.9469757080078
+  pitch: -3.8282289505004883
+logoutlocation:
+  world: 898304f4-36ad-4c56-91fb-f835befe1c99
+  world-name: world_danish_survival
+  x: 0.5
+  y: 69.0
+  z: 0.5
+  yaw: -179.9469757080078
+  pitch: -3.8282289505004883

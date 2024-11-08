@@ -5992,7 +5992,6 @@
 "portal": "portal"
 
 # Used for the disguise option Particle
-"ambient_entity_effect": "ambient_entity_effect"
 
 # Used for the disguise option Particle
 "gust_emitter_large": "gust_emitter_large"
@@ -6157,7 +6156,6 @@
 "cloud": "cloud"
 
 # Used for the disguise option Particle
-"gust_emitter": "gust_emitter"
 
 # Used for the disguise option Particle
 "dust": "dust"

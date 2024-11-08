@@ -618,9 +618,6 @@
 # Reference: LD_COMMAND_METAINFO
 "<blue>/libsdisguises metainfo - <aqua>Debugging info, tells you what the metadata is for a disguise": "<blue>/libsdisguises metainfo - <aqua>Debugging info, tells you what the metadata is for a disguise"
 
-# Reference: LD_COMMAND_CONFIG
-"<blue>/libsdisguises config - <aqua>Tells you what's not normal in your config": "<blue>/libsdisguises config - <aqua>Tells you what's not normal in your config"
-
 # Reference: LD_COMMAND_UPDATE
 "<blue>/libsdisguises update - <aqua>'update' will fetch an update, 'update dev' will fetch a dev build update, 'update release' will fetch a release build update and 'update!' will download that update!": "<blue>/libsdisguises update - <aqua>'update' will fetch an update, 'update dev' will fetch a dev build update, 'update release' will fetch a release build update and 'update!' will download that update!"
 
@@ -863,3 +860,11 @@
 
 # Reference: LD_COMMAND_UPDATE_PACKET_EVENTS
 "<blue>/libsdisguises updatepacketevents - <aqua>Updates PacketEvents to the latest release": "<blue>/libsdisguises updatepacketevents - <aqua>Updates PacketEvents to the latest release"
+# Reference: LD_COMMAND_CONFIG
+"<blue>/libsdisguises config - <aqua>Checks for modified values in Lib's Disguises config": "<blue>/libsdisguises config - <aqua>Checks for modified values in Lib's Disguises config"
+
+# Reference: LD_DEBUG_MODE
+"<blue>/libsdisguises debugging - <aqua>For internal use to debug stuff": "<blue>/libsdisguises debugging - <aqua>For internal use to debug stuff"
+
+# Reference: LD_DEBUG_DISGUISE_LOOP
+"<blue>/libsdisguises disguiseloop - <aqua>Used to quickly loop through every disguise for problematic ones": "<blue>/libsdisguises disguiseloop - <aqua>Used to quickly loop through every disguise for problematic ones"

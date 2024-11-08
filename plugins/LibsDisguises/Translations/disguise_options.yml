@@ -675,3 +675,8 @@
 
 # Found in the disguise options for TextDisplay and uses a byte
 "setTextOpacity": "setTextOpacity"
+# Found in the disguise options for Wolf and uses a ItemStack
+"setWolfArmor": "setWolfArmor"
+
+# Found in the disguise options for Wolf and uses a Color
+"setWolfArmorColor": "setWolfArmorColor"
