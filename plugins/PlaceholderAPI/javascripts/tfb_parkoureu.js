@@ -18,10 +18,10 @@ function tfbParkourEU() {
     } else if (type == "lore") {
         switch (lang) {
             case "danish":
-                return "&eSprog&8: &7Dansk/Engelsk\\n&eKlik for at joine nu!";
+                return "&eSprog&8: &7Engelsk\\n&eKlik for at joine nu!";
                 break;
             default:
-                return "&eLanguage&8: &7Danish/English\\n&eClick to connect now!";
+                return "&eLanguage&8: &7English\\n&eClick to connect now!";
         }
     } else if (type == "message") {
         switch (lang) {

@@ -16,25 +16,8 @@ boolean:
   'false': 'no'
 date_format: MM/dd/yy HH:mm:ss
 debug: false
+cloud_allow_unverified_expansions: true
 expansions:
-  javascript:
-    enable_parse_command: false
-    debug: false
-    github_script_downloads: false
-    argument_split: ','
-    use_quick_js: false
-  bungee:
-    check_interval: 30
-  pinger:
-    offline: '&cOffline'
-    check_interval: 30
-    online: '&aOnline'
-  server:
-    tps_color:
-      high: '&a'
-      low: '&c'
-      medium: '&e'
-    server_name: A Minecraft Server
   player:
     ping_value:
       high: 100
@@ -52,3 +35,28 @@ expansions:
       medium: '&e'
       high: '&c'
       low: '&a'
+  pinger:
+    offline: '&cOffline'
+    check_interval: 30
+    online: '&aOnline'
+  bungee:
+    check_interval: 30
+  server:
+    tps_color:
+      high: '&a'
+      low: '&c'
+      medium: '&e'
+    server_name: A Minecraft Server
+  javascript:
+    enable_parse_command: false
+    debug: false
+    github_script_downloads: false
+    argument_split: ','
+    use_quick_js: false
+  vault:
+    formatting:
+      thousands: k
+      millions: M
+      billions: B
+      trillions: T
+      quadrillions: Q

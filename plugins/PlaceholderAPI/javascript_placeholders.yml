@@ -22,6 +22,29 @@
 # 'my_placeholder':
 #   file: 'my_placeholder.js'
 
+# Javascript Expansion: @VERSION@
+# This is the main configuration file for the Javascript Expansion.
+#
+# You will define your javascript placeholders in this file.
+#
+# Javascript files must be located in the:
+#  /plugins/placeholderapi/javascripts/ folder
+#
+# A detailed guide on how to create your own javascript placeholders
+# can be found here:
+# https://github.com/PlaceholderAPI-Expansions/Javascript-Expansion/wiki
+#
+# Your javascript placeholders will be identified by: %javascript_<identifier>%
+#
+# Configuration format:
+#
+# <identifier>:
+#   file: <name of file>.<file extension>
+#
+# Example:
+#
+# 'my_placeholder':
+#   file: 'my_placeholder.js'
 back:
   file: back.js
 tfb_compass:
@@ -45,8 +68,6 @@ tfb_danish-survival:
   file: tfb_danish-survival.js
 tfb_cs-tmm:
   file: tfb_cs-tmm.js
-tfb_cs-tmm:
-  file: tfb_cs-tmm.js
 tfb_parkoureu:
   file: tfb_parkoureu.js
 tfb_lobby:
@@ -65,5 +86,11 @@ tfb_chat_help:
   file: tfb_chat_help.js
 tfb_chat_staff:
   file: tfb_chat_staff.js
+motd:
+  file: motd.js
+motdWB:
+  file: motdWB.js
+lobby_hologram:
+  file: lobby_hologram.js
 example:
   file: example.js
