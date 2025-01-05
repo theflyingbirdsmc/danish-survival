@@ -107,15 +107,6 @@ panels:
         - '%javascript_tfb_danish-survival_lore,{luckperms_meta_tfb-language}%'
         commands:
         - server= danish-survival
-      # '30':
-      #   material: SLIME_BLOCK
-      #   stack: 1
-      #   name: '%javascript_tfb_parkoureu_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_mc.theflyingbirds.net:30003%&8)'
-      #   lore:
-      #   - '&eOnline&7: &a%bungee_parkour%'
-      #   - '%javascript_tfb_parkoureu_lore,{luckperms_meta_tfb-language}%'
-      #   commands:
-      #   - server= parkour
       '31':
         material: END_CRYSTAL
         stack: 1
@@ -126,14 +117,14 @@ panels:
         commands:
         - server= lobby
       '33':
-        material: BEDROCK
+        material: SLIME_BLOCK
         stack: 1
-        name: '&8Coming soon!'
+        name: '%javascript_tfb_parkoureu_name,{luckperms_meta_tfb-language}% &8(&7%pinger_gameversion_parkour:30102%&8)'
         lore:
-        # - '&eOnline&7: &a%bungee_cs-tmm%'
-        # - '%javascript_tfb_cs-tmm_lore,{luckperms_meta_tfb-language}%'
+        - '&eOnline&7: &a%bungee_parkour%'
+        - '%javascript_tfb_parkoureu_lore,{luckperms_meta_tfb-language}%'
         commands:
-        - server= cs-tmm
+        - server= parkour
       '49':
         material: CAMPFIRE
         stack: 1
