@@ -2,88 +2,36 @@ import java.util.jar.JarFile
 import org.yaml.snakeyaml.Yaml
 
 buildscript {
-  repositories {
-    maven {
-      url "https://plugins.gradle.org/m2/"
+    repositories {
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
     }
-  }
-  dependencies {
-    classpath("org.yaml:snakeyaml:2.0")
-    classpath "org.jfrog.buildinfo:build-info-extractor-gradle:5.1.10"
-  }
+    dependencies {
+        classpath("org.yaml:snakeyaml:2.0")
+    }
 }
 
 plugins {
     id 'java'
     id 'groovy'
+    id 'maven-publish'
 }
-
-apply plugin: "com.jfrog.artifactory"
-apply plugin: 'maven-publish'
 
 apply from: 'dependencies.gradle'
 
-// dependencies {
-//     dependencies.each { dep ->
-//         implementation dep
-//     }
-// }
-
-// dependencies {
-//     // Network plugins
-//     implementation 'Server:Paper:1.20.4-496'
-//     implementation 'Plugin:PlayerReferrals:1.3.+'
-//     implementation 'Plugin:Tebex:2.0.+'
-//     implementation 'Plugin:ChatControlRed:10.26.+'
-//     implementation 'Plugin:CommandPanels:3.+'
-//     implementation 'Plugin:CoreProtect:22.+'
-//     implementation 'Plugin:DecentHolograms:2.8.11'
-//     implementation 'Plugin:Essentials:2.20.+'
-//     implementation 'Plugin:EssentialsSpawn:2.20.+'
-//     implementation 'Plugin:FastAsyncWorldEdit:2.9.+'
-//     implementation 'Plugin:GadgetsMenu:5.16.+'
-//     implementation 'Plugin:HexNicks:3.1.1'
-//     implementation 'Plugin:GSit:1.10.0'
-//     implementation 'Plugin:LibsDisguises:10.0.44-20240915.164903-1'
-//     implementation 'Plugin:LuckPerms:5.4.141'
-//     implementation 'Plugin:Multiverse-Core:4.+'
-//     implementation 'Plugin:PlaceholderAPI:2.11.6'
-//     implementation 'Plugin:ProtocolLib:5.2.+'
-//     implementation 'Plugin:Plan:5.6-build-2883'
-//     implementation 'Plugin:TAB:4.1.+'
-//     implementation 'Plugin:mcMMO:2.2.+'
-//     implementation 'Plugin:Vault:1.7.+'
-//     implementation 'Plugin:VotingPlugin-Bungee:6.16.+'
-//     implementation 'Plugin:WorldGuard:7.0.+'
-//     // implementation 'Vulcan:Vulcan:2.7.5'
-
-//     //PlaceholderAPI Expansions
-//     implementation 'PAPI-Expansion:Expansion-Bungee:2.2'
-//     implementation 'PAPI-Expansion:Expansion-Essentials:1.5.2'
-//     implementation 'PAPI-Expansion:Expansion-Javascript:2.1.2'
-//     implementation 'PAPI-Expansion:Expansion-LuckPerms:5.4'
-//     implementation 'PAPI-Expansion:Expansion-Pinger:1.0.1'
-//     implementation 'PAPI-Expansion:Expansion-Player:2.0.7'
-//     implementation 'PAPI-Expansion:Expansion-Server:2.6.2'
-//     implementation 'PAPI-Expansion:Expansion-VotingPlugin:1.5'
-//     implementation 'PAPI-Expansion:Expansion-World:1.2.2'
-    
-//     // K8s Plugins
-//     implementation 'Plugin:UnifiedMetrics:0.3.8'
-// }
-
-
-
 // Use environment instead of gradle.properties
-if("$System.env.MAVEN_URL" != null) {
-    ext.MAVEN_URL="$System.env.MAVEN_URL"+"/"+"tfb"
-    ext.MAVEN_PASSWORD="$System.env.MAVEN_PASSWORD"
-    ext.MAVEN_USERNAME="$System.env.MAVEN_USERNAME"
+if ("$System.env.MAVEN_URL" != null) {
+    ext.MAVEN_URL = "$System.env.MAVEN_URL" + "/tfb"
+    ext.MAVEN_PASSWORD = "$System.env.MAVEN_PASSWORD"
+    ext.MAVEN_USERNAME = "$System.env.MAVEN_USERNAME"
 }
-// TFB Artifactory
+
+// Nexus repository configuration
 repositories {
-    mavenCentral {
-        url "${MAVEN_URL}"
+    mavenCentral()
+    maven {
+        url = uri("${MAVEN_URL}")
         credentials {
             username = "${MAVEN_USERNAME}"
             password = "${MAVEN_PASSWORD}"
@@ -93,18 +41,18 @@ repositories {
 
 // Type "gradle plugins" in terminal to update plugins
 task plugins(type: Copy) {
-    doFirst{
-    delete fileTree(dir: 'plugins/.', include: '/*.jar')
+    doFirst {
+        delete fileTree(dir: 'plugins/.', include: '/*.jar')
     }
     from configurations.compileClasspath
-    exclude '*Paper*', '*Flamecord*', '*Expansion*', 'Purpur*'
+    exclude '*Paper*', '*FlameCord*', '*Expansion*', 'Purpur*'
     into 'plugins'
 }
 
 // Type "gradle expansions" in terminal to update PAPI Expansions
 task expansions(type: Copy) {
-    doFirst{
-    delete fileTree(dir: 'plugins/PlaceholderAPI/expansions/.', include: '/*.jar')
+    doFirst {
+        delete fileTree(dir: 'plugins/PlaceholderAPI/expansions/.', include: '/*.jar')
     }
     from configurations.compileClasspath
     include '*Expansion*'
@@ -113,25 +61,28 @@ task expansions(type: Copy) {
 
 // Type "gradle server" in terminal to update server
 task server(type: Copy) {
-    doFirst{
-    delete fileTree(dir: '/.' , include: 'server.jar')
+    doFirst {
+        delete fileTree(dir: '.', include: 'server.jar')
     }
     from configurations.compileClasspath
-    include 'Paper-*', 'Flamecord-*', 'Purpur-*'
+    include 'Paper-*', 'FlameCord-*', 'Purpur-*'
     rename '.*-(.+)', 'server.jar'
     into "."
+}
+tasks.named("server").configure {
+    doNotTrackState("Copies into project root, which may contain unreadable files.")
 }
 
 task update(dependsOn: ['server', 'plugins', 'expansions'])
 
 ext.dir = new File("_plugins")
 def files = ext.dir.listFiles().findAll { it.isFile() && it.name.endsWith('.jar') }
-def allowedPrefixes = ["Paper", "FlameCord","Purpur", "Expansion"]
+def allowedPrefixes = ["Paper", "FlameCord", "Purpur", "Expansion"]
 
 def dists = []
 
 files.each { file ->
-if (allowedPrefixes.any { prefix -> file.name.startsWith(prefix) } && file.name.endsWith(".jar")) {
+    if (allowedPrefixes.any { prefix -> file.name.startsWith(prefix) } && file.name.endsWith(".jar")) {
         def fileName = file.name - '.jar' // Remove the ".jar" extension
         
         if (fileName.startsWith("Expansion-")) {
@@ -167,7 +118,6 @@ if (allowedPrefixes.any { prefix -> file.name.startsWith(prefix) } && file.name.
             println("Found JAR: groupId=$groupId, artifactId=$artifactId, version=$version, path=$path")
 
             dists << [groupId: groupId, artifactId: artifactId, version: version, path: path]
-            
         }
     } else {
         def jarFile = new JarFile(file)
@@ -206,28 +156,21 @@ if (allowedPrefixes.any { prefix -> file.name.startsWith(prefix) } && file.name.
 publishing {
     publications {
         dists.each { dist ->
-            "$dist.artifactId"(MavenPublication) {
-                groupId dist.groupId
-                version = dist.version
+            create(dist.artifactId, MavenPublication) {
+                groupId = dist.groupId
                 artifactId = dist.artifactId
+                version = dist.version
 
                 artifact dist.path
             }
         }
     }
-}
-
-artifactory {
-    contextUrl = "https://jfrog.theflyingbirds.net/artifactory"
-    publish {
-        repository {
-            repoKey = 'tfb'
-            username = "${MAVEN_USERNAME}"
-            password = "${MAVEN_PASSWORD}"
-        }
-        defaults {
-            dists.each { dist ->
-                publications(dist.artifactId)
+    repositories {
+        maven {
+            url = uri("${MAVEN_URL}")
+            credentials {
+                username = "${MAVEN_USERNAME}"
+                password = "${MAVEN_PASSWORD}"
             }
         }
     }
