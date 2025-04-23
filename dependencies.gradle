@@ -28,7 +28,7 @@ dependencies {
     implementation 'Plugin:ProtocolLib:5.3.0'
     implementation 'Plugin:Plan:5.6-build-2965'
     implementation 'Plugin:TAB:5.2.0'
-    // implementation 'Plugin:Vault:1.7.3-b131'
+    implementation 'Plugin:Vault:1.7.3-b131'
     implementation 'Plugin:mcMMO:2.2.035'
     // implementation 'Plugin:ViaVersion:5.0.+'
     implementation 'Plugin:VotingPlugin:6.18.4'
