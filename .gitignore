@@ -37,7 +37,6 @@ libraries
 **/plugins/Vulcan/punishments.txt
 **/plugins/Vulcan/violations.txt
 **/crash-reports/**
-**/plugins/Multiverse-Core/worlds.yml
 */plugins/VotingPlugin/ServerData.yml
 */plugins/ProtocolLib/lastupdate
 */plugins/VotingPlugin/nonvotedplayerscache.yml
