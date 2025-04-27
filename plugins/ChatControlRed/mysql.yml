@@ -24,7 +24,7 @@ Hikari: true
 Host: tfb-network-db:3306
 
 # The database name
-Database: tfb_network_chatcontrolred
+Database: tfb_network_chatcontrol
 
 # The username
 User: tfb_network
