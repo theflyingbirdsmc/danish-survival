@@ -13,10 +13,10 @@ storage:
   method: MySQL
 # Requires Mysql
 mysql:
-  username: tfb_danish_survival
+  username: danish_survival
   password: WaLFY@^9!yc8Kg*y^DPt6urL6MS$HV
-  hostname: tfb-danish-survival-db:3306
-  database: tfb_danish_survival_jobs
+  hostname: danish-survival-db:3306
+  database: danish_survival_jobs
   table-prefix: jobs_
   verify-server-certificate: false
   use-ssl: false
