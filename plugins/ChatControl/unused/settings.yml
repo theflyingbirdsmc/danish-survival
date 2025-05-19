@@ -1,0 +1,74 @@
+Sync_Period: 1 second
+Channels:
+  Async: false
+  Autojoin_On_Reload: false
+  Save_To_Database: true
+  Alternative_Console_Sending: false
+  Make_Links_Clickable: true
+Integration:
+  BungeeCord:
+    
+    # Hook to BungeeCord?
+    #
+    # [IMPORTANT] Install BungeeControl Red: https://www.mc-market.org/resources/24248 first.
+    # [IMPORTANT] Please write the 'server-name' key to your server.properties according 
+    #             to https://mineacademy.org/server-properties
+    Enabled: true
+    
+    # The optional prefix before all messages so that you know where they are coming from.
+    Prefix: ''
+Messages:
+  Async: []
+  Delay_Until_Resource_Pack_Loaded: false
+Motd:
+  Async: false
+Timestamp_Format: dd.MM.yyyy HH:mm:ss
+Anti_Spam:
+  Similarity_Ignore_Accents: true
+Anti_Bot:
+  Cooldown:
+    Rejoin: 0 seconds
+Rules:
+  Regex_Timeout_Ms: 500
+Sound_Notify:
+  Color: '&a'
+Tag:
+  Change_Displayname: true
+Books:
+  # On Minecraft 1.18+ you can use https://docs.advntr.dev/minimessage/index.html in books.
+  # This makes legacy &c and #ccffdd codes in books invalid, you need to use the minimessage format.
+  MiniMessage_Format: true
+Newcomer:
+  Warning_Points_Multiplier: 2.0
+Console_Filter:
+  
+  # Should we enable this feature? *DOES NOT SUPPORT RELOAD* *MAY BREAK YOUR MULTICRAFT PANEL*
+  Enabled: false
+  
+  # Remove these messages from console using the "contains" method.
+  # Does not need to be whole message, just a part of the message you want to block.
+  #
+  # [NOTICE] If you have Multicraft, DO NOT place the following messages there else 
+  #          your server will literaly stop working properly. This is a bug in Multicraft.
+  # - UUID of player
+  # - lost connection
+  Messages:
+  - Reached end of stream for
+  - Connection reset
+Fallback_Player_Image: ''
+Image_Head_Endpoint: ''
+Register_Tools: false
+Strip_Oversized_Json: true
+Date_Format: dd.MM.yyyy HH:mm:ss
+Date_Format_Short: dd.MM.yyyy HH:mm
+Date_Format_Month: dd.MM HH:mm
+Location_Format: '{world} {x}, {y}, {z}'
+Modern_Chat_Listener: true
+Prefix: '&8[&cChatControl&8]&7 '
+Clear_Cache_On_Disconnect: false
+Log_Lag_Over_Milis: 100
+Version: 31
+Discord:
+  Forward_From_Bungee: false
+ProtocolLib:
+  Book_Anti_Crash: false

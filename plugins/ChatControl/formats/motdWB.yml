@@ -1,0 +1,55 @@
+# -----------------------------------------------------------------------------------------
+# Represents a chat format file that can be used to stylize messages.
+# -----------------------------------------------------------------------------------------
+
+# If true, each section in Parts will begin on a new line automatically.
+# See https://github.com/kangarko/ChatControl-Red/issues/2510
+New_Line_Per_Part: false
+
+# The parts of this format. See chat.yml for documentation.
+Parts:
+  Header:
+    Message:
+    - ' '
+    - '<center>{javascript_motdWB_header,{luckperms_meta_tfb-language}}'
+  Vote:
+    Message:
+    - ' '
+    - '<center>{javascript_motdWB_1,{luckperms_meta_tfb-language}}'
+    Hover:
+    - '&eMy votes'
+    - '&7Total Votes: &a{votingplugin_total_alltime} &f#&e{votingplugin_top_all_position}'
+    - '&7This Month: &a{votingplugin_total_monthly} &f#&e{votingplugin_top_month_position}'
+    - '&7Current Streak: &a{VotingPlugin_DailyVoteStreak} &7days'
+    - '&7Best Vote Streak: &a{VotingPlugin_BestDailyVoteStreak} &7days'
+    - '&7Next Vote: &a{VotingPlugin_Next_AnySite}'
+    Run_Command: /voteall
+  MOTD:
+    Message:
+    - ' '
+    - '<center>{javascript_motdWB_3,{luckperms_meta_tfb-language}}'
+    - '<center>{javascript_motdWB_4,{luckperms_meta_tfb-language}}'
+    - ' '
+    - '<center>{javascript_motdWB_6,{luckperms_meta_tfb-language}}'
+    - ' '
+    - ' '
+  discord:
+    Message: '          <#5865F2>Discord &8|'
+    Hover: '<#f0f0f0>Join our Discord'
+    Open_Url: https://discord.theflyingbirds.net
+  github:
+    Message: ' <#f0f0f0>Github &8|'
+    Hover: '<#f0f0f0>View our source code!'
+    Open_Url: https://discord.theflyingbirds.net
+  menu:
+    Message: ' <#235bab>Shop &8|'
+    Hover: '<#f0f0f0>Visit our shop!'
+    Open_Url: https://shop.theflyingbirds.net
+  stats:
+    Message: ' <#368F17>Statistics &8|'
+    Hover: '<#f0f0f0>View statistics of players!'
+    Open_Url: https://stats.theflyingbirds.net
+  youtube:
+    Message: ' <#FF0000>Youtube'
+    Hover: '<#f0f0f0>Check out our channel!'
+    Open_Url: https://youtube.com/user/theflyingbirdsmc

@@ -1,0 +1,26 @@
+# -----------------------------------------------------------------------------------------------------
+# An alternative file that holds sensitive database information.
+#
+# **IMPORTANT** We only support utf8mb4_unicode_520_ci collation (database encoding) because we need
+# need to store messages in 4 bytes (mb4) due to unicode/emojis/non-English letter support.
+#
+# Check if your database has that charset. Check with your hosting provider. Or try removing all
+# old ChatControl tables and the plugin will recreate the database with the right encoding.
+# Using MySQL 5.7 or 8.0 is recommended, there may be issues with MariaDB due to this encoding.
+# -----------------------------------------------------------------------------------------------------
+#
+
+# How we should save player-related data, emails, logs, regions and other server settings.
+# Available: local (just works, no configuration needed, uses SQLite)
+#            remote (requires Host, Database, User, Password set below, supports MySQL/MariaDB)
+Type: remote
+
+# The remote database connection settings. Only configure if using remote database.
+Host: tfb-network-db:3306
+Database: tfb_network_chatcontrol
+User: tfb_network
+Password: ifFfF4cUeEYVXCZ4a5494sjVS8oBZL
+
+# Expert. Customize the connection here. Requires remote database. Custom drivers are
+# supported but you need to write a plugin that loads before ChatControl and loads the driver.
+Line: jdbc:mariadb://{host}/{database}?autoReconnect=true&useSSL=false
