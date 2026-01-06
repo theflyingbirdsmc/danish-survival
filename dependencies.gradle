@@ -30,7 +30,7 @@ dependencies {
     implementation 'Plugin:TAB:5.2.0'
     implementation 'Plugin:Vault:1.7.3-b131'
     implementation 'Plugin:mcMMO:2.2.035'
-    // implementation 'Plugin:ViaVersion:5.0.+'
+    implementation 'Plugin:ViaVersion:5.7.0'
     implementation 'Plugin:VotingPlugin:6.18.4'
     implementation 'Plugin:WorldGuard:7.0.12+829a4a4'
     // implementation 'Vulcan:Vulcan:2.7.5'
