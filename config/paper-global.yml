@@ -126,7 +126,7 @@ unsupported-settings:
   allow-permanent-block-break-exploits: true
   allow-piston-duplication: true
   allow-tripwire-disarming-exploits: false
-  allow-unsafe-end-portal-teleportation: false
+  allow-unsafe-end-portal-teleportation: true
   compression-format: ZLIB
   perform-username-validation: true
   simplify-remote-item-matching: false
