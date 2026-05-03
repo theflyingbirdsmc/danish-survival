@@ -122,13 +122,14 @@ timings:
   url: https://timings.aikar.co/
   verbose: true
 unsupported-settings:
-  allow-headless-pistons: false
-  allow-permanent-block-break-exploits: false
-  allow-piston-duplication: false
+  allow-headless-pistons: true
+  allow-permanent-block-break-exploits: true
+  allow-piston-duplication: true
   allow-tripwire-disarming-exploits: false
   allow-unsafe-end-portal-teleportation: false
   compression-format: ZLIB
   perform-username-validation: true
+  simplify-remote-item-matching: false
   skip-vanilla-damage-tick-when-shield-blocked: false
 watchdog:
   early-warning-delay: 10000
