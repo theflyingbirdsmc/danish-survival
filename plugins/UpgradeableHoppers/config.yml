@@ -65,12 +65,12 @@ database:
   mysql:
     # Enable this to use MySQL instead of "file based" SQLite. For performance improvements it's recommended to
     # use MySQL. If you don't have access to a MySQL server, just let this disabled (false).
-    enabled: false
-    address: 'localhost'
+    enabled: true
+    address: 'danish-survival-db'
     port: '3306'
-    database: 'upgradeablehoppers'
-    username: 'minecraft'
-    password: 'password'
+    database: 'danish_survival_upgradeablehoppers'
+    username: 'danish_survival'
+    password: 'WaLFY@^9!yc8Kg*y^DPt6urL6MS$HV'
     # It is highly recommended to set a unique table prefix if the plugin shares a database with other plugins.
     table-prefix: 'hoppers_'
 
