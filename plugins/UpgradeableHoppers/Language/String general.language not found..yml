@@ -1,0 +1,234 @@
+# Here you can edit all chat messages.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/locale-and-config/messages
+
+general:
+  prefix:
+    normal: '&8[&9UpgradeHoppers&8] '
+    help: '&8[&9UpgradeHoppers&8] &7Usage: '
+  time:
+    seconds: second(s)
+    minutes: minute(s)
+    hours: hour(s)
+  hopper:
+    default-name: '{world}, x={x}, y={y}, z={z}'
+  teleportation:
+    bossbar: '&7Wait&5 {time} &7Second(s) until Teleportation.'
+  command:
+    argument:
+      optional: '&8<&e{arg}&8>'
+      required: '&8[&e{arg}&8]'
+      type:
+        cmd: cmd
+        player: player
+        name: name
+        confirm: confirm
+        menu: menu
+        world: world
+        args: arguments
+        page: page
+        database: database
+        plugin: plugin
+        boolean: true | false
+        type: type
+        amount: amount
+        set-owner: set-owner
+
+help:
+  help:
+    root:
+      header: '[NoPrefix][T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Click here to navigate to
+        the previous page.[/H][C]{cmd} {previous}[/C][/T] &9UpgradeableHoppers Commands
+        &7Page&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Click here to
+        go to the next page.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Click on the arrows below to navigate.
+        [T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Click here to navigate to the previous page.[/H][C]{cmd} {previous}[/C][/T] &9UpgradeableHoppers Commands &7Page&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Click here to go to the next page.[/H][C]{cmd} {next}[/C][/T]
+    sub:
+      unknown: |
+        &cThe subcommand&4 {command} &cdoesn't exist.
+          [T]&7✖ View commands: &3/{cmd} &8[CLICK][H]&7Click here to get a list of available commands[/H][C]{cmd}[/C][/T]
+      header: '[NoPrefix][T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Click here to navigate
+        to the previous page.[/H][C]{cmd} {previous}[/C][/T] &9Sub Commands &7Page&3
+        {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Click here to go to
+        the next page.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Click on the arrows below to navigate.
+        [T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Click here to navigate to the previous page.[/H][C]{cmd} {previous}[/C][/T] &9Sub Commands &7Page&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Click here to go to the next page.[/H][C]{cmd} {next}[/C][/T]
+  command:
+    upgradeablehoppers:
+      help: '[T]&e{parent} {subcmd} {args} &8- &7List commands[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
+      get: '[T]&e{parent} {subcmd} {args} &8 - &7Get hopper[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
+      give: '[T]&e{parent} {subcmd} {args} &8 - &7Give hopper(s)[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
+      list: '[T]&e{parent} {subcmd} &8- &7View your hoppers[H]&7Click to execute.[/H][C]{fullcmd}[/C][/T]'
+      view: '[T]&e{parent} {subcmd} &8- &7Mark nearby hoppers and links[H]&7Click
+        to execute.[/H][C]{fullcmd}[/C][/T]'
+      abort: '[T]&e{parent} {subcmd} &8- &7Quit link or unlink mode[H]&7Click to execute.[/H][C]{fullcmd}[/C][/T]'
+      confirmtp: '[T]&e{parent} {subcmd} &8- &7Confirm unsafe teleport destination[H]&7Click
+        to execute.[/H][C]{fullcmd}[/C][/T]'
+      admin:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Admin commands[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
+        reload: '[T]&e{parent} {subcmd} &8- &7Reload configurations[H]&7Click to execute.[/H][C]{fullcmd}[/C][/T]'
+        import: '[T]&e{parent} {subcmd} {args} &8- &7Import hoppers from 3rd party[H]&7Click
+          to copy.[/H][SC]{fullcmd}[/SC][/T]'
+        migratedb: '[T]&e{parent} {subcmd} {args} &8- &7Migrate database[H]&7Click
+          to copy.[/H][SC]{fullcmd}[/SC][/T]'
+        about: '[T]&e{parent} {subcmd} &8- &7Debug information[H]&7Click to execute.[/H][C]{fullcmd}[/C][/T]'
+        give: '[T]&e{parent} {subcmd} {args} &8- &7Give hoppers[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
+        listperms: '[T]&e{parent} {subcmd} {args} &8- &7List active permissions[H]&7Click
+          to copy.[/H][SC]{fullcmd}[/SC][/T]'
+
+upgradeablehoppers:
+  message:
+    hopper:
+      created: '#t#{type}{newline}&7Successfully created.'
+      deleted: '#t#{type}{newline}&cSuccessfully deleted.'
+      claimed: '&7You claimed this hopper, because the previous owner was untrusted
+        from the land at your current position.'
+      link:
+        click: '&7Click on a container or hopper to link it with this hopper.'
+        inventory: '&cYou can''t link this block. &7It needs to be a container.'
+        type: '&cThis type of container can''t be linked. &8Type: {type}'
+        origin: '&cYou can''t link the hopper to itself. &7Please link it to another
+          container.'
+        world: '&cYou can''t create links from one world to another one. &7The link
+          needs to be in the same world as the hopper.'
+        max-distance: '&cThis destination is too far away. &7The maximum distance
+          for this hopper is&3 {distance}&7. You can upgrade it in the menu of the
+          hopper.'
+        already: '&cThis container is already linked. &7To view linked containers,
+          open the hopper menu.'
+        max: '&cYou can''t link any more containers to this hopper. &7You reached
+          the maximum of&3 {max} &7links. &7You can upgrade the amount in the hoppers
+          menu.'
+        untrusted: '&cYou can''t link containers that are located in claims in which
+          you''re not trusted.'
+        success: '#t#&9&lHopper{newline}&7Successfully linked.'
+      unlink:
+        click: '&7Click on a container or hopper to unlink it from this hopper.'
+        not-linked: '&cThis container isn''t linked to the hopper. &7Nothing changed.'
+        success: '#t#&9&lContainer{newline}&7Successfully unlinked.'
+    menu-reopen: '#a#&6Opening the previous menu in&5 {time}&6.'
+    no-access:
+      upgrade: '&cYou''re not allowed to upgrade this hopper. &7It belongs to&3 {owner}&7.'
+      open: '&cYou''re not allowed to open this hoppers inventory. &7It belongs to&3
+        {owner}&7.'
+      delete: '&cYou''re not allowed to delete this hopper. &7It belongs to&3 {owner}&7.'
+      link: '&cYou''re not allowed to create a link to this hopper. &7It belongs to&3
+        {owner}&7.'
+      vanilla:
+        craft: '&cYou''re not allowed to craft normal hoppers. &7An administrator
+          disabled that. &7Use &8/&aHopper get &7to buy a hopper. Bypass permission:
+          uhoppers.bypass.vanilla.craft'
+        place: '&cYou''re not allowed to place normal hoppers. &7An administrator
+          disabled that. &7Use &8/&aHopper get &7to buy a hopper. Bypass permission:
+          uhoppers.bypass.vanilla.place'
+    creation:
+      world: '&cYou''re not allowed to create upgradeable hoppers in this world. &7An
+        administrator needs to add world&3 {world} &7to config: worlds_list'
+      owner: '&cYou can''t place this hopper. &7It belongs to player&3 {owner}&7.'
+      max:
+        normal: '&cYou can''t place any more upgradeable hoppers, because you reached
+          your maximum amount of&4 {max} &cupgradeable hoppers.'
+        convert: '&cCould not convert this hopper into an upgradeable hopper, because
+          you reached your maximum amount of&4 {max} &cupgradeable hoppers.'
+        claim: '&cThis hopper is claimable, since the land it stands in got unclaimed
+          or the owner of the hopper got untrusted, but you can''t claim it, since
+          you already reached your maximum amount of&4 {max} &choppers.'
+      only-land: |
+        &cYou can't place upgradeable hoppers in the wilderness. &7You need to place them inside claims.
+         [T]&7Claim land: &3/{fullcmd} &8[CLICK][H]&7Click here to claim at your current position.[/H][C]{fullcmd}[/C][/T]
+      untrusted: '&cYou can''t place upgradeable hoppers at this position. &7You''re
+        not trusted in this land.'
+    teleportation:
+      already: '&cYou can''t start a second teleportation. There''s already a teleportation
+        in progress. &7Please wait until it''s done.'
+      started: '&7Teleportation process started. Teleporting in&5 {sec} seconds&7.
+        Please don''t move.'
+      cmd: '&cYou can''t use any commands while being teleported. &7Please wait another&5
+        {sec} seconds &7until the teleportation has been finished.'
+      progress: '#b#[config]color:purple,style:solid[/config]&7Wait&5 {time} &7Second(s)
+        until Teleportation.'
+      cancelled: '&cYour teleportation has been cancelled. &7Please don''t move while
+        you''re waiting&5 {sec} &7seconds for teleportation.'
+      plugin: '&cTeleportation has been cancelled by a 3rd party plugin. &7Please
+        check your other plugins. &7This is not a Lands issue.'
+      unsafe: |
+        &7The teleportation has been cancelled, because the destination is not safe.
+          [T]&2✔ Teleport anyways: &8[CLICK][H]&7Warning: The teleportation destination is not safe and might be dangerous for you.[/H][C]{cmd}[/C][/T]
+      corrected: '&7The original teleport destination was unsafe. &7Your final destination
+        has been corrected to a safe location.'
+    action:
+      link: '#t#&6Link Mode[newline]&7Click a container to link it.[newline]&cUse
+        &l/uhopper abort&c &cto quit this mode.'
+      unlink: '#t#&6Unlink Mode[newline]&7Click a container to unlink it.[newline]&cUse
+        &l/uhopper abort&c &cto quit this mode.'
+      disabled: '&7Link or unlink mode successfully disabled.'
+    chat-input:
+      general: '&7Please enter your input in the chat.'
+      player: '#t#&6Enter the Name[newline]&7of the player in chat[newline]&7Enter
+        "cancel" to abort.'
+      rename: '#t#&6Enter a new Name[newline]&7for this link in chat[newline]&7Enter
+        "cancel" to abort.'
+      name: '#t#&6Enter the Name[newline]&7in chat[newline]&7Enter "cancel" to abort.'
+  command:
+    general:
+      no-permission: '&cYou don''t have permission to do this. &8You need permission
+        {permission}.'
+      cant-afford: '&cYou can''t afford this. &7You need&3 {cost} &7to pay for this.'
+      player-offline: '&cCouldn''t find this player. &7Player&3 {player} &7is offline.'
+      invalid-number: '&cYou entered an invalid number at the&e {argument} &cargument.
+        &7Please insert a valid number there.'
+      name:
+        number: '&cYou''re not allowed to use numbers for this name. &7Please use
+          only letters. Found number:&3 {invalid}'
+        character: '&cYou can''t use invalid characters for the name. &7Please use
+          only letters and numbers. &7Found invalid character:&3 {invalid}'
+        color: '&cYou''re not allowed to use color codes for this name. &7Please remove
+          any color codes from your input.'
+        length: '&cThis name is too long. &7Max length is&3 {max} &7characters &8(&7yours:
+          {input}&8)&7. &8This includes color codes.'
+        empty: '&cThis name is invalid. &7You need to enter at least one character
+          other than color codes.'
+      input:
+        confirm: |
+          &7Please confirm this action &8(&e/{input}&8) &7by clicking below:
+            [T]&2✔ Confirm &8[CLICK][H]&7Click here to confirm this action.[/H][C]{fullcmd}[/C][/T]
+        number: '&cYour input&4 {input} &cisn''t a number. &7Argument {pos}: {expected}'
+        player: '&cThere''s no player with the name&4 {player}&c. &7Typo?'
+        offline: '&cThere''s currently no player with the name&4 {player} &conline.
+          &7Typo?'
+        world: '&cThe world&4 {input} &cdoesn''t exist. &7Argument {pos}: {expected}'
+        world-disabled: '&cThis is deactivated in this world. &8World: {input}'
+    confirmtp:
+      none: '&cYou have no active teleportation.'
+    view:
+      disabled: '&7Disabled all active visualizations.'
+      enabled: '&7Nearby hoppers and links will now be marked with particles. To disable
+        this, just execute this command again.'
+    get:
+      type: '&cThe hopper type&4 {input} &cdoesn''t exist. &7Valid types: {types}'
+      max: '&cYou can''t buy&4 {amount} &cmore hopper(s). &7You can at most buy&3
+        {max} &7more hopper(s). &8Permission: uhoppers.hoppers.<number>'
+      confirm: |
+        &cPlease confirm this purchase. &7Buying this hopper will cost you&c {costs}&7.
+          [T]&2✔ Confirm &8[&7CLICK&8][H]&7Click here to confirm this purchase.[/H][C]{fullcmd}[/C][/T]
+      dropped: '&7You received&3 {amount} &7hoppers for&c {cost}&7. &cSome dropped
+        to the ground, because there was no space left in your inventory.'
+      success: '&7You received&3 {amount} &7hoppers item for&c {cost}&7. They''re
+        now in your inventory.'
+    give:
+      success-sender: '&7You successfully gave&3 {items} &7hopper(s) to player&3 {player}&7.'
+      success-target: '&7You received&3 {items} &7hopper(s). They were put in your
+        inventory.'
+      dropped: '&7You received&3 {items} &7hopper(s). &cThey dropped to the ground,
+        because there was no space left in your inventory.'
+    list:
+      retrieving: '&7Retrieving placed hopper''s coordinates of player {player}...'
+
+

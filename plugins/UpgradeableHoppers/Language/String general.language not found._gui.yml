@@ -1,0 +1,276 @@
+# Here you can edit all GUI menus.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/menus/gui-menus
+
+general:
+  filter:
+    blacklist: '&8Blacklist'
+    whitelist: '&fWhitelist'
+  previous: previous
+  max: '&cMax reached'
+  unlimited: '&aunlimited'
+  wYes: '&aYes'
+  now: '&aNow'
+  destination: '&a{block}&8, &7World:&2 {world}&8, &7X:&2 {x}&8, &7Y:&2 {y}&8, &7Z:&2
+    {z}'
+  wNo: '&cNo'
+  disabled: '&cDisabled'
+  none: '&cNone'
+  enabled: '&aEnabled'
+  others: Others
+  value:
+    none: '&cNone'
+    unlimited: '&aunlimited'
+
+common:
+  items:
+    default:
+      child_failure_page_previous:
+        name: '&4&lNo Previous Page'
+      child_failure_page_next:
+        name: '&4&lNo Next Page'
+      refresh_page_previous:
+        lore: '&8✖ &7Go to the previous page:&3 {previous}'
+        name: '&c&lPrevious Page'
+        material: ARROW
+        slots: 38
+      back:
+        lore: '&8✖ &7Go back to[newline]   &7{back}.'
+        name: '&c&lBack'
+        material: RED_STAINED_GLASS_PANE
+        slots: 37
+      refresh_page_next:
+        lore: '&8✖ &7Go to the next page:&3 {next}'
+        name: '&a&lNext Page'
+        material: ARROW
+        slots: 44
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        hide-tooltip: true
+        slots: 1-45
+  size: 45
+  entries: 10-36
+gui:
+  list_filter:
+    title: '&7Link Filter'
+    items:
+      default:
+        child_failure_copy_none:
+          lore: '&cYou didn''t copy any filter.'
+          name: '&4&lNo Copy'
+        entry_object:
+          lore: '&8✖ &7Remove this item.'
+          name: '&6&l{item}'
+          material: INHERIT
+        child_success_copy:
+          lore: '&7You can now paste it in[newline]&7the filter menu of another[newline]&7link.'
+          name: '&a&lCopied Filter'
+        whitelist:
+          lore: '&8✖ &7Toggle the filter mode.[newline][newline]   &8• &8&lBlacklist:[newline]      &7Don''t
+            allow items that are[newline]      &7listed in this filter.[newline][newline]   &8•
+            &f&lWhitelist:[newline]      &7Only allow items that are[newline]      &7listed
+            in this filter.'
+          name: '&6&lMode: {enabled}'
+          material: HOPPER
+          slots: 40
+        refresh_strict:
+          lore: '&8✖ &7Toggle strict filtering.[newline][newline]   &8• &7&lIf enabled:[newline]     &7The
+            filter will additionally compare[newline]     &7items by their name, lore,
+            enchants,[newline]     &7durability and all the other information.[newline][newline]   &8•
+            &7If you, for example, want to[newline]     &7filter specific potions
+            and not[newline]     &7just all, you must enable this[newline]     &7setting.'
+          name: '&6&lStrict Filtering: {enabled}'
+          material: OAK_DOOR
+          slots: 41
+        refresh_copy_paste:
+          lore: '&8✖ &bLEFT CLICK[newline]   &7Paste a copied filter.[newline]&8✖
+            &bSHIFT + LEFT CLICK[newline]   &7Paste this filter for all links.[newline]&8✖
+            &9RIGHT CLICK[newline]   &7Copy this filter including[newline]   &7mode
+            and strict filtering[newline]   &7properties to another link.'
+          name: '&6&lCopy Filter and Mode'
+          material: skin:94c28ffb9063e63037c7c9c3a99975333254946ddfa0018996151740a5c66842
+          slots: 42
+  hopper_main:
+    title: '{name}'
+    items:
+      default:
+        child_failure_cost:
+          lore: '&7You need&c {cost} &7for that.'
+          name: '&4&lNot enough Money'
+        child_failure_max:
+          lore: '&cThis hopper has already reached[newline]&cthe highest level for
+            this upgrade.'
+          name: '&4&lMax Level reached'
+        child_failure_perm:
+          lore: '&7You''re missing the permission[newline]&7to upgrade this level
+            type for[newline]&7any hopper.'
+          name: '&4&lUpgrade locked'
+        refresh_upgrade_links_amount:
+          lore: '&8✖ &7Upgrade the maximum amount[newline]   &7of links.[newline][newline]   &8•
+            &7Current: {value}[newline]   &8• &7Next:&a {value_next}[newline]     &7Cost:&c
+            {cost}'
+          name: '&6&lLinks Amount'
+          material: CHEST
+          slots: 11
+        upgrade_link_distance:
+          lore: '&8✖ &7Upgrade the maximum link[newline]   &7distance.[newline][newline]   &8•
+            &7Current: {value}[newline]   &8• &7Next:&a {value_next}[newline]     &7Cost:&c
+            {cost}'
+          name: '&6&lMax Link Distance'
+          material: COMPASS
+          slots: 14
+        linking:
+          lore: '&8✖ &bLEFT CLICK[newline]   &7Link this hopper to a container.[newline]   &7Use
+            SHIFT to keep link mode enabled.[newline]&8✖ &9RIGHT CLICK[newline]   &7Unlink
+            a container from this hopper.[newline]   &7Use SHIFT to keep unlink mode
+            enabled.[newline]&8✖ &3DROP[newline]   &7Cancel link or unlink mode.'
+          name: '&6&lLink to Containers &8(&7{amount}&8/&c{max}&8)'
+          material: skin:26e6696b63738bbcc5fd973709ea90997215b0cfeece20b2659cb7b35f1bf0
+          slots: 29
+        suction-properties:
+          lore: ' &8✖ &bLEFT CLICK[newline]    &7Increase radius[newline] &8✖ &9RIGHT
+            CLICK[newline]    &7Decrease the radius. &7If it''s set to 0,[newline]    &7vanilla
+            suction will be used instead.[newline][newline]&6&lOther Options[newline]
+            &8✖ &bSHIFT + LEFT CLICK[newline]    &7Toggle visualization: {visualization}'
+          name: '&6&lCurrent Radius:&f {radius}'
+          material: skin:ec2ff244dfc9dd3a2cef63112e7502dc6367b0d02132950347b2b479a72366dd
+          slots: 31
+        child_failure_suction_max-radius:
+          name: '&4&lMax Radius Reached'
+          lore: '&cUpgrade the radius level[newline]&cto set a higher radius.'
+        child_failure_suction_min-radius:
+          name: '&4&lMin Radius Reached'
+          lore: '&cThe radius can''t be any lower.'
+        filter-delete:
+          lore: '&8✖ &cDelete items that don''t fit[newline]   &cany filter of your
+            links?'
+          name: '&6&lDelete Items: {enabled}'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 32
+        links:
+          lore: '&8✖ &7Edit the filters for your[newline]   &7linked containers.'
+          name: '&6&lLinks'
+          material: skin:f98bc63f05f6378bf29ef10e3d82acb3ceb73a720bf80f30bc576d0ad8c40cfb
+          slots: 30
+        upgrade_suction_radius:
+          lore: '&8✖ &7Upgrade the suction radius.[newline]   &7The hopper sucks all
+            items that[newline]   &7are in this radius.[newline][newline]   &8• &7Current:
+            {value}[newline]   &8• &7Next:&a {value_next}[newline]     &7Cost:&c {cost}'
+          name: '&6&lSuction Radius'
+          material: BEACON
+          slots: 13
+        upgrade_transfer_amount:
+          lore: '&8✖ &7Upgrade amount of items that[newline]   &7are transferred each
+            cycle.[newline][newline]   &8• &7Current: {value}[newline]   &8• &7Next:&a
+            {value_next}[newline]     &7Cost:&c {cost}'
+          name: '&6&lTransfer Amount'
+          material: HOPPER
+          slots: 12
+        upgrade_suction_radius_chunk:
+          lore: '&8✖ &7Upgrade the chunk suction radius.[newline]   &7The hopper sucks
+            all items that[newline]   &7are in these chunks.[newline][newline]   &8•
+            &7Current: {value}[newline]   &8• &7Next:&a {value_next}[newline]     &7Cost:&c
+            {cost}'
+          name: '&6&lSuction Radius'
+          material: BEACON
+          slots: 13
+        name:
+          name: '&6&lName:&r {name}'
+          lore: '&8✖ &7Change the name.'
+          material: NAME_TAG
+          slots: 33
+  list_player_list:
+    title: '&8Upgradeable Hoppers'
+    items:
+      default:
+        child_failure_delete_unloaded:
+          lore: '&cYou must be near the hopper to delete it.'
+          name: '&4&lHopper Region Unloaded'
+        child_failure_cost:
+          lore: '&7You need&c {cost} &7for that.'
+          name: '&4&lNot enough Money'
+        child_failure_permission:
+          lore: '&7You''re missing the permission to[newline]&7do this.'
+          name: '&4&lMissing Permission'
+        entry_object:
+          lore: '&8✖ &bLEFT CLICK[newline]   &7Open menu.[newline]&8✖ &9RIGHT CLICK[newline]   &7Teleport
+            to the hopper[newline]   &7for&c {cost}&7.[newline]&8✖ &3DROP[newline]   &7Delete
+            this hopper.'
+          name: '{name}'
+          material: HOPPER
+  list_links:
+    title: '&8Links'
+    items:
+      default:
+        entry_object:
+          lore: '&8✖ &7Manage the filter.[newline][newline]&8✖ &9RIGHT CLICK[newline]   &7Rename[newline]&8✖
+            &eKey Q[newline]   &7Unlink[newline][newline]&7&lIf insert by order is
+            enabled:[newline] &8✖ &bSHIFT + LEFT CLICK[newline]    &7Higher priority[newline]
+            &8✖ &9SHIFT + RIGHT CLICK[newline]    &7Lower priority[newline][newline]
+            &8• &7Information:[newline]   &8- &7Type: {type}[newline]   &8- &7Position:
+            world={world}, x={x}, y={y}, z={z}[newline]   &8- &7Filter mode: {filter-mode}'
+          name: '&6&l{name}'
+          material: INHERIT
+        refresh_insert_by_order:
+          lore: '&8✖ &7Insert items by link order?[newline][newline]   &8• &7&lIf
+            enabled:[newline]     &7Items are always added to the first[newline]     &7link
+            which filter accepts the item.[newline]     &7They aren''t distributed
+            equally[newline]     &7over all links that accept this item.'
+          name: '&6&lInsert by Order: {status}'
+          material: COMPARATOR
+          slots: 41
+  action-confirm:
+    title: '&8Confirm this Action'
+    items:
+      default:
+        confirm:
+          name: '&a&lConfirm'
+          material: LIME_STAINED_GLASS_PANE
+          slots:
+          - 1-4
+          - 10-13
+          - 19-22
+          - 28-31
+          - 37-40
+        cancel:
+          name: '&c&lCancel'
+          material: RED_STAINED_GLASS_PANE
+          slots:
+          - 6-9
+          - 15-18
+          - 24-27
+          - 33-36
+          - 42-45
+        info:
+          lore: '&7Click &a&lConfirm &7to confirm or[newline]&c&lCancel &7to abort
+            this action.'
+          name: '&6&lConfirm this Action'
+          material: OAK_SIGN
+          slots:
+          - 5
+          - 14
+          - 23
+          - 32
+          - 41
+
+physical:
+  currency:
+    name: ''
+    material: GOLD_INGOT
+  hopper:
+    lore: '&7With this item you[newline]&7can create a better[newline]&7hopper by
+      placing[newline]&7it somewhere.[newline][newline]&8> &7Stats[newline]  &7Owner:&2
+      {owner}[newline]  &7Transfer amount:&a {transfer} &7items[newline]  &7Suction
+      radius:&a {suction}[newline]  &7Links:&a {links} &7links[newline]  &7Max distance:&a
+      {distance} &7blocks'
+    name: '&a{type}'
+    material: HOPPER
+common_sounds:
+  # Play a sound when the item is set in the menu.
+  set:
+    # Each item starting with [item_type]_failure_<name> will have this sound set.
+    # You can still override the "sound_set" for any item in their sections.
+    failure: entity.villager.no

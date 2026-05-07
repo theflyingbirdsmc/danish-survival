@@ -1,0 +1,22 @@
+# Here you can edit all dialogs.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/locale-and-config/dialogs
+
+dialogs:
+  input:
+    title: Input
+    inputs:
+      text:
+        label: Text
+      player:
+        label: Player
+    buttons:
+      confirm:
+        label: '&aConfirm'
+        tooltip: Click here to confirm your input.
+      discard:
+        label: '&cDiscard'
+        tooltip: Click to discard your input.
