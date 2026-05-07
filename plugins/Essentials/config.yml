@@ -676,7 +676,7 @@ allow-bulk-buy-sell: true
 
 # Allow selling of items with custom names with the /sell command.
 # This may be useful to prevent players accidentally selling named items.
-allow-selling-named-items: false
+allow-selling-named-items: true
 
 # Delay for the MOTD display for players on join, in milliseconds.
 # This has no effect if the MOTD command or permission are disabled.
