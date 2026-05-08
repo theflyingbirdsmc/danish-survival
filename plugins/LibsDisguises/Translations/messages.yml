@@ -414,29 +414,8 @@
 # Reference: SKIN_API_UUID_3
 "<red>Using account with UUID version 3. If skin is incorrect, try change 'UUIDVersion' in protocol.yml to 3. If skin is still incorrect and you did not purchase Minecraft, this cannot be fixed.": "<red>Using account with UUID version 3. If skin is incorrect, try change 'UUIDVersion' in protocol.yml to 3. If skin is still incorrect and you did not purchase Minecraft, this cannot be fixed."
 
-# Reference: SKIN_API_IN_USE
-"<red>mineskin.org is currently in use, please try again": "<red>mineskin.org is currently in use, please try again"
-
-# Reference: SKIN_API_TIMER
-"<red>mineskin.org can be used again in %s seconds": "<red>mineskin.org can be used again in %s seconds"
-
 # Reference: SKIN_API_FAIL
 "<red>Unexpected error while accessing mineskin.org, please try again": "<red>Unexpected error while accessing mineskin.org, please try again"
-
-# Reference: SKIN_API_FAIL_TOO_FAST
-"<red>Too many requests accessing mineskin.org, please slow down!": "<red>Too many requests accessing mineskin.org, please slow down!"
-
-# Reference: SKIN_API_BAD_URL
-"<red>Invalid url provided! Please ensure it is a .png file download!": "<red>Invalid url provided! Please ensure it is a .png file download!"
-
-# Reference: SKIN_API_FAILED_URL
-"<red>Invalid url provided! mineskin.org failed to grab it!": "<red>Invalid url provided! mineskin.org failed to grab it!"
-
-# Reference: SKIN_API_403
-"mineskin.org denied access to that url": "mineskin.org denied access to that url"
-
-# Reference: SKIN_API_404
-"mineskin.org unable to find an image at that url": "mineskin.org unable to find an image at that url"
 
 # Reference: SKIN_API_IMAGE_TIMEOUT
 "<red>Error! mineskin.org took too long to connect! Is your image valid?": "<red>Error! mineskin.org took too long to connect! Is your image valid?"
@@ -530,9 +509,6 @@
 
 # Reference: ERROR_LOADING_CUSTOM_DISGUISE
 "<red>Error while loading custom disguise '%s'%s": "<red>Error while loading custom disguise '%s'%s"
-
-# Reference: SKIN_API_INTERNAL_ERROR
-"<red>Internal error in the skin API, perhaps bad data?": "<red>Internal error in the skin API, perhaps bad data?"
 
 # Reference: META_NOT_FOUND
 "<red>No meta exists under that name!": "<red>No meta exists under that name!"
@@ -807,12 +783,6 @@
 # Reference: CLICK_TO_COPY_HOVER_CLIPBOARD
 "<gold>%s / %s. Click to Copy to Clipboard</gold>\n<green>%s</green>": "<gold>%s / %s. Click to Copy to Clipboard</gold>\n<green>%s</green>"
 
-# Reference: SKIN_API_FAIL_CODE
-"<red>Error! Mineskin gave code %s, %s": "<red>Error! Mineskin gave code %s, %s"
-
-# Reference: SKIN_API_IMAGE_HAS_ERROR
-"Mineskin tells us this error and that's all we know: %s": "Mineskin tells us this error and that's all we know: %s"
-
 # Reference: SKIN_API_TOO_MANY_FAILURES
 "<red>Too many failures when trying to resolve skin for <light_purple>%s</light_purple>, to prevent backend spam you will not be able to make any more requests until a hour has passed from your last failed request. Try /grabskin if you need to test.": "<red>Too many failures when trying to resolve skin for <light_purple>%s</light_purple>, to prevent backend spam you will not be able to make any more requests until a hour has passed from your last failed request. Try /grabskin if you need to test."
 
@@ -868,3 +838,26 @@
 
 # Reference: LD_DEBUG_DISGUISE_LOOP
 "<blue>/libsdisguises disguiseloop - <aqua>Used to quickly loop through every disguise for problematic ones": "<blue>/libsdisguises disguiseloop - <aqua>Used to quickly loop through every disguise for problematic ones"
+# Reference: LIBS_UPDATE_CANT_SWITCH_BRANCH
+"<red>[LibsDisguises] Invalid argument, update branch has been set to %s in libsdisguises.yml and cannot be ignored. Change this to SAME_BUILDS and use /ld reload to restore normal behavior.": "<red>[LibsDisguises] Invalid argument, update branch has been set to %s in libsdisguises.yml and cannot be ignored. Change this to SAME_BUILDS and use /ld reload to restore normal behavior."
+
+# Reference: PARSE_PARTICLE_TRAIL
+"<red>Expected <green>%s:Target(3 numbers),Color(3 numbers or red/blue/etc)</green> eg <green>X,Y,Z:RED</green>, received <green>%s</green> instead": "<red>Expected <green>%s:Target(3 numbers),Color(3 numbers or red/blue/etc)</green> eg <green>X,Y,Z:RED</green>, received <green>%s</green> instead"
+
+# Reference: SKIN_API_IN_USE
+"<red>mineskin.org is currently in use, please try again.": "<red>mineskin.org is currently in use, please try again."
+
+# Reference: SKIN_API_TIMER
+"<red>mineskin.org can be used again in %s seconds.": "<red>mineskin.org can be used again in %s seconds."
+
+# Reference: SKIN_API_SUGGEST_KEY
+"<red>Try setting up a MineSkin API key for improved access!": "<red>Try setting up a MineSkin API key for improved access!"
+
+# Reference: SKIN_API_FAIL_TOO_FAST
+"<red>Too many requests accessing mineskin.org, please slow down!%s": "<red>Too many requests accessing mineskin.org, please slow down!%s"
+
+# Reference: SKIN_API_FAIL_CODE
+"<red>Error! Mineskin gave code %s with message %s": "<red>Error! Mineskin gave code %s with message %s"
+
+# Reference: SKIN_API_FAIL_CODE_EXCEPTIONAL
+"<red>Error! Mineskin gave a response code of %s and message %s": "<red>Error! Mineskin gave a response code of %s and message %s"

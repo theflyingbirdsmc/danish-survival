@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 0:0:0:0:0:0:0:1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1778177812070
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1778273719138
+  login: 1778273757794
+money: '1000005645524.0'
+last-account-name: Kri1ler
+lastlocation:
+  world: 59c784d7-916b-4504-89d7-002bf9d6631f
+  world-name: world_danish_survival
+  x: 1258.6082018850384
+  y: 78.0
+  z: -1183.195704115352
+  yaw: 160.64129638671875
+  pitch: -10.081863403320312
+logoutlocation:
+  world: 59c784d7-916b-4504-89d7-002bf9d6631f
+  world-name: world_danish_survival
+  x: 1385.7890768403358
+  y: 139.1445652606447
+  z: -988.5896873927652
+  yaw: 70.72565460205078
+  pitch: 53.246395111083984
+homes:
+  end:
+    world: 59c784d7-916b-4504-89d7-002bf9d6631f
+    world-name: world_danish_survival
+    x: 1112.343643271459
+    y: 6.846627883668978
+    z: -1331.7346938759229
+    yaw: -25.11147689819336
+    pitch: 6.3992390632629395

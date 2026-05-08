@@ -202,6 +202,7 @@ command:
         to: ' &eto: &f'
         objectives: Objectives
         rewards: Reward commands
+        rewardAmount: ' &eAmount: &f'
         description: '&eDescription'
         areas: '&eRestricted areas'
   blockinfo:
@@ -347,6 +348,9 @@ command:
         info: '&eFish'
         none: '%jobname% does not get money from fishing.'
       pyrofishingpro:
+        info: '&eFish'
+        none: '%jobname% does not get money from fishing.'
+      customfishing:
         info: '&eFish'
         none: '%jobname% does not get money from fishing.'
       craft:
@@ -565,9 +569,9 @@ command:
     output:
       addedNew: '&eAdded a new restricted area with &6%bonus% &ebonus'
       removed: '&eRemoved the restricted area &6%name%'
-      list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%)
-        &6%bonus%'
-      wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
+      lists: '&7%number%&f. &7%areaname% &f%worldname% &7(&a%x1%:%y1%:%z1%&7/&e%x2%:%y2%:%z2%&7)
+        &2%money% &6%points% &e%exp%'
+      wgLists: '&7%number%&f. WorldGuard: &7%areaname% &2%money% &6%points% &e%exp%'
       noAreas: '&eThere are no saved restricted areas'
       noAreasByLoc: '&eThere are no restricted areas in this location'
       areaList: '&eRestricted areas by your location: &6%list%'
@@ -676,11 +680,16 @@ command:
     output:
       turnedoff: '&4This feature is turned off!'
       paid:
+        main: '&aYou got:'
+        money: '&e[amount] money'
+        exp: '&7[exp] exp'
+        points: '&6[points] points'
         ACmoney: '&e+[amount]$ '
         ACexp: '&7+[exp]XP '
         ACpoints: '&6+[points]pts '
-      'on': '&aToggled: &aON'
-      'off': '&aToggled: &4OFF'
+      Rapid: '&7[type]&a: &7Rapid'
+      Batched: '&7[type]&a: &fBatched'
+      'Off': '&7[type]&a: &6Off'
   howmuch:
     help:
       info: Check potential payment by target entity or block

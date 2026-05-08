@@ -290,3 +290,9 @@ Salvageables:
     CARROT_ON_A_STICK:
         MinimumLevel: 0
         XpMultiplier: 0.5
+    CROSSBOW:
+        MinimumLevel: 0
+        XpMultiplier: 1
+    TRIDENT:
+        MinimumLevel: 0
+        XpMultiplier: 1

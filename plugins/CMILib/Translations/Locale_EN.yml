@@ -194,7 +194,6 @@ info:
   pageCount: '&2[current]&7/&2[total]'
   pageCountHover: '&e[totalEntries] entries'
   skullOwner: '!actionbar!&7Owner:&r [playerName]'
-  playerHeadName: '&eHead of &7[playerName]'
   mobHeadName: '&eHead of &f[mobName]'
   circle: '&3Circle'
   square: '&5Square'
@@ -238,72 +237,6 @@ info:
     void: Void
     wither: Wither
     world_border: world border
-  Biomes:
-    BADLANDS: Badlands
-    BAMBOO_JUNGLE: Bamboo jungle
-    BASALT_DELTAS: Basalt deltas
-    BEACH: Beach
-    BIRCH_FOREST: Birch forest
-    CHERRY_GROVE: Cherry grove
-    COLD_OCEAN: Cold ocean
-    CRIMSON_FOREST: Crimson forest
-    CUSTOM: Custom
-    DARK_FOREST: Dark forest
-    DEEP_COLD_OCEAN: Deep cold ocean
-    DEEP_DARK: Deep dark
-    DEEP_FROZEN_OCEAN: Deep frozen ocean
-    DEEP_LUKEWARM_OCEAN: Deep lukewarm ocean
-    DEEP_OCEAN: Deep ocean
-    DESERT: Desert
-    DRIPSTONE_CAVES: Dripstone caves
-    END_BARRENS: End barrens
-    END_HIGHLANDS: End highlands
-    END_MIDLANDS: End midlands
-    ERODED_BADLANDS: Eroded badlands
-    FLOWER_FOREST: Flower forest
-    FOREST: Forest
-    FROZEN_OCEAN: Frozen ocean
-    FROZEN_PEAKS: Frozen peaks
-    FROZEN_RIVER: Frozen river
-    GROVE: Grove
-    ICE_SPIKES: Ice spikes
-    JAGGED_PEAKS: Jagged peaks
-    JUNGLE: Jungle
-    LUKEWARM_OCEAN: Lukewarm ocean
-    LUSH_CAVES: Lush caves
-    MANGROVE_SWAMP: Mangrove swamp
-    MEADOW: Meadow
-    MUSHROOM_FIELDS: Mushroom fields
-    NETHER_WASTES: Nether wastes
-    OCEAN: Ocean
-    OLD_GROWTH_BIRCH_FOREST: Old growth birch forest
-    OLD_GROWTH_PINE_TAIGA: Old growth pine taiga
-    OLD_GROWTH_SPRUCE_TAIGA: Old growth spruce taiga
-    PLAINS: Plains
-    RIVER: River
-    SAVANNA: Savanna
-    SAVANNA_PLATEAU: Savanna plateau
-    SMALL_END_ISLANDS: Small end islands
-    SNOWY_BEACH: Snowy beach
-    SNOWY_PLAINS: Snowy plains
-    SNOWY_SLOPES: Snowy slopes
-    SNOWY_TAIGA: Snowy taiga
-    SOUL_SAND_VALLEY: Soul sand valley
-    SPARSE_JUNGLE: Sparse jungle
-    STONY_PEAKS: Stony peaks
-    STONY_SHORE: Stony shore
-    SUNFLOWER_PLAINS: Sunflower plains
-    SWAMP: Swamp
-    TAIGA: Taiga
-    THE_END: The end
-    THE_VOID: The void
-    WARM_OCEAN: Warm ocean
-    WARPED_FOREST: Warped forest
-    WINDSWEPT_FOREST: Windswept forest
-    WINDSWEPT_GRAVELLY_HILLS: Windswept gravelly hills
-    WINDSWEPT_HILLS: Windswept hills
-    WINDSWEPT_SAVANNA: Windswept savanna
-    WOODED_BADLANDS: Wooded badlands
   EntityType:
     allay: Allay
     area_effect_cloud: Area effect cloud

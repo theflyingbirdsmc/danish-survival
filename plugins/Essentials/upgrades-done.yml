@@ -14,3 +14,4 @@ updateUsersMailList: true
 updatePurgeBrokenNpcAccounts: true
 newUidCacheBuilt: true
 updateLegacyToAdventure: true
+updateRandomTeleport: true

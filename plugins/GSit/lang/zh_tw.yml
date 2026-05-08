@@ -13,8 +13,6 @@ Plugin:
   plugin-disabled: '[P]&a 插件已成功禁用'
   plugin-prefix: '&7[&6GSit&7]'
 
-
-
 Messages:
   action-sit-error: '[P]&c 由於錯誤，你無法在這裡坐下！'
   action-pose-error: '[P]&c 由於錯誤，你無法在這裡躺下！'

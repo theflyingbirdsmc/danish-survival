@@ -1,7 +1,7 @@
 #
 # Edited by roracle to include 1.13 items and item names, prepping for 1.14 as well.
 #
-# Stores information about each job.
+# Stores information about each job
 #
 # NOTE: When having multiple jobs, both jobs will give the income payout to the player
 # even if they give the pay for one action (make the configurations with this in mind)
@@ -126,6 +126,8 @@ exampleJob:
       RewardCommands:
       - eco give [playerName] 500
       - msg [playerName] Completed quest!
+      # Reward amount to be given to player after quest is finished
+      RewardAmount: 0
       # Quest description to be used to explain quest requirements or rewards for player
       RewardDesc:
       - Break 300 Oak wood
@@ -416,6 +418,12 @@ exampleJob:
       income: 1.0
       points: 1.0
       experience: 1.0
+  # Catching CUSTOM fish of the CustomFishing plugin
+  CustomFishing:
+    CustomFishId:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
   # Repairing items
   Repair:
     wood_sword:
@@ -538,11 +546,16 @@ exampleJob:
       permission: aaaaaatest.node2
       # Permission granted when reaching level 10
       level: 10
+  # Permissions granted when particular conditions are met
+  conditions:
+    # Condition name, irrelevant, you can write anything in here
     first:
+      # j marks that player should have particular jobs level and higher
       requires:
       - j:Miner-50
       - j:Digger-50
       - p:essentials.notnoob
+      # p marks permission, player will get if given true value, if used false, permission will be taken
       perform:
       - p:essentials.fly-true
   # Commands executed when player reached level

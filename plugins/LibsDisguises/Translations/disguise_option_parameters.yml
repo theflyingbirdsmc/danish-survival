@@ -122,34 +122,6 @@
 # Used for the disguise option Villager Profession
 "NONE": "NONE"
 
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
-# Used for the disguise option Villager Profession
-
 # A disguise option name, has description View all the biomes you can set on a Villager and Zombie Villager
 "Villager Biome": "Villager Biome"
 
@@ -157,20 +129,10 @@
 "View all the biomes you can set on a Villager and Zombie Villager": "View all the biomes you can set on a Villager and Zombie Villager"
 
 # Used for the disguise option Villager Biome
-
-# Used for the disguise option Villager Biome
 "JUNGLE": "JUNGLE"
 
 # Used for the disguise option Villager Biome
-
-# Used for the disguise option Villager Biome
-
-# Used for the disguise option Villager Biome
 "SNOW": "SNOW"
-
-# Used for the disguise option Villager Biome
-
-# Used for the disguise option Villager Biome
 
 # A disguise option name, has description View the directions usable on player setSleeping and shulker direction
 "Direction": "Direction"
@@ -207,20 +169,6 @@
 
 # Used for the disguise option Rabbit Type
 "GOLD": "GOLD"
-
-# Used for the disguise option Rabbit Type
-
-# Used for the disguise option Rabbit Type
-
-# Used for the disguise option Rabbit Type
-
-# A disguise option name, has description View the different types of tree species
-
-# Description for the disguise option Tree Species
-
-# Used for the disguise option Tree Species
-
-# Used for the disguise option Tree Species
 
 # Used for the disguise option Tree Species
 "BIRCH": "BIRCH"
@@ -274,59 +222,13 @@
 "The different particles of Minecraft": "The different particles of Minecraft"
 
 # Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
 "CRIT": "CRIT"
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
 
 # Used for the disguise option Particle
 "NOTE": "NOTE"
 
 # Used for the disguise option Particle
 "PORTAL": "PORTAL"
-
-# Used for the disguise option Particle
 
 # Used for the disguise option Particle
 "FLAME": "FLAME"
@@ -344,22 +246,10 @@
 "SNOWBALL": "SNOWBALL"
 
 # Used for the disguise option Particle
-
-# Used for the disguise option Particle
 "SLIME": "SLIME"
 
 # Used for the disguise option Particle
 "HEART": "HEART"
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
 
 # Used for the disguise option Particle
 "DRAGON_BREATH": "DRAGON_BREATH"
@@ -375,8 +265,6 @@
 
 # Used for the disguise option Particle
 "FALLING_DUST": "FALLING_DUST"
-
-# Used for the disguise option Particle
 
 # Used for the disguise option Particle
 "SPIT": "SPIT"
@@ -516,12 +404,6 @@
 # Used for the disguise option Particle
 "BLOCK_MARKER": "BLOCK_MARKER"
 
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
 # A disguise option name, has description Patterns of a tropical fish
 "Pattern": "Pattern"
 
@@ -639,8 +521,6 @@
 "SPIN_ATTACK": "SPIN_ATTACK"
 
 # Used for the disguise option EntityPose
-
-# Used for the disguise option EntityPose
 "DYING": "DYING"
 
 # A disguise option name, has description The type of cat
@@ -648,22 +528,6 @@
 
 # Description for the disguise option Cat Type
 "The type of cat": "The type of cat"
-
-# Used for the disguise option Cat Type
-
-# Used for the disguise option Cat Type
-
-# Used for the disguise option Cat Type
-
-# Used for the disguise option Cat Type
-
-# Used for the disguise option Cat Type
-
-# Used for the disguise option Cat Type
-
-# Used for the disguise option Cat Type
-
-# Used for the disguise option Cat Type
 
 # A disguise option name, has description The type of fox
 "Fox Type": "Fox Type"
@@ -1240,8 +1104,6 @@
 
 # Used for the disguise option Material
 "COBWEB": "COBWEB"
-
-# Used for the disguise option Material
 
 # Used for the disguise option Material
 "FERN": "FERN"
@@ -2817,8 +2679,6 @@
 
 # Used for the disguise option Material
 "TURTLE_HELMET": "TURTLE_HELMET"
-
-# Used for the disguise option Material
 
 # Used for the disguise option Material
 "FLINT_AND_STEEL": "FLINT_AND_STEEL"
@@ -4450,7 +4310,6 @@
 "ItemStack": "ItemStack"
 
 # A disguise option descriptive name
-"ItemStack (Material,Amount?,Glow?)": "ItemStack (Material,Amount?,Glow?)"
 
 # Description for the disguise option ItemStack
 "An ItemStack compromised of Material,Amount,Glow. Only requires Material": "An ItemStack compromised of Material,Amount,Glow. Only requires Material"
@@ -4574,10 +4433,6 @@
 
 # Description for the disguise option Block Position
 "Three numbers separated by a ,": "Three numbers separated by a ,"
-
-# A disguise option name, has description Get the gameprofile here https://sessionserver.mojang.com/session/minecraft/profile/PLAYER_UUID_GOES_HERE?unsigned=false
-
-# Description for the disguise option GameProfile
 
 # A disguise option name, has description Set how long the disguise lasts, <Num><Time><Num>... where <Time> is (s/sec)(m/min)(h/hour)(d/day) etc. 30m20secs = 30 minutes, 20 seconds
 "Expiry Time": "Expiry Time"
@@ -4956,12 +4811,6 @@
 
 # Description for the disguise option Frog Variant
 "The variant of Frog": "The variant of Frog"
-
-# Used for the disguise option Frog Variant
-
-# Used for the disguise option Frog Variant
-
-# Used for the disguise option Frog Variant
 
 # A disguise option name, has description 14 comma seperated numbers for a position translation
 "Transformation": "Transformation"
@@ -5618,10 +5467,6 @@
 "GUST": "GUST"
 
 # Used for the disguise option Particle
-
-# Used for the disguise option Particle
-
-# Used for the disguise option Particle
 "TRIAL_SPAWNER_DETECTION": "TRIAL_SPAWNER_DETECTION"
 
 # Used for the disguise option EntityPose
@@ -5819,7 +5664,6 @@
 # Used for the disguise option SoundGroup
 "BREEZE": "BREEZE"
 
-# Used for the disguise option SoundGroup
 # Used for the disguise option Art
 "BAROQUE": "BAROQUE"
 
@@ -5992,8 +5836,6 @@
 "portal": "portal"
 
 # Used for the disguise option Particle
-
-# Used for the disguise option Particle
 "gust_emitter_large": "gust_emitter_large"
 
 # Used for the disguise option Particle
@@ -6154,8 +5996,6 @@
 
 # Used for the disguise option Particle
 "cloud": "cloud"
-
-# Used for the disguise option Particle
 
 # Used for the disguise option Particle
 "dust": "dust"
@@ -6639,3 +6479,71 @@
 
 # Used for the disguise option SoundGroup
 "BREEZE_WIND_CHARGE": "BREEZE_WIND_CHARGE"
+# A disguise option name, has description 'Controls how the player will view oversized self disguises'
+"Tall Disguise": "Tall Disguise"
+
+# Description for the disguise option Tall Disguise
+"Controls how the player will view oversized self disguises": "Controls how the player will view oversized self disguises"
+
+# Used for the disguise option Tall Disguise
+"VISIBLE": "VISIBLE"
+
+# Used for the disguise option Tall Disguise
+"SCALED": "SCALED"
+
+# Used for the disguise option Tall Disguise
+"HIDDEN": "HIDDEN"
+
+# Used for the disguise option Particle
+"block_crumble": "block_crumble"
+
+# Used for the disguise option Particle
+"firefly": "firefly"
+
+# Used for the disguise option Particle
+"copper_fire_flame": "copper_fire_flame"
+
+# Used for the disguise option Particle
+"light": "light"
+
+# Used for the disguise option Particle
+"pause_mob_growth": "pause_mob_growth"
+
+# Used for the disguise option Particle
+"pale_oak_leaves": "pale_oak_leaves"
+
+# Used for the disguise option Particle
+"trail": "trail"
+
+# Used for the disguise option Particle
+"barrier": "barrier"
+
+# Used for the disguise option Particle
+"tinted_leaves": "tinted_leaves"
+
+# Used for the disguise option Particle
+"reset_mob_growth": "reset_mob_growth"
+
+# A disguise option descriptive name
+"ItemStack (Material,Amount?,Glow?) or ItemStack[data=data] (valid via /give)": "ItemStack (Material,Amount?,Glow?) or ItemStack[data=data] (valid via /give)"
+
+# Used for the disguise option SoundGroup
+"CREAKING": "CREAKING"
+
+# Used for the disguise option SoundGroup
+"WOLF$angry": "WOLF$angry"
+
+# Used for the disguise option SoundGroup
+"WOLF$big": "WOLF$big"
+
+# Used for the disguise option SoundGroup
+"WOLF$cute": "WOLF$cute"
+
+# Used for the disguise option SoundGroup
+"WOLF$grumpy": "WOLF$grumpy"
+
+# Used for the disguise option SoundGroup
+"WOLF$puglin": "WOLF$puglin"
+
+# Used for the disguise option SoundGroup
+"WOLF$sad": "WOLF$sad"

@@ -45,6 +45,10 @@ claim:
         # Note: This setting does not affect a claim whose parent is a town.
         inherit-parent: false
 
+        # Whether plots should inherit their parent on creation. (Default: False)
+        # Note: This setting does not affect a claim whose parent is a town.
+        inherit-parent-plot: true
+
         # The maximum world height override used during claim creation.
         # Note: Requires 'override-world-height' to be enabled.
         max-world-height-override: 255
@@ -94,6 +98,17 @@ claim:
 
     # The cooldown time, in seconds, when using the '/trapped' command. (Default: 300)
     player-trapped-cooldown: 300
+
+    # Controls plot claim settings.
+    plot-settings:
+        # If enabled, a schematic will be generated on plot creation and used to restore the plot to its original state when abandoned. (Default: true)
+        # Note: A schematic will restore all blocks to their original state. Use with caution.
+        # Note: This setting requires WorldEdit.
+        use-schematics: true
+
+        # If enabled, snapshots will be generated on plot creation and used to restore the plot to its original state when abandoned. (Default: true)
+        # Note: A snapshot will include all claim data such as settings, flags, options, and trust.
+        use-snapshots: true
 
     # Whether tamed entities should be protected in claims from non-owners. Default: true
     protect-tamed-entities: true
@@ -581,6 +596,9 @@ playerdata:
     # This requires 'claim-block-system' to be set to VOLUME.
     migrate-volume-rate: -1
 
+    # Whether limiting claim options are checked per world instead of globally. Allows for finer per-world control when using global or server-wide playerdata. (Default: False)
+    per-world-claim-limits: false
+
     # If enabled, resets all playerdata accrued claim blocks to match total cost of claims owned.
     # Example: If a player has 5 basic claims with a total cost of 1000, this will set their accrued claim blocks to 1000.
     # Note: This will also reset all bonus claim blocks to 0. It is highly recommended to backup before using.
@@ -615,6 +633,10 @@ town:
     # The required amount of funds to create a town. (Default: 0)
     # Note: This requires an Economy plugin.
     creation-cost: 0.0
+tracker:
+    # Whether GD should track block physic changes caused by players. (Default: true)
+    # Note: This is a core functionality of GD. Disabling this will prevent GD from tracking block changes not directly caused by a player.
+    block-physics: true
 visual:
     # The active time, in seconds, to keep a claim's visuals shown to a player. (Default: 60)
     # Note: If value is <= 0, GD will use the default value.
@@ -680,6 +702,18 @@ visual:
 
     # The visual corner block used while in restore nature mode. (Default: minecraft:diamond_block)
     nature-corner-block: minecraft:diamond_block
+
+    # The visual accent block used for plots. (Default: minecraft:prismarine_bricks)
+    plot-accent-block: minecraft:prismarine_bricks
+
+    # The visual accent block used to represent a plot that is vacant. (Default: minecraft:prismarine)
+    plot-accent-vacant-block: minecraft:prismarine
+
+    # The visual corner block used for plots. (Default: minecraft:sea_lantern)
+    plot-corner-block: minecraft:sea_lantern
+
+    # The visual filler block used for plots. (Default: minecraft:prismarine_bricks)
+    plot-filler-block: minecraft:prismarine_bricks
 
     # The visual accent block used for subdivision claims. (Default: minecraft:white_wool or minecraft:wool for legacy versions)
     subdivision-accent-block: minecraft:white_wool

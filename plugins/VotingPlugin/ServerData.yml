@@ -1,13 +1,21 @@
-LastUpdated: 1730081107145
+LastUpdated: 1778273743499
 VotingPlugin:
-  AutoCachePlaceholders: []
+  AutoCachePlaceholders:
+  - total_alltime
+  - top_all_position
+  - total_monthly
+  - top_month_position
+  - dailyvotestreak
+  - bestdailyvotestreak
+  - next_anysite
   AutoCacheUpdated: true
-  Version: '1.21.1-122-4430e96 (MC: 1.21.1)'
+  Version: '1.21.1-133-3cb8529 (MC: 1.21.1)'
   BungeeVotePartyCurrent: 0
   BungeeVotePartyRequired: 0
+  VoteShopConverted: true
 PluginVersions:
-  VotingPlugin: 6.16.1
-Month: OCTOBER
-PrevWeek: 44
-PrevDay: 27
+  VotingPlugin: 6.18.4
+Month: MAY
+PrevWeek: 19
+PrevDay: 8
 IgnoreTime: false

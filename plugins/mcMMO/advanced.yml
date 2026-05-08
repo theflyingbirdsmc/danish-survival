@@ -95,6 +95,8 @@ Skills:
                     CapLevel: 1000
                     IncreaseLevel: 50
             EnchantBuff: 5
+        Attack_Cooldown:
+            Adjust_Skills_For_Attack_Cooldown: true
     # IncreaseLevel: This setting will determine when the length of every ability gets longer with 1 second
     # EnchantBuff: This setting determines how many enchant levels to use when buffing Super Breaker & Giga Drill Breaker
 
@@ -520,6 +522,9 @@ Skills:
             # BleedTicks: This determines how long the bleeding effect of SerratedStrikes lasts
             DamageModifier: 4.0
             BleedTicks: 5
+        Stab:
+            Base_Damage: 1.0
+            Per_Rank_Multiplier: 1.5
     #
     #  Settings for Taming
     # ##
@@ -633,3 +638,10 @@ Skills:
             MaxBonusLevel:
                 Standard: 100
                 RetroMode: 1000
+    Maces:
+        Cripple:
+            Chance_To_Apply_On_Hit:
+                Rank_1: 10
+                Rank_2: 15
+                Rank_3: 20
+                Rank_4: 33

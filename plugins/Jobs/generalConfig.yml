@@ -474,6 +474,11 @@ ExploitProtections:
   # Disable if you having issues with it or using old version
   MythicMobs:
     enabled: true
+  # CustomFishing plugin support (Optional)
+  # If setting is enabled, Fish and PyroFishingPro actions are disabled and only CustomFishing action is enabled.
+  # Leave it disabled if you're not experiencing issues because of CustomFishing Plugin.
+  CustomFishing:
+    Use-CustomFishing-Only: false
   Smelt:
     # Prevent payments when hoppers moving items into furnace
     # Player will not get paid, but items will be smelted
@@ -494,12 +499,20 @@ old-job:
   # Percentage to loose when leaving job at max level
   # Only works when fix-at-max-level is set to false
   level-loss-from-max-level: 30
-ActionBars:
+ChatText:
   Messages:
-    # When this set to true player will see action bar messages by default
-    # When false, players will see chat messages instead.
-    EnabledByDefault: true
-    # Time in seconds action bar will remain visible if enabled
+    # States of chat text messages when payment is issued
+    # Valid options: Off, Batched
+    # This will be used if player disables action bar payment messages
+    DefaultState: 'Off'
+ActionBars:
+  # Enables ActionBar messages
+  Enabled: true
+  Messages:
+    # States of action bar messages
+    # Valid options: Off, Rapid, Batched
+    DefaultState: Rapid
+    # Time in seconds action bar will remain visible if rapid state is enabled
     # This time is used to define for how long we will accumulate payments to be shown in action bar
     # If no payments are being issued in defined time then it will reset to 0 and remain hidden
     KeepFor: 5
@@ -509,7 +522,7 @@ BossBar:
   Enabled: true
   Messages:
     # When this set to true player will see Bossbar messages by default
-    EnabledByDefault: true
+    DefaultState: Batched
   # Defines in how many parts bossbar will be split visually
   # Valid options: 1, 6, 10, 12, 20
   SegmentCount: 1
@@ -630,6 +643,9 @@ Commands:
     JobsTop:
       # Defines amount of players to be shown in one page for /jobs top & /jobs gtop
       AmountToShow: 15
+      # List of player names who should be excluded from /jobs top & /jobs gtop
+      HiddenPlayers:
+      - Zrips
     Placeholders:
       # Defines amount of placeholders to be shown in one page for /jobs placeholders
       AmountToShow: 10
@@ -645,9 +661,14 @@ Commands:
   JobsInfo:
     # Open up the jobs browse action list, when your performed /jobs info command?
     open-browse: false
+  Stats:
+    # Amount of progress bars to be shown in /jobs stats command
+    BarCount: 50
 BlockOwnership:
   # Set to 0 or lower if you want to disable this. Setting to positive number will mean that player needs to be in this range from owner block to get paid
   Range: 0
   # When enabled by interacting with furncae ownership will get transfered to new player
   # If set to false then furnace will belong to player who interacted with it first until its ownership is removed
   TakeOver: false
+  # When set to true, all checks and actions regarding ownership will no longer be carried out. This mode does not cause a loss of any already existing data.
+  Disabled: false

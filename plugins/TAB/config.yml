@@ -1,4 +1,3 @@
-# Detailed explanation of all options available at https://github.com/NEZNAMY/TAB/wiki/config.yml
 header-footer:
   enabled: true
   header:
@@ -32,27 +31,15 @@ scoreboard-teams:
   - GROUPS:founder,cto,csm,sm,phoenix,colibri,budgie,default
   - PLACEHOLDER_A_TO_Z:%player%
   case-sensitive-sorting: true
-  unlimited-nametag-mode:
-    enabled: true
-    disable-on-boats: true
-    space-between-lines: 0.22
-    dynamic-lines:
-    - abovename
-    - nametag
-    - belowname
-    - another
-    static-lines:
-      myCustomLine: 0.66
-    disable-condition: '%world%=disabledworld'
   can-see-friendly-invisibles: false
   disable-condition: '%world%=disabledworld'
 belowname-objective:
   enabled: false
-  number: '%health%'
-  text: '&cHealth'
   disable-condition: '%world%=disabledworld'
-  fancy-display-default: NPC
-  fancy-display-players: '&c%health%'
+  fancy-value-default: NPC
+  fancy-value: '&c%health%'
+  value: '%health%'
+  title: '&cHealth'
 prevent-spectator-effect:
   enabled: false
 bossbar:
@@ -87,7 +74,6 @@ scoreboard:
   use-numbers: false
   static-number: 0
   delay-on-join-milliseconds: 0
-  respect-other-plugins: true
   scoreboards:
     danish-survival:
       title: '&#ee2b23T&#f04923h&#f26622e &#3551d7F&#366dd9l&#3789dby&#38a4ddi&#39c0dfn&#3adce1g
@@ -125,15 +111,6 @@ conditions:
     - '%player%=%essentials_nickname%'
     true: '%player%'
     false: ~%essentials_nickname%
-placeholderapi-refresh-intervals:
-  default-refresh-interval: 500
-  '%server_uptime%': 1000
-  '%server_tps_1_colored%': 1000
-  '%server_unique_joins%': 5000
-  '%player_health%': 200
-  '%player_ping%': 1000
-  '%vault_prefix%': 1000
-  '%rel_factionsuuid_relation_color%': 1000
 assign-groups-by-permissions: false
 primary-group-finding-list:
 - Owner
@@ -152,6 +129,7 @@ mysql:
 use-online-uuid-in-tablist: true
 global-playerlist:
   enabled: false
+  update-latency: false
 layout:
   enabled: false
 permission-refresh-interval: 1000
@@ -160,5 +138,22 @@ playerlist-objective:
   value: '%ping%'
   disable-condition: '%world%=disabledworld'
   fancy-value: '&7%ping%'
+  title: Java Edition is better
+  render-type: INTEGER
 ping-spoof:
   enabled: false
+proxy-support:
+  enabled: true
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+compensate-for-packetevents-bug: false
+placeholder-refresh-intervals:
+  default-refresh-interval: 500
+  '%server_uptime%': 1000
+  '%server_tps_1_colored%': 1000
+  '%server_unique_joins%': 5000
+  '%player_health%': 200
+  '%player_ping%': 1000
+  '%vault_prefix%': 1000
+  '%rel_factionsuuid_relation_color%': 1000

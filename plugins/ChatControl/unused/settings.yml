@@ -72,3 +72,8 @@ Discord:
   Forward_From_Bungee: false
 ProtocolLib:
   Book_Anti_Crash: false
+Private_Messages:
+  Allow_Cross_Server_Tab_Complete: true
+Performance:
+  Async_Motd: false
+Avatar_Api_Url: https://minotar.net/avatar/{player_name}/{image_height}.png

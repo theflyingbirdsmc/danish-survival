@@ -13,8 +13,6 @@ Plugin:
   plugin-disabled: '[P]&a El plugin ha sido deshabilitado con éxito.'
   plugin-prefix: '&7[&6GSit&7]'
 
-
-
 Messages:
   action-sit-error: '[P]&c Due to an error you can''t sit here!'
   action-pose-error: '[P]&c Due to an error you can''t pose here!'
