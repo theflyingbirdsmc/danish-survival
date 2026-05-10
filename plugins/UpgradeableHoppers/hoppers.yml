@@ -9,12 +9,12 @@
 hoppers:
   normal:
     # Available types: NORMAL and CHUNK
-    type: NORMAL
+    type: UNORMAL
     # Is default type? Used if no hopper type is provided at /hopper get.
     default: true
     name: '&5&lNormal Hopper'
     item:
-      name: '&5&lNormal Hopper'
+      name: '&5&lUNormal Hopper'
       lore: '&7With this item you[newline]&7can create a better[newline]&7hopper by
         placing[newline]&7it somewhere.[newline][newline]&8> &7Stats[newline]  &7Owner:&2
         {owner}[newline]  &7Transfer amount:&a {transfer} &7items[newline]  &7Suction
