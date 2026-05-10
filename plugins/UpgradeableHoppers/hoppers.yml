@@ -113,7 +113,7 @@ hoppers:
           cost: 5000.0
         '3':
           value: 150
-          cost: 7500.0
+          cost: 7000.0
         '4':
           value: 300
           cost: 9000.0
