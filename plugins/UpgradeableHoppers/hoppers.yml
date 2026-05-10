@@ -9,12 +9,12 @@
 hoppers:
   normal:
     # Available types: NORMAL and CHUNK
-    type: 'NORMAL'
+    type: NORMAL
     # Is default type? Used if no hopper type is provided at /hopper get.
     default: true
-    name: '&9&lUpgradeable Hopper'
+    name: '&5&lNormal UHopper'
     item:
-      name: '&9&lUpgradeable Hopper'
+      name: '&5&lNormal UHopper'
       lore: '&7With this item you[newline]&7can create a better[newline]&7hopper by
         placing[newline]&7it somewhere.[newline][newline]&8> &7Stats[newline]  &7Owner:&2
         {owner}[newline]  &7Transfer amount:&a {transfer} &7items[newline]  &7Suction
@@ -33,93 +33,100 @@ hoppers:
     # You can specify specific containers which should be linkable.
     # If you don't configure a list of containers here, it will allow all containers.
     # List of possible materials (please note that only containers are linkable): https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
-    linktypes: 'ALL'
+    linktypes: ALL
     # Should dropped items be directly inserted into a hopper of this type, if it is within range and has space?
     direct-suction: false
     # You can specify a required permission here. Players without this permission won't be able to get the hopper type at /hoppers get
     # No required permission set as default.
     permission: ''
-
+    
     levels:
       # Transfer amount
       # How many items should be transferred at one transfer?
       transfer_amount:
-        1:
+        '1':
           value: 8
           cost: 0
-        2:
-          value: 11
+        '2':
+          value: 16
           cost: 3000.0
-        3:
-          value: 14
+        '3':
+          value: 32
           cost: 6000.0
-        4:
-          value: 17
-          cost: 17500.0
-        5:
+        '4':
           value: 64
+          cost: 17500.0
+        '5':
+          value: 128
           cost: 35000.0
-
-
+      
+      
       # Suction radius How large should be the suction radius?
       # NOTE: If you want to disable upgradeable suction and enable vanilla hopper suction: Edit the default hopper settings in config.yml
       # For example 2 x 2 x 2
       # Three-dimensional
       suction_radius:
-        1:
-          value: 2
-          cost: 0
-        2:
-          value: 3
-          cost: 500.0
-        3:
-          value: 4
-          cost: 5000.0
-        4:
+        '1':
           value: 5
+          cost: 0
+        '2':
+          value: 10
+          cost: 500.0
+        '3':
+          value: 15
+          cost: 5000.0
+        '4':
+          value: 20
           cost: 7500.0
-
-
+      
+      
       # Links amount
       # How many links can the player create for one hopper?
       # A player can link his hopper to other containers by open the hopper menu and then clicking the link item.
       links_amount:
-        1:
-          value: 1
+        '1':
+          value: 5
           cost: 0
-        2:
-          value: 2
+        '2':
+          value: 25
           cost: 5000.0
-        3:
-          value: 3
-          cost: 8000.0
-        4:
+        '3':
           value: 50
+          cost: 8000.0
+        '4':
+          value: 100
           cost: 10000.0
-
-
+        
+        '5':
+          value: 250
+          cost: 25000.0
+      
+      
       # Maximum distance between a hopper and the link destination.
       # You can use -1 for unlimited.
       link_distance:
-        1:
-          value: 100
+        '1':
+          value: 50
           cost: 0
-        2:
-          value: 125
+        '2':
+          value: 100
           cost: 5000.0
-        3:
+        '3':
           value: 150
           cost: 7500.0
-        4:
-          value: 200
+        '4':
+          value: 300
           cost: 9000.0
-
+        '5':
+          value: -1
+          cost: 50000.0
+  
   chunk:
-    type: 'CHUNK'
-    name: '&9&lChunk Hopper'
+    type: CHUNK
+    name: '&4&lChunk Hopper'
     cost: 5000.0
     item:
-      name: '&9&lUpgradeable Hopper'
+      name: '&4&lChunk Hopper'
       lore: '&7With this item you[newline]&7can create a better[newline]&7hopper by
         placing[newline]&7it somewhere.[newline][newline]&8> &7Stats[newline]  &7Owner:&2
         {owner}[newline]  &7Transfer amount:&a {transfer} &7items[newline]  &7Suction
@@ -137,80 +144,83 @@ hoppers:
     # You can specify specific containers which should be linkable.
     # If you don't configure a list of containers here, it will allow all containers.
     # List of possible materials (please note that only containers are linkable): https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
-    linktypes: 'ALL'
+    linktypes: ALL
     # Should dropped items be directly inserted into a hopper of this type, if it is within range and has space?
     direct-suction: false
     # You can specify a required permission here. Players without this permission won't be able to get the hopper type at /hoppers get
     # No required permission set as default.
     permission: ''
-
+    
     levels:
       # Transfer amount
       # How many items should be transferred at one transfer?
       transfer_amount:
-        1:
+        '1':
           value: 16
           cost: 0
-        2:
-          value: 18
-          cost: 1700.0
-        3:
-          value: 24
-          cost: 2300.0
-        4:
-          value: 28
-          cost: 3700.0
-        5:
+        '2':
           value: 32
+          cost: 1700.0
+        '3':
+          value: 64
+          cost: 2300.0
+        '4':
+          value: 128
+          cost: 3700.0
+        '5':
+          value: 256
           cost: 4800.0
-
+      
       # Suction radius How large should be the suction radius?
       # NOTE: If you want to disable upgradeable suction and enable vanilla hopper suction: Edit the default hopper settings in config.yml
       suction_radius:
-        1:
+        '1':
           value: 1
           cost: 0
-        2:
+        '2':
           value: 2
           cost: 10000.0
-        3:
+        '3':
           value: 3
           cost: 15000.0
-        4:
+        '4':
           value: 7
           cost: 20000.0
-
-
+      
+      
       # Links amount
       # How many links can the player create for one hopper?
       # A player can link his hopper to other containers by open the hopper menu and then clicking the link item.
       links_amount:
-        1:
-          value: 1
+        '1':
+          value: 10
           cost: 0
-        2:
-          value: 2
+        '2':
+          value: 15
           cost: 5000.0
-        3:
-          value: 3
+        '3':
+          value: 20
           cost: 8000.0
-        4:
-          value: 4
+        '4':
+          value: 25
           cost: 10000.0
-
-
+      
+      
       # Maximum distance between a hopper and the link destination.
       # You can use -1 for unlimited.
       link_distance:
-        1:
+        '1':
           value: 100
           cost: 0
-        2:
+        '2':
           value: 125
           cost: 5000.0
-        3:
+        '3':
           value: 150
           cost: 7500.0
-        4:
+        '4':
           value: 200
           cost: 9000.0
+        '5':
+          value: -1
+          cost: 100000          
