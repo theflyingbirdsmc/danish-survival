@@ -70,7 +70,7 @@ database:
     port: '3306'
     database: 'danish_survival_upgradeablehoppers'
     username: 'danish_survival'
-    password: 'EhR3su7tKALaSpz#8V$MhF^8cs@7c*'
+    password: 'WaLFY@^9!yc8Kg*y^DPt6urL6MS$HV'
     # It is highly recommended to set a unique table prefix if the plugin shares a database with other plugins.
     table-prefix: 'hoppers_'
 
